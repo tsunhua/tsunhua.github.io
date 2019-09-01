@@ -11,7 +11,7 @@ Hello, Welcome to my Blog.
 
 請點擊下方的連結暢遊：
 
-Please Click the flowing Link to Visit:
+Please Click the following Link to Visit:
 
 リンクをクリックしてご覧ください：
 
