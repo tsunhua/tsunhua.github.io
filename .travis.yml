@@ -12,7 +12,7 @@ install:
 
 before_script:
 - export TZ='Asia/Shanghai'
-- git config --global user.name "LinLshare"
+- git config --global user.name "linlshare"
 - git config --global user.email "linlshare@gmail.com"
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 
