@@ -1,12 +1,21 @@
 language: node_js
+sudo: required
+node_js: 
+  - 7.9.0
+
+cache:
+  directories:
+    - node_modules
+
 branches:
   only:
   - dev
 
 before_install:
-- npm install -g hexo
+- npm install hexo-cli -g --no-optional
+- npm install hexo-deployer-git --save
 
-install: 
+install:
 - npm install
 
 before_script:
@@ -15,6 +24,9 @@ before_script:
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 
 script:
+- hexo clean
+
+after_script:
 - hexo g -d
 
 notifications:
