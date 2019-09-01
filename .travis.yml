@@ -3,7 +3,9 @@ branches:
   only:
   - dev
 
-install: npm install
+install: 
+- npm install -g hexo-cli
+- npm install
 
 before_script:
 - git config --global user.name "LinLshare"
