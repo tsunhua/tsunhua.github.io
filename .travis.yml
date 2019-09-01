@@ -1,0 +1,10 @@
+script: ls -l
+notifications:
+  webhooks:
+    urls:
+      - https://us-central1-blog-3d4cb.cloudfunctions.net/travisPush
+    on_success: always # default: always
+    on_failure: never # default: always
+    on_start:   never # default: never
+    on_cancel:  never # default: always
+    on_error:   never # default: always
