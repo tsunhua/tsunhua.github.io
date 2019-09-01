@@ -8,7 +8,6 @@ branches:
   - dev
 
 before_install:
-- sudo apt-get install which
 - sudo npm install hexo-cli -g
 - npm install hexo-deployer-git --save
 
