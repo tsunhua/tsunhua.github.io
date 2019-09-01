@@ -6,12 +6,9 @@ branches:
   only:
   - dev
 
-before_install:
-- npm install hexo-cli -g
-- npm install hexo-deployer-git --save
-
 install:
 - npm install
+- npm install hexo-cli --save
 
 before_script:
 - export TZ='Asia/Shanghai'
