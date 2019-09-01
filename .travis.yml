@@ -3,8 +3,10 @@ branches:
   only:
   - dev
 
+before_install:
+- npm install -g hexo
+
 install: 
-- npm install -g hexo-cli
 - npm install
 
 before_script:
