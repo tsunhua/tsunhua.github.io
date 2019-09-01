@@ -82,7 +82,7 @@ theme: kiss
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/linlshare/linlshare.github.io.git
+  repository: https://__GITHUB_TOKEN__@github.com/linlshare/linlshare.github.io.git
   branch: master
 
 

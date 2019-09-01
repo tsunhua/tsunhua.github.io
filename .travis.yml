@@ -1,4 +1,5 @@
-script: ls -l
+script:
+- hexo g -d
 notifications:
   webhooks:
     urls:
@@ -8,3 +9,17 @@ notifications:
     on_start:   never # default: never
     on_cancel:  never # default: always
     on_error:   never # default: always
+
+language: node_js
+branches:
+  only:
+  - dev
+
+install: npm install
+
+before_script:
+- git config --global user.name "LinLshare"
+- git config --global user.email "linlshare@gmail.com"
+- sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
+
+script: npm run build
