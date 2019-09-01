@@ -3,22 +3,20 @@ sudo: required
 node_js: 
   - 7.9.0
 
-cache:
-  directories:
-    - node_modules
-
 branches:
   only:
   - dev
 
 before_install:
-- npm install hexo-cli -g --no-optional
+- sudo apt-get install which
+- sudo npm install hexo-cli -g
 - npm install hexo-deployer-git --save
 
 install:
 - npm install
 
 before_script:
+- export TZ='Asia/Shanghai'
 - git config --global user.name "LinLshare"
 - git config --global user.email "linlshare@gmail.com"
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
