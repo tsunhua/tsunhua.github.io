@@ -4,6 +4,7 @@ p: language/jp/keitai-de-nihongo.md
 tags:
 - 日本語
 - 携帯
+- アプリ
 ---
 
 有一天，我把手机上的系统语言设定为日语，觉得读手机上的日语读起来很有趣。边读边猜边查字典认识了不少，于是整理了本文以飨读者。
@@ -18,11 +19,11 @@ One day, I set the system language of my phone to Japanese, which is so funny wh
 
 手机上的应用叫 「アプリ」(apuri)，取自英语「Application」前三个音节，日语中常有此类将常用英语引进时省略后面音节的做法，比如「パソコン」(pasokon) 取自英语「Personal Computer」第一个单词的前两个音节和后一个单词的第一个音节。值得注意的是，日语中有一个词语：「応用」（ouyou），虽然也是应用的意思，但可不是应用程序的缩写。这与汉语和英语的用法相异，汉语的「应用」和英语的「Application」都有投入实际使用和应用程序的意思。
 
-下表汇总了我手机上的一些 アプリ，请看：
+下面分 システムアプリ（系统应用）和ユーザーアプリ（用户应用）汇总了我手机上的一些 アプリ进行对比。
 
 ### （一）システムアプリ（系统应用）
 
-| アプリ                   | Applications         | 应用程序      | 軟體       |
+| アプリ                   | Applications         | 应用程序      | 應用程式   |
 | ------------------------ | -------------------- | ------------- | ---------- |
 | アプリストア(apurisutoa) | App store            | 应用商店      | 應用商店   |
 | パスウードとアカウード   | Passwords & Accounts | 密码与账户    | 密碼與賬號 |
@@ -56,32 +57,36 @@ One day, I set the system language of my phone to Japanese, which is so funny wh
 
 | アプリ                          | Applications | 应用程序 | 應用程式 |
 | ------------------------------- | --------------- | -------- | -------- |
-| WeChat / ウィチャット(wichatto) | Wechat          | 微信     | 微信   |
-| QQ / キュキュ(kyukyu)           | QQ              | QQ       | QQ     |
-| アリペイ(aripei)                | Alipay          | 支付宝   | 支付寶 |
-| ビリビリ(biribiri)              | Bilibili        | 哔哩哔哩 | 嗶哩嗶哩 |
-| グーグル(gūguru)                | Google          | 谷歌     | 谷歌   |
-| キンドル(kinderu)               | Kindle          | Kindle   | Kindle |
-| Chrome | Chrome | Chrome | Chrome |
-| YouTube | YouTube | YouTube | YouTube |
-| Gmail | Gmail | Gmail | Gmail |
+| 微信 / ウェイシン \| WeChat / ウィチャット | Wechat          | 微信     | 微信   |
+| QQ / キュキュ           | QQ              | QQ       | QQ     |
+| アリペイ                | Alipay          | 支付宝   | 支付寶 |
+| ビリビリ              | Bilibili        | 哔哩哔哩 | 嗶哩嗶哩 |
+| Google / グーグル       | Google          | 谷歌     | 谷歌   |
+| Kindle / キンドル | Kindle          | Kindle   | Kindle |
+| Chrome / クロム | Chrome | Chrome | Chrome |
+| YouTube / ユーチューブ | YouTube | YouTube | YouTube |
+| Gmail / ジメイル | Gmail | Gmail | Gmail |
 | Google フォト | Google Photo | Google相册 | Google相簿 |
-| 翻訳 | Translate | 翻译 | 翻譯 |
-| Instagram | Instagram | Instagram | Instagram |
-| WhatsApp | WhatsApp | WhatsApp | WhatsApp |
-| Wunderlist | Wunderlist | 奇妙清单 | 奇妙清單 |
-| NetEase Music | NetEase Music | 网易云音乐 | 網易云音樂 |
-| Qdaily | Qdaily | 好奇心日报 | 好奇心日報 |
-| 手机淘宝 | Taobao | 手机淘宝 | 手機淘寶 |
-| JD | JD | 京东 | 京東 |
-| 高德地图 | Amap | 高德地图 | 高德地圖 |
-| 印象笔记（印象メモ） | Evernote | 印象笔记 | 印象筆記 |
-| 招商银行 | CMB | 招商银行 | 招商銀行 |
-| 微信读书 | WeRead | 微信读书 | 微信讀書 |
-| 优酷（ユウク） | Youku | 优酷 | 優酷 |
+| 翻訳（ほにゃく） | Translate | 翻译 | 翻譯 |
+| Instagram / インスタグラム | Instagram | Instagram | Instagram |
+| WhatsApp / ワッツアップ | WhatsApp | WhatsApp | WhatsApp |
+| Wunderlist / ワンダーリスト | Wunderlist | 奇妙清单 | 奇妙清單 |
+| NetEase Music / ネットイース ミュージック | NetEase Music | 网易云音乐 | 網易云音樂 |
+| 好奇心日報（こうきしんにっぽう） | Qdaily | 好奇心日报 | 好奇心日報 |
+| Taobao / タオバオ | Taobao | 手机淘宝 | 手機淘寶 |
+| 京東 / ジンドン | JD | 京东 | 京東 |
+| 高德地図 / こうとくちず | Amap | 高德地图 | 高德地圖 |
+| 印象メモ | Evernote | 印象笔记 | 印象筆記 |
+| 招商銀行 / しょうしょうぎんこう | CMB | 招商银行 | 招商銀行 |
+| WeChat 読書（どくしょ 1）? | WeRead | 微信读书 | 微信讀書 |
+| Youku（ヨウク） | Youku | 优酷 | 優酷 |
 | 愛奇芸（アイキゲー） | IQiyi | 爱奇艺 | 愛奇藝 |
 
 ## 二、設定（せってい）
+
+「設定」这个词语，不仅含义上，语音上也跟英语的「Setting」相似，很有意思。
+
+下面分「接続設定」（连接设置）、「フィードバック設定」（反馈设置）、「一般設定」（通用设置）和「ストアー設定」（商店设置）进行比较。
 
 ### （一）接続（せつぞく）設定（连接设置）
 
@@ -124,9 +129,9 @@ One day, I set the system language of my phone to Japanese, which is so funny wh
 | iTunes Store と App Store | iTunes Store＆App Store | iTunes Store 与 App Store | iTunes Store 與 App Store |
 | WalletとApple Pay         | Wallet＆Apple Pay       | 钱包与 Apple Pay          | 錢包與 Apple Pay          |
 
-## （三）操作（そうさ）
+## 三、操作（そうさ）
 
-我整理了一些应用的一般操作，对照了日文、英文、中文简体和中文繁体的写法，请看下表：
+アプリ 的操作是人机交互的重要部分，我们通过操作完成人机交互。常用的操作整理如下：
 
 | 日本語               | English | 汉语 | 漢語 |
 | -------------------- | ------- | ---- | ---- |
@@ -140,7 +145,7 @@ One day, I set the system language of my phone to Japanese, which is so funny wh
 | 検索（けんさく）     | Search  | 搜索 | 搜尋 |
 | 削除（さくじょ 1）   | Delete  | 删除 | 删除 |
 | 破棄（はき 1）       | Discard | 废弃 | 捨棄 |
-| 元に戻す（もとにもどす） | Undo | 撤消？ | 復原 |
+| 元に戻す（もとにもどす） | Undo | 撤消 | 復原 |
 | 開く（ひらく2）      | Open    | 打开 | 打開 |
 | 閉じる（とじる 2）   | Close   | 关闭 | 關閉 |
 | 編集（へんしゅう）   | Edit    | 编辑 | 編輯 |
@@ -150,4 +155,10 @@ One day, I set the system language of my phone to Japanese, which is so funny wh
 | 新着（しんちゃく） | New | 新增 | 新增 |
 | 報告（ほうこく） | Report | 举报 | 回報 |
 | マーク | Mark | 标记 | 標示 |
+| 再生（さいせい） | Play | 播放 | 播放 |
+| 一時停止（いちじていし） | Pause | 暂停 | 暫停 |
+| 停止（ていし） | Stop | 停止 | 停止 |
+| 登録（とうろく） | Sign Up | 注册 | 註冊 |
+| ログイン | Sign In / Log In | 登录 | 登入 |
+| ログアウト | Sign Out / Log Out | 退出 | 登出 / 退出 |
 
