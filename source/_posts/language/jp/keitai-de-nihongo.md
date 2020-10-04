@@ -9,10 +9,6 @@ tags:
 
 有一天，我把手机上的系统语言设定为日语，觉得读手机上的日语读起来很有趣。边读边猜边查字典认识了不少，于是整理了本文以飨读者。
 
-一日，吾設手機之系統語言為日語，讀之甚有趣。讀、猜、查，識字頗多，遂輯本文以饗讀者。
-
-One day, I set the system language of my phone to Japanese, which is so funny when reading it. Then I guess what it means and refer to the dictionaries. Since I know more about it, I write this article for sharing.
-
 <!--more-->
 
 ## 一、アプリ（应用程序）
