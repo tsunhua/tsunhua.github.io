@@ -46,7 +46,7 @@ tags:
 6. se / si：始
 ☞ 甲子話中「吾」旁的基本都是發 ngo 音，如下：
 1. u / ngo： 吾
- 2. nge / ngo： 語
+2. nge / ngo： 語
 3. ngo / ngo：悟、晤、梧、寤、遇、愚
 
 ## 潮州 eng / 甲子 ing、ng
