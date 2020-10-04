@@ -47,6 +47,7 @@ tags:
 4. keh / koh：乞（～汝）
 5. re / ri：耳（木～）、洱、餌、貳、膩
 6. se / si：始
+
 ☞ 甲子話中「吾」旁的基本都是發 ngo 音，如下：
 1. u / ngo： 吾
 2. nge / ngo： 語
@@ -319,7 +320,7 @@ tags:
 8. nguêng / iang：芫
 
 ## 其餘
-1. 宿舍：潮州 suah⁴ sia³  / 甲子 sog ⁴ sia³
+1. 宿舍：潮州 suah⁴ sia³  / 甲子 sog⁴ sia³
 2. 唔肯：潮州m⁶ kêng² / 甲子m⁶ kêng² 或 m⁶ kiang²
-4. 言語：潮州 ngang⁵ ghe² / 甲子 ngiang⁵ ngo²
-5. 瓊、煢：潮州kuang⁵ / 甲子kêng⁵
+3. 言語：潮州 ngang⁵ ghe² / 甲子 ngiang⁵ ngo²
+4. 瓊、煢：潮州kuang⁵ / 甲子kêng⁵
