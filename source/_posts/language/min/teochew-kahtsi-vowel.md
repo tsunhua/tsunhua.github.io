@@ -7,6 +7,8 @@ tags:
 - 甲子話
 ---
 
+![](teochew-kahtsi-vowel/202010042112.png)
+
 ## 概述
 
 本文所說的潮州話指的是狹義的潮州話，即潮州市內通行的閩南語，甲子話則是指陸豐市甲子鎮內通行的閩南語。通過比較，發現：甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻。
@@ -318,7 +320,6 @@ tags:
 
 ## 其餘
 1. 宿舍：潮州 suah⁴ sia³  / 甲子 sog ⁴ sia³
-2. 懷孕：潮州huai⁵ hêng⁶ / 甲子huai⁵ êng⁶？？ （又音 hung⁷，身孕）
-3. 唔肯：潮州m⁶ kêng² / 甲子m⁶ kêng² 或 m⁶ kiang²
+2. 唔肯：潮州m⁶ kêng² / 甲子m⁶ kêng² 或 m⁶ kiang²
 4. 言語：潮州 ngang⁵ ghe² / 甲子 ngiang⁵ ngo²
 5. 瓊、煢：潮州kuang⁵ / 甲子kêng⁵
