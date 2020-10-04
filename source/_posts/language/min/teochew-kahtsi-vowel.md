@@ -8,7 +8,8 @@ tags:
 ---
 
 ## 概述
-甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻，整體上看，開口度較潮州話大。
+
+本文所說的潮州話指的是狹義的潮州話，即潮州市內通行的閩南語，甲子話則是指陸豐市甲子鎮內通行的閩南語。通過比較，發現：甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻。
 
 ## 潮州 do(to) / 甲子 dê(tê)
 
