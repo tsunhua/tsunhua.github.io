@@ -9,9 +9,12 @@ tags:
 
 ![](teochew-kahtsi-vowel/202010042112.png)
 
+# 潮州話與甲子話韻母差異（稿）
+
 ## 概述
 
-本文所說的潮州話指的是狹義的潮州話，即潮州市內通行的閩南語，甲子話則是指陸豐市甲子鎮內通行的閩南語。通過比較，發現：甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻。
+本文所說的潮州話指的是狹義的潮州話，即潮州市內通行的閩南語，甲子話則是指陸豐市甲子鎮內通行的閩南語。
+通過比較，發現甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，而與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻。
 
 ## 潮州 do(to) / 甲子 dê(tê)
 
@@ -87,7 +90,7 @@ tags:
 ## 潮州 iê(iêh) / 甲子 io(ioh)
 
 例如：
-1. iê / io：腰、舀、姚、窯、揺
+1. iê / io：腰、姚、窯、揺
 2. iêh / ioh：約、藥
 3. biê / bio：表
 4. biê & piao / pio & biao：標、飆
@@ -171,11 +174,6 @@ tags:
 19. ting / ting： 烴、陳、澄
 20. zing / zing：甄、津、真、嗔、臻、拯、振、賑、震、晉、進、盡、燼
 21. zing / ding 珍
-
-## 潮州 io / 甲子 ion
-
-例如：
-1. io / ion 舀
 
 ## 潮州 iou(iouh) / 甲子 iao(iaoh)
 
@@ -306,10 +304,11 @@ tags:
 23. ruêng / ruang：亂
 24. ruêg / ruag：悅
 25. suêng / suang：選、算（又音 seng）、旋、漩
-26. tuêng / tuang：湍、團、傳zuêng 專、轉、鐫、顓、撰
-27. zuêg / zuag：拙、茁、咄、絀
+26. tuêng / tuang：湍、團、傳
+27. zuêng / zuang： 專、轉、鐫、顓、撰
+28. zuêg / zuag：拙、茁、咄、絀
 
-反例：
+例外：
 1. bhuêng/mang：萬、饅、慢、漫
 2. kuêng /  kêng：傾、頃、卿
 3. huêng / hoin：衡
@@ -324,3 +323,4 @@ tags:
 2. 唔肯：潮州m⁶ kêng² / 甲子m⁶ kêng² 或 m⁶ kiang²
 3. 言語：潮州 ngang⁵ ghe² / 甲子 ngiang⁵ ngo²
 4. 瓊、煢：潮州kuang⁵ / 甲子kêng⁵
+5. 舀：潮州 io² / 甲子ion² 
