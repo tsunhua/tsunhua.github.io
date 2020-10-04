@@ -209,19 +209,19 @@ body {
 }
 .article-entry h1,
 .widget h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .article-entry h2,
 .widget h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .article-entry h3,
 .widget h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .article-entry h4,
 .widget h4 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .article-entry h5,
 .widget h5 {
