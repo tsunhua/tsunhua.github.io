@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>編舟堂</title>
+  <icon>http://linlshare@github.io/icon.png</icon>
+  <subtitle>語言 · 人文 · 科技</subtitle>
+  <link href="http://linlshare@github.io/atom.xml" rel="self"/>
+  
+  <link href="http://linlshare@github.io/"/>
+  <updated>2020-10-06T05:44:08.899Z</updated>
+  <id>http://linlshare@github.io/</id>
+  
+  <author>
+    <name>Hua</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>詩經·秦風‧蒹葭 (甲子話注音版)</title>
+    <link href="http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/"/>
+    <id>http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/</id>
+    <published>2020-10-06T01:12:45.597Z</published>
+    <updated>2020-10-06T05:44:08.899Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    
+    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
+    
+    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>潮州話與甲子話韻母差異（稿）</title>
+    <link href="http://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/"/>
+    <id>http://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/</id>
+    <published>2020-10-04T09:48:48.801Z</published>
+    <updated>2020-10-04T14:41:21.558Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/04/language/min/teochew-kahtsi-vowel/202010042112.png&quot; alt&gt;&lt;/p&gt;
+&lt;h1 id=&quot;潮州話與甲子話韻母差異（稿）&quot;&gt;&lt;a href=&quot;#潮州話與甲子話韻母差異（稿）&quot; class=&quot;headerlink&quot; title=&quot;潮州話與甲子話韻母差異（稿）&quot;&gt;&lt;/a&gt;潮州話與甲子話韻母差異（稿）&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;本文所說的潮州話指的是狹義的潮州話，即潮州市內通行的閩南語，甲子話則是指陸豐市甲子鎮內通行的閩南語。&lt;br&gt;通過比較，發現甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，而與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻。&lt;/p&gt;
+&lt;h2 id=&quot;潮州-do-to-甲子-de-te&quot;&gt;&lt;a href=&quot;#潮州-do-to-甲子-de-te&quot; class=&quot;headerlink&quot; title=&quot;潮州 do(to) / 甲子 dê(tê)&quot;&gt;&lt;/a&gt;潮州 do(to) / 甲子 dê(tê)&lt;/h2&gt;&lt;p&gt;例如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;do / dê：短、代、袋&lt;/li&gt;
+&lt;li&gt;to / tê：退、褪、推、胎、蛻&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例外：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;do / do：刀、多、朵、躲、倒、戴、逃、桃、在、萄&lt;/li&gt;
+&lt;li&gt;to / to：討、妥、唾、橢、馱、陀、沱、跎、桃&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    
+    <category term="潮州話" scheme="http://linlshare@github.io/tags/潮州話/"/>
+    
+    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>携帯で日本語（手机上的日语）</title>
+    <link href="http://linlshare@github.io/2020/10/04/language/jp/keitai-de-nihongo/"/>
+    <id>http://linlshare@github.io/2020/10/04/language/jp/keitai-de-nihongo/</id>
+    <published>2020-10-04T07:48:34.830Z</published>
+    <updated>2020-10-04T10:43:03.780Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;有一天，我把手机上的系统语言设定为日语，觉得读手机上的日语读起来很有趣。边读边猜边查字典认识了不少，于是整理了本文以飨读者。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="日本語" scheme="http://linlshare@github.io/tags/日本語/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://linlshare@github.io/2019/09/01/Hello/"/>
+    <id>http://linlshare@github.io/2019/09/01/Hello/</id>
+    <published>2019-09-01T09:02:23.000Z</published>
+    <updated>2020-10-04T08:25:37.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;汝好，世界&lt;/p&gt;
+&lt;p&gt;幸會，世界&lt;/p&gt;
+&lt;p&gt;您好，世界&lt;/p&gt;
+&lt;p&gt;Hello</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hello" scheme="http://linlshare@github.io/tags/Hello/"/>
+    
+  </entry>
+  
+</feed>
