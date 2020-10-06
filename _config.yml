@@ -107,6 +107,10 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  icon: icon.png
+  icon: favicon.png
   autodiscovery: true
   template:
+
+# play video & music
+aplayer:
+  meting: true
