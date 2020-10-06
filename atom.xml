@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>編舟堂</title>
-  <icon>http://linlshare@github.io/icon.png</icon>
+  <icon>http://linlshare@github.io/favicon.png</icon>
   <subtitle>語言 · 人文 · 科技</subtitle>
   <link href="http://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="http://linlshare@github.io/"/>
-  <updated>2020-10-06T05:44:08.899Z</updated>
+  <updated>2020-10-06T15:27:54.440Z</updated>
   <id>http://linlshare@github.io/</id>
   
   <author>
@@ -21,25 +21,25 @@
     <link href="http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/"/>
     <id>http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/</id>
     <published>2020-10-06T01:12:45.597Z</published>
-    <updated>2020-10-06T05:44:08.899Z</updated>
+    <updated>2020-10-06T15:27:54.440Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
         
       
     
     
     
     
-    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
     
     <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
+    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
     
   </entry>
   
@@ -67,11 +67,11 @@
     
     
     
+    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
+    
     <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
     
     <category term="潮州話" scheme="http://linlshare@github.io/tags/潮州話/"/>
-    
-    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
     
   </entry>
   
@@ -104,10 +104,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;汝好，世界&lt;/p&gt;
-&lt;p&gt;幸會，世界&lt;/p&gt;
-&lt;p&gt;您好，世界&lt;/p&gt;
-&lt;p&gt;Hello</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
         
       
     
