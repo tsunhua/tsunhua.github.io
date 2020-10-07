@@ -6,7 +6,7 @@
   <link href="http://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="http://linlshare@github.io/"/>
-  <updated>2020-10-06T15:27:54.440Z</updated>
+  <updated>2020-10-07T00:34:32.609Z</updated>
   <id>http://linlshare@github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/"/>
     <id>http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/</id>
     <published>2020-10-06T01:12:45.597Z</published>
-    <updated>2020-10-06T15:27:54.440Z</updated>
+    <updated>2020-10-07T00:34:32.609Z</updated>
     
     
       
@@ -35,11 +35,11 @@
     
     
     
-    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
+    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
     
     <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
     
   </entry>
   
@@ -67,11 +67,11 @@
     
     
     
-    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
-    
     <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
     
     <category term="潮州話" scheme="http://linlshare@github.io/tags/潮州話/"/>
+    
+    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
     
   </entry>
   
