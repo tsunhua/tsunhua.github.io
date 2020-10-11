@@ -1,3 +1,10 @@
+---
+title: 聆聽音樂：蕭邦之「雨滴」
+p: music/listen-chopin-raindrop
+tags:
+- 聆聽音樂
+---
+
 # 聆聽音樂：蕭邦之「雨滴」
 
 我發現聆聽音樂可以提高自己的想像力，進而提高記憶力；仔細聆聽之餘，還可以提高自身的音樂素養，實在是一舉多得。以後我要多多聆聽，多多分享有感覺的音樂。
@@ -5,6 +12,8 @@
 今天點到蕭邦的「雨滴」，其全名爲 Prelude Op. 28 No. 15 Db major (Raindrop)，網易雲音樂上又寫成 Prélude in D:Flat Major, Op. 28, No. 15，是同樣的（繼續讀下去就知道爲什麼），翻譯成中文就是：降 D 大調前奏曲, 作品28之15。先來與君共賞。
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=554424111&auto=1&height=66"></iframe>
+
+<!--more-->
 
 ## 聽後感
 
