@@ -90,7 +90,9 @@ theme_config:
   # Header
   menu:
     主頁: /
-    彙整: /archives
+    閩南語: /tags/閩南語
+    Java: /tags/Java
+    聆聽音樂: /tags/聆聽音樂
 
   # Content
   excerpt_link: 繼續閱讀
