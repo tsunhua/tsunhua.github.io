@@ -109,7 +109,7 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  icon: favicon.png
+  icon: favicon.ico
   autodiscovery: true
   template:
 
