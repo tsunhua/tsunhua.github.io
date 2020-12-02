@@ -124,7 +124,7 @@ body,
 }
 body {
   background: #eee;
-  font: 17px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -406,9 +406,9 @@ body {
 .nav-icon {
   font-family: FontAwesome;
   text-align: center;
-  font-size: 17px;
-  width: 17px;
-  height: 17px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
   padding: 20px 15px;
   position: relative;
   cursor: pointer;
@@ -669,7 +669,7 @@ a.article-title:hover {
   text-align: center;
 }
 .article-entry blockquote footer {
-  font-size: 17px;
+  font-size: 15px;
   margin: 1.6em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -1162,7 +1162,7 @@ a.article-title:hover {
 .article-entry pre,
 .article-entry .highlight {
   margin: 0;
-  line-height: 27.200000000000003px;
+  line-height: 24px;
   white-space: pre-wrap;
   word-wrap: break-word;
   background: #fff;
@@ -1228,7 +1228,7 @@ a.article-title:hover {
   padding-right: 20px;
 }
 .article-entry .highlight .line {
-  height: 27.200000000000003px;
+  height: 24px;
 }
 .article-entry .highlight .line.marked {
   background: #515151;
