@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>編舟堂</title>
-  <icon>http://linlshare@github.io/favicon.png</icon>
+  <icon>http://linlshare@github.io/favicon.ico</icon>
   <subtitle>語言 · 人文 · 科技</subtitle>
   <link href="http://linlshare@github.io/atom.xml" rel="self"/>
   
