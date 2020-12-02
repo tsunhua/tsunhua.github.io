@@ -78,11 +78,11 @@
     
     
     
-    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
+    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
     
     <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
     
   </entry>
   
@@ -91,7 +91,7 @@
     <link href="http://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/"/>
     <id>http://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/</id>
     <published>2020-10-04T09:48:48.801Z</published>
-    <updated>2020-10-06T06:12:16.840Z</updated>
+    <updated>2020-12-02T03:32:41.725Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/04/language/min/teochew-kahtsi-vowel/202010042112.png&quot; alt&gt;&lt;/p&gt;
@@ -110,11 +110,11 @@
     
     
     
-    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
-    
     <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
     
     <category term="潮州話" scheme="http://linlshare@github.io/tags/潮州話/"/>
+    
+    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
     
   </entry>
   
