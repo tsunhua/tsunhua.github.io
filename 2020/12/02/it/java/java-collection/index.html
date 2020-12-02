@@ -4,6 +4,19 @@
   <meta charset="utf-8">
   <html lang="en"></html>
   
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-128207704-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
 
   
   <title>Java 集合 | 編舟堂</title>
@@ -107,10 +120,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <!-- Table of Contents -->
-        <div id="toc" class="toc-article">
-            <strong class="toc-title">目錄</strong>
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概覽"><span class="toc-number">1.</span> <span class="toc-text">概覽</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#List、Set、Map-三者之區別"><span class="toc-number">1.1.</span> <span class="toc-text">List、Set、Map 三者之區別</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#List、Set、Map-三者之底層數據結構"><span class="toc-number">1.2.</span> <span class="toc-text">List、Set、Map 三者之底層數據結構</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Iterator-迭代器"><span class="toc-number">1.3.</span> <span class="toc-text">Iterator 迭代器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有哪些集合是線程不安全的？怎麼解決？"><span class="toc-number">1.4.</span> <span class="toc-text">有哪些集合是線程不安全的？怎麼解決？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#length、length-、size-三者用途"><span class="toc-number">1.5.</span> <span class="toc-text">length、length()、size() 三者用途</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Collections-工具類的使用"><span class="toc-number">1.6.</span> <span class="toc-text">Collections 工具類的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#List"><span class="toc-number">2.</span> <span class="toc-text">List</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#比較-ArrayList-與-LinkedList"><span class="toc-number">2.1.</span> <span class="toc-text">比較 ArrayList 與 LinkedList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList-擴容機制"><span class="toc-number">2.2.</span> <span class="toc-text">ArrayList 擴容機制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速隨機訪問-RandomAccess"><span class="toc-number">2.3.</span> <span class="toc-text">快速隨機訪問 RandomAccess</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#System-arraycopy-與-Arrays-copyOf-方法"><span class="toc-number">2.4.</span> <span class="toc-text">System.arraycopy() 與 Arrays.copyOf() 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CopyOnWriteArrayList-的特點"><span class="toc-number">2.5.</span> <span class="toc-text">CopyOnWriteArrayList 的特點</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何移除列表中的元素"><span class="toc-number">2.6.</span> <span class="toc-text">如何移除列表中的元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正確使用-Arrays-asList"><span class="toc-number">2.7.</span> <span class="toc-text">正確使用 Arrays.asList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#把數組轉爲-java-util-ArrayList"><span class="toc-number">2.8.</span> <span class="toc-text">把數組轉爲 java.util.ArrayList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#將-List-轉爲數組"><span class="toc-number">2.9.</span> <span class="toc-text">將 List 轉爲數組</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Set"><span class="toc-number">3.</span> <span class="toc-text">Set</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#無序性和不可重複性的含義"><span class="toc-number">3.1.</span> <span class="toc-text">無序性和不可重複性的含義</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比較-HashSet、LinkedHashSet-和-TreeSet"><span class="toc-number">3.2.</span> <span class="toc-text">比較 HashSet、LinkedHashSet 和 TreeSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定義排序的實現"><span class="toc-number">3.3.</span> <span class="toc-text">自定義排序的實現</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashSet-如何檢查重複"><span class="toc-number">3.4.</span> <span class="toc-text">HashSet 如何檢查重複</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-number">4.</span> <span class="toc-text">Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#比較-HashMap-與-TreeMap"><span class="toc-number">4.1.</span> <span class="toc-text">比較 HashMap 與 TreeMap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap-底層實現"><span class="toc-number">4.2.</span> <span class="toc-text">HashMap 底層實現</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍歷-HashMap-的幾種方式"><span class="toc-number">4.3.</span> <span class="toc-text">遍歷 HashMap 的幾種方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ConcurrentHashMap-線程安全的原因"><span class="toc-number">4.4.</span> <span class="toc-text">ConcurrentHashMap 線程安全的原因</span></a></li></ol></li></ol>
-        </div>
+        
+          <div id="toc" class="toc-article">
+              <strong class="toc-title">目錄</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概覽"><span class="toc-number">1.</span> <span class="toc-text">概覽</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#List、Set、Map-三者之區別"><span class="toc-number">1.1.</span> <span class="toc-text">List、Set、Map 三者之區別</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#List、Set、Map-三者之底層數據結構"><span class="toc-number">1.2.</span> <span class="toc-text">List、Set、Map 三者之底層數據結構</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Iterator-迭代器"><span class="toc-number">1.3.</span> <span class="toc-text">Iterator 迭代器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有哪些集合是線程不安全的？怎麼解決？"><span class="toc-number">1.4.</span> <span class="toc-text">有哪些集合是線程不安全的？怎麼解決？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#length、length-、size-三者用途"><span class="toc-number">1.5.</span> <span class="toc-text">length、length()、size() 三者用途</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Collections-工具類的使用"><span class="toc-number">1.6.</span> <span class="toc-text">Collections 工具類的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#List"><span class="toc-number">2.</span> <span class="toc-text">List</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#比較-ArrayList-與-LinkedList"><span class="toc-number">2.1.</span> <span class="toc-text">比較 ArrayList 與 LinkedList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList-擴容機制"><span class="toc-number">2.2.</span> <span class="toc-text">ArrayList 擴容機制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速隨機訪問-RandomAccess"><span class="toc-number">2.3.</span> <span class="toc-text">快速隨機訪問 RandomAccess</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#System-arraycopy-與-Arrays-copyOf-方法"><span class="toc-number">2.4.</span> <span class="toc-text">System.arraycopy() 與 Arrays.copyOf() 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CopyOnWriteArrayList-的特點"><span class="toc-number">2.5.</span> <span class="toc-text">CopyOnWriteArrayList 的特點</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何移除列表中的元素"><span class="toc-number">2.6.</span> <span class="toc-text">如何移除列表中的元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正確使用-Arrays-asList"><span class="toc-number">2.7.</span> <span class="toc-text">正確使用 Arrays.asList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#把數組轉爲-java-util-ArrayList"><span class="toc-number">2.8.</span> <span class="toc-text">把數組轉爲 java.util.ArrayList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#將-List-轉爲數組"><span class="toc-number">2.9.</span> <span class="toc-text">將 List 轉爲數組</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Set"><span class="toc-number">3.</span> <span class="toc-text">Set</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#無序性和不可重複性的含義"><span class="toc-number">3.1.</span> <span class="toc-text">無序性和不可重複性的含義</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比較-HashSet、LinkedHashSet-和-TreeSet"><span class="toc-number">3.2.</span> <span class="toc-text">比較 HashSet、LinkedHashSet 和 TreeSet</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定義排序的實現"><span class="toc-number">3.3.</span> <span class="toc-text">自定義排序的實現</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashSet-如何檢查重複"><span class="toc-number">3.4.</span> <span class="toc-text">HashSet 如何檢查重複</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-number">4.</span> <span class="toc-text">Map</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#比較-HashMap-與-TreeMap"><span class="toc-number">4.1.</span> <span class="toc-text">比較 HashMap 與 TreeMap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap-底層實現"><span class="toc-number">4.2.</span> <span class="toc-text">HashMap 底層實現</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遍歷-HashMap-的幾種方式"><span class="toc-number">4.3.</span> <span class="toc-text">遍歷 HashMap 的幾種方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ConcurrentHashMap-線程安全的原因"><span class="toc-number">4.4.</span> <span class="toc-text">ConcurrentHashMap 線程安全的原因</span></a></li></ol></li></ol>
+          </div>
+        
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Java 集合分 List、Set、Map 三大類，其中 List 和 Set 實現了 Collection 接口。List 的特點是數據有序、可重複；Set 的特點是數據無序、不可重複；Map 存儲鍵值映射，Key 不可重複，Value 可重複，且一個 Key 只能對應一個 Value。</p>
 <p>List 有一實現 <code>ArrayList</code>，其底層實現是對象數組，默認容量是 10，但等到首次添加元素時才分配內存，每次遞增爲上次容量的 1.5 倍。在添加大量元素之前，建議調用 <code>ensureCapacity</code> 方法擴容，以減少遞增式再分配內存的次數。</p>
 <p>Set 有一實現 <code>HashSet</code>，其底層實現是 <code>HashMap</code> ，其檢查重複的機制有賴於 <code>hashCode</code> 和 <code>equals</code> 方法。</p>
@@ -299,7 +314,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://linlshare@github.io/2020/12/02/it/java/java-collection/" data-id="cki73mv3z0007msw8ijv9mxjs" class="article-share-link">分享</a>
+      <a data-url="http://linlshare@github.io/2020/12/02/it/java/java-collection/" data-id="cki7m45kb000786w87o2e1g1b" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
@@ -386,9 +401,22 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2020 Hua<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by 
+        <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;&&nbsp;
+        <a href="https://github.com/" target="_blank">Github</a>
+      <br/>
+
+      <span id="busuanzi_container_site_uv">
+        讀者數：<span id="busuanzi_value_site_uv"></span>
+      </span>
+      &nbsp;,&nbsp;
+      <span id="busuanzi_container_site_pv">
+        閱讀次數：<span id="busuanzi_value_site_pv"></span>
+      </span>
     </div>
   </div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
 </footer>
     </div>
     <nav id="mobile-nav">
