@@ -8,6 +8,8 @@ subtitle: 語言 · 人文 · 科技
 description: 在一座孤島中，目之所及皆是無明煩惱。我決心編就一葉扁舟，在苦海中行進，以期到達般若彼岸。
 keywords: 漢字,閩南語,福建話,潮州話,甲子話,IT,編程,Java,Python,Go,AWS,雲原生
 author: Hua
+qrcode: qrcode.jpg
+favicon: favicon.ico
 language: 
 - zh-TW
 - zh-CN
