@@ -8,7 +8,7 @@ subtitle: 語言 · 人文 · 科技
 description: 在一座孤島中，目之所及皆是無明煩惱。我決心編就一葉扁舟，在苦海中行進，以期到達般若彼岸。
 keywords: 漢字,閩南語,福建話,潮州話,甲子話,IT,編程,Java,Python,Go,AWS,雲原生
 author: Hua
-qrcode: qrcode.jpg
+qrcode: https://linlshare.github.io/qrcode.jpg
 favicon: favicon.ico
 language: 
 - zh-TW
@@ -18,7 +18,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://linlshare@github.io
+url: https://linlshare@github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
