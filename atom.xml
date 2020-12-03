@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>編舟堂</title>
-  <icon>http://linlshare@github.io/favicon.ico</icon>
+  <icon>https://linlshare@github.io/favicon.ico</icon>
   <subtitle>語言 · 人文 · 科技</subtitle>
-  <link href="http://linlshare@github.io/atom.xml" rel="self"/>
+  <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
-  <link href="http://linlshare@github.io/"/>
+  <link href="https://linlshare@github.io/"/>
   <updated>2020-12-02T07:03:36.480Z</updated>
-  <id>http://linlshare@github.io/</id>
+  <id>https://linlshare@github.io/</id>
   
   <author>
     <name>Hua</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Java 集合</title>
-    <link href="http://linlshare@github.io/2020/12/02/it/java/java-collection/"/>
-    <id>http://linlshare@github.io/2020/12/02/it/java/java-collection/</id>
+    <link href="https://linlshare@github.io/2020/12/02/it/java/java-collection/"/>
+    <id>https://linlshare@github.io/2020/12/02/it/java/java-collection/</id>
     <published>2020-12-01T22:56:04.000Z</published>
     <updated>2020-12-02T07:03:36.480Z</updated>
     
@@ -41,14 +41,14 @@
     
     
     
-    <category term="Java" scheme="http://linlshare@github.io/tags/Java/"/>
+    <category term="Java" scheme="https://linlshare@github.io/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Java 基礎</title>
-    <link href="http://linlshare@github.io/2020/12/02/it/java/java-basic/"/>
-    <id>http://linlshare@github.io/2020/12/02/it/java/java-basic/</id>
+    <link href="https://linlshare@github.io/2020/12/02/it/java/java-basic/"/>
+    <id>https://linlshare@github.io/2020/12/02/it/java/java-basic/</id>
     <published>2020-12-01T22:20:10.000Z</published>
     <updated>2020-12-02T07:05:32.442Z</updated>
     
@@ -70,14 +70,14 @@
     
     
     
-    <category term="Java" scheme="http://linlshare@github.io/tags/Java/"/>
+    <category term="Java" scheme="https://linlshare@github.io/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>在潮劇中學之《玉堂春》</title>
-    <link href="http://linlshare@github.io/2020/10/15/language/min/teochew-opera-gh%C3%AAgdengcung/"/>
-    <id>http://linlshare@github.io/2020/10/15/language/min/teochew-opera-gh%C3%AAgdengcung/</id>
+    <link href="https://linlshare@github.io/2020/10/15/language/min/teochew-opera-gh%C3%AAgdengcung/"/>
+    <id>https://linlshare@github.io/2020/10/15/language/min/teochew-opera-gh%C3%AAgdengcung/</id>
     <published>2020-10-15T05:16:09.930Z</published>
     <updated>2020-10-15T15:51:36.531Z</updated>
     
@@ -90,18 +90,18 @@
     
     
     
-    <category term="潮劇" scheme="http://linlshare@github.io/tags/潮劇/"/>
+    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
-    <category term="潮州話" scheme="http://linlshare@github.io/tags/潮州話/"/>
+    <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
     
-    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
     
   </entry>
   
   <entry>
     <title>聆聽音樂：蕭邦之「雨滴」</title>
-    <link href="http://linlshare@github.io/2020/10/11/music/listen-chopin-raindrop/"/>
-    <id>http://linlshare@github.io/2020/10/11/music/listen-chopin-raindrop/</id>
+    <link href="https://linlshare@github.io/2020/10/11/music/listen-chopin-raindrop/"/>
+    <id>https://linlshare@github.io/2020/10/11/music/listen-chopin-raindrop/</id>
     <published>2020-10-11T14:44:31.951Z</published>
     <updated>2020-10-11T15:46:33.810Z</updated>
     
@@ -113,14 +113,14 @@
     
     
     
-    <category term="聆聽音樂" scheme="http://linlshare@github.io/tags/聆聽音樂/"/>
+    <category term="聆聽音樂" scheme="https://linlshare@github.io/tags/聆聽音樂/"/>
     
   </entry>
   
   <entry>
     <title>詩經·秦風‧蒹葭 (甲子話注音版)</title>
-    <link href="http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/"/>
-    <id>http://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/</id>
+    <link href="https://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/"/>
+    <id>https://linlshare@github.io/2020/10/06/language/min/sig%C3%AAng-giamgia/</id>
     <published>2020-10-06T01:12:45.597Z</published>
     <updated>2020-10-07T00:34:32.609Z</updated>
     
@@ -129,25 +129,25 @@
       
         
         
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot;</summary>
         
       
     
     
     
     
-    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
     
-    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
+    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="詩經" scheme="http://linlshare@github.io/tags/詩經/"/>
+    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
   </entry>
   
   <entry>
     <title>潮州話與甲子話韻母差異（稿）</title>
-    <link href="http://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/"/>
-    <id>http://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/</id>
+    <link href="https://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/"/>
+    <id>https://linlshare@github.io/2020/10/04/language/min/teochew-kahtsi-vowel/</id>
     <published>2020-10-04T09:48:48.801Z</published>
     <updated>2020-12-02T03:32:41.725Z</updated>
     
@@ -168,18 +168,18 @@
     
     
     
-    <category term="潮州話" scheme="http://linlshare@github.io/tags/潮州話/"/>
+    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="閩南語" scheme="http://linlshare@github.io/tags/閩南語/"/>
+    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
-    <category term="甲子話" scheme="http://linlshare@github.io/tags/甲子話/"/>
+    <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
     
   </entry>
   
   <entry>
     <title>携帯で日本語（手机上的日语）</title>
-    <link href="http://linlshare@github.io/2020/10/04/language/jp/keitai-de-nihongo/"/>
-    <id>http://linlshare@github.io/2020/10/04/language/jp/keitai-de-nihongo/</id>
+    <link href="https://linlshare@github.io/2020/10/04/language/jp/keitai-de-nihongo/"/>
+    <id>https://linlshare@github.io/2020/10/04/language/jp/keitai-de-nihongo/</id>
     <published>2020-10-04T07:48:34.830Z</published>
     <updated>2020-10-04T10:43:03.780Z</updated>
     
@@ -189,14 +189,14 @@
     
     
     
-    <category term="日本語" scheme="http://linlshare@github.io/tags/日本語/"/>
+    <category term="日本語" scheme="https://linlshare@github.io/tags/日本語/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://linlshare@github.io/2019/09/01/Hello/"/>
-    <id>http://linlshare@github.io/2019/09/01/Hello/</id>
+    <link href="https://linlshare@github.io/2019/09/01/Hello/"/>
+    <id>https://linlshare@github.io/2019/09/01/Hello/</id>
     <published>2019-09-01T09:02:23.000Z</published>
     <updated>2020-10-04T08:25:37.030Z</updated>
     
@@ -205,14 +205,14 @@
       
         
         
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot;</summary>
         
       
     
     
     
     
-    <category term="Hello" scheme="http://linlshare@github.io/tags/Hello/"/>
+    <category term="Hello" scheme="https://linlshare@github.io/tags/Hello/"/>
     
   </entry>
   
