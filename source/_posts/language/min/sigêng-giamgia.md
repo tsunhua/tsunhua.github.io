@@ -19,6 +19,8 @@ giam¹ gia¹ ci¹ ci¹‚ bêh⁸ lao³ bhoi⁷ hi¹. so² ui³ i¹ ring⁵‚ d
 
 蒹葭采采，白露未已[^10]。所謂伊人，在水之涘[^11]。溯洄從之，道阻且右[^12]。溯游從之，宛在水中沚[^13]。[^14]_ giam¹ gia¹ cai² cai²‚ bêh⁸ lao³ bhoi⁷ in². so² ui³ i¹ ring⁵‚ do¹ zui² zu¹ su⁶. sog⁴ hoi⁵ ciong⁵ zu¹‚ dao⁶ zo² cian² iu⁶. sog⁴ iu⁵ ciong¹ zu¹‚ uang² do¹ zui² dang¹ zi².
 
+<!--more-->
+
 [^1]:	「蒹」，荻草；「葭」，蘆草。
 
 [^2]:	按今讀應爲「cang¹」，但根據韻腳應讀「cng¹」，且「倉」字甲子話亦讀作「cng¹」。

@@ -9,9 +9,9 @@ tags:
 
 今天點到蕭邦的「雨滴」，其全名爲 Prelude Op. 28 No. 15 Db major (Raindrop)，網易雲音樂上又寫成 Prélude in D:Flat Major, Op. 28, No. 15，是同樣的（繼續讀下去就知道爲什麼），翻譯成中文就是：降 D 大調前奏曲, 作品28之15。先來與君共賞。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=554424111&auto=1&height=66"></iframe>
-
 <!--more-->
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=554424111&auto=1&height=66"></iframe>
 
 ## 聽後感
 

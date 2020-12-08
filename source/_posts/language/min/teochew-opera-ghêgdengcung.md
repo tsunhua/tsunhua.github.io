@@ -11,10 +11,10 @@ tags:
 
 潮劇的語音特點是：最早的潮劇基本上是以潮州府城音爲主要音系來表演的，但迴避了潮州音的最明顯的特徵音韻母——潮州府城話的 iêng/iêg、uêng/uêg、iêm/iêb 等韻母，換成了跟其他方言相同的 iang/iag、uang/uag 和 iam/iab 韻母。然後，還參雜了揭陽話的一些特點。（引自林倫倫《潮劇是用哪個地方的方言來演唱的？》）
 
+<!--more-->
+
 今日要講的是明朝一段跟名妓玉堂春有關的冤案。請看視頻（時長 4:35:52）：
 <iframe width="720" height="480" src="https://www.youtube.com/embed/_F8IQgDZjnw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!--more-->
 
 ## 故事概要
 蘇三，花名玉堂春，原名周玉潔，明朝山西大同府周家莊人，因被販賣到燕京的「蘇淮妓院」而改姓蘇，又在妓女中排行第三，是爲蘇三。在馮夢龍版的故事裏，故事的男主角叫王景隆，其父令其到燕京收債，得銀三萬兩，遂到妓院尋歡，傾盡身資，佔有了才貌雙全的蘇三，兩人許下山盟海誓。不到一年，身資喪盡，被鴇婆趕出妓院。蘇三勸王景隆考取功名，王景隆回到金陵，奮發圖強，上京趕考，中了進士，選任真定府理刑判官。後爲父所迫，娶了劉都堂之女爲妻。
