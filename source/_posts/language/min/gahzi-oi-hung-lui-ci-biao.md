@@ -811,7 +811,7 @@ tags:
 
     ![](gahzi-oi-hung-lui-ci-biao/Untitled%2048.png)
 
-11. 飛天蜈蚣 /boi¹ tinh¹ ghê⁵ gang¹/
+11. 飛天蜈蚣 /boi¹ tin¹ ghê⁵ gang¹/
 
     ![](gahzi-oi-hung-lui-ci-biao/Untitled%2049.png)
 
@@ -1779,7 +1779,7 @@ tags:
 1. 耍遊戲 /sng² iu⁵ hi³/ 玩遊戲
 2. ䷀箭 /diong³ zin³/ 射箭
 3. ䷀珠 /diong³ zu¹/ 打彈珠
-4. 彈枪 /duan⁷ ciong¹/ 開槍
+4. 彈槍 /duan⁷ ciong¹/ 開槍
 5. 跳索 /tiao³ soh⁴/ 跳繩
 6. 踏孔 /dah⁸ kong²/ 捉迷藏
 7. 泅水 /siu⁵ zui²/ 游泳
@@ -1841,9 +1841,7 @@ tags:
 3. 三國時，吳侯孫權派遣將軍衛溫（？～231年）攻打福建、琉球和台灣（夷州），被風雨刮到甲子門。
 4. 南宋乾道五年(1169)，承奉郎致仕范有仁建順濟橋，橋從大膽山腳(今東宮社轄區)跨越瀛江到後庭（今甲東鎮雨亭村轄區）。
 
-    ![](gahzi-oi-hung-lui-ci-biao/Untitled%2084.png)
-
-    順濟橋（來源：[BTG](http://www.iobtg.com/Cc.Jiazi.htm#1)）
+    ![順濟橋（來源：[BTG](http://www.iobtg.com/Cc.Jiazi.htm#1)）](gahzi-oi-hung-lui-ci-biao/Untitled%2084.png)
 
 5. 宋嘉定甲申年(1224)，南宋承奉郎范良臣（范有仁之孫）登腹石山，因山對面可見甲子門奇石十八，屹立如人，遂刻「登瀛」二字於石，取十八學士登瀛洲之義。
 6. 1276 年，元兵攻陷南宋京城臨安，南宋擁立幼帝趙昰，從福州乘船經福建沿海入廣東，於冬十二月抵甲子門腹石山（後人爲紀念此事，更山名爲待渡山），范良臣給軍食三日，留帝像登瀛石上。
