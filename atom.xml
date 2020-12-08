@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2020-12-08T12:22:28.609Z</updated>
+  <updated>2020-12-08T14:29:38.624Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://linlshare@github.io/2020/12/08/language/min/gahzi-oi-hung-lui-ci-biao/"/>
     <id>https://linlshare@github.io/2020/12/08/language/min/gahzi-oi-hung-lui-ci-biao/</id>
     <published>2020-12-08T12:00:33.609Z</published>
-    <updated>2020-12-08T12:22:28.609Z</updated>
+    <updated>2020-12-08T14:29:38.624Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;序言-su⁶-ngiang⁵&quot;&gt;&lt;a href=&quot;#序言-su⁶-ngiang⁵&quot; class=&quot;headerlink&quot; title=&quot;序言(su⁶ ngiang⁵)&quot;&gt;&lt;/a&gt;序言(su⁶ ngiang⁵)&lt;/h2&gt;&lt;p&gt;甲子鎮處在陸豐市，與惠來縣交界，語言文化上偏惠來（其實五百年前與惠來交界處同屬海豐縣）。甲子話是三甲地區（甲子、甲西、甲東三鎮）通行的語言，是甲子地方文化的重要載體之一。在學術上，甲子話被歸入粵東閩南語潮汕話片。 &lt;/p&gt;
@@ -118,11 +118,11 @@
     
     
     
-    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
+    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
     <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
     
-    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
+    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
     
   </entry>
   
@@ -154,12 +154,12 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/06/language/min/sigêng-giamgia/202010060948.jpg&quot; alt&gt;&lt;/p&gt;
 
-        &lt;div id=&quot;aplayer-wdwKdGPJ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+        &lt;div id=&quot;aplayer-oYSlCFyF&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
             &lt;pre class=&quot;aplayer-lrc-content&quot;&gt;&lt;/pre&gt;
         &lt;/div&gt;
         &lt;script&gt;
           var ap = new APlayer({
-            element: document.getElementById(&quot;aplayer-wdwKdGPJ&quot;),
+            element: document.getElementById(&quot;aplayer-oYSlCFyF&quot;),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -204,9 +204,9 @@
     
     
     
-    <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
-    
     <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
+    
+    <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
     
     <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
