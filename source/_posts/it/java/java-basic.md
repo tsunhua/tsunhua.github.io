@@ -604,7 +604,7 @@ try (Scanner scanner = new Scanner(new File("src/main/resources/test.txt"))) {
 
 ### 多線程
 
-見 [Java 並發](https://linlshare.github.io/2020/12/02/it/java/java-concurrent/) 
+見 [Java 多線程](https://linlshare.github.io/2020/12/10/it/java/java-concurrent/) 
 
 ### 文件與 I/O 流
 
