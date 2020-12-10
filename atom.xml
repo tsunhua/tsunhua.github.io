@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2020-12-08T14:37:55.496Z</updated>
+  <updated>2020-12-10T16:22:19.966Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 多線程</title>
+    <link href="https://linlshare@github.io/2020/12/10/it/java/java-concurrent/"/>
+    <id>https://linlshare@github.io/2020/12/10/it/java/java-concurrent/</id>
+    <published>2020-12-10T08:12:54.000Z</published>
+    <updated>2020-12-10T16:22:19.966Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;首先區分進程和線程。進程是程序運行的基本單位，也是系統分配資源的最小單位；而線程是 CPU 調度的最小單位，一個進程可以有多個線程，而各個線程擁有獨立的程序計數器、虛擬機棧和本地方法棧，但共享同一個堆和方法區。爲著充分利用系統資源，減少 CPU 空等，多線程技術應運而生。系統使用時間片輪轉法分配 CPU 資源到各個線程，如果線程在分配的時間片內未能處理完任務，則會導致上下文切換。&lt;/p&gt;
+&lt;p&gt;Java 中線程類爲 &lt;code&gt;Thread&lt;/code&gt; ，其 &lt;code&gt;start&lt;/code&gt; 方法會使線程進入 Runnable 狀態；其 &lt;code&gt;sleep&lt;/code&gt; 方法會阻塞線程而不釋放鎖，跟 &lt;code&gt;Object.wait&lt;/code&gt; 有別；其 &lt;code&gt;interrupt&lt;/code&gt; 方法並不停止線程，而是設置一個標誌位通知線程應當關閉，線程可以根據該標誌位決定是否要停止運行。&lt;/p&gt;
+&lt;p&gt;多個線程可以通過線程池進行統一管理，好處是還可以提前 Ready 好一些線程避免等待線程創建的時間損耗；還可以使用舊的線程，減少線程的頻繁創建和銷毀的資源損耗。線程池推薦直接使用 &lt;code&gt;ThreadPoolExecutor&lt;/code&gt; 的構造方法去創建，以便設置合適的構造參數。調用 &lt;code&gt;ThreadPoolExecutor.execute&lt;/code&gt; 可以將一個 &lt;code&gt;Runnable&lt;/code&gt; 任務放入線程池處理； 調用&lt;code&gt;ThreadPoolExecutor.submit&lt;/code&gt;  可以將一個 &lt;code&gt;Callable&lt;/code&gt; 任務放入線程池處理，返回一個 &lt;code&gt;Future&lt;/code&gt; 代表處理結果，後續通過調用 &lt;code&gt;Future.get&lt;/code&gt; 獲取處理結果，其過程是阻塞的。&lt;/p&gt;
+&lt;p&gt;Java 1.5 開始提供&lt;code&gt;AbstractQueuedSynchronizer&lt;/code&gt;，用於創建多線程訪問共享資源的同步器，其內部使用一個名爲 CLH 的 FIFO 的雙向隊列進行資源分配。其常見實現類有：&lt;code&gt;ReentrantLock&lt;/code&gt;、&lt;code&gt;ReadWriteLock&lt;/code&gt; 和 &lt;code&gt;CountDownLatch&lt;/code&gt; 。其中 &lt;code&gt;ReadWriteLock&lt;/code&gt; 性能優於 &lt;code&gt;ReentrantLock&lt;/code&gt; ，因爲兩個讀操作在 &lt;code&gt;ReadWriteLock&lt;/code&gt; 中不互斥而在 &lt;code&gt;ReentrantLock&lt;/code&gt; 中互斥。&lt;/p&gt;
+&lt;p&gt;Java 1.8 開始提供了 &lt;code&gt;CompletableFuture&lt;/code&gt; ，其實現了 &lt;code&gt;Future&lt;/code&gt; 接口，並提供了基於回調的函數式異步編程方式和對&lt;code&gt;CompletableFuture&lt;/code&gt; 的組合，使用者可以不關心底層的線程池，大大簡便了異步編程。&lt;/p&gt;
+&lt;p&gt;Java 還提供了 ThreadLocal 類可以使得各個線程擁有變量的副本而不會相互影響，底層是使用 Thread 類的 &lt;code&gt;ThreadLocalMap&lt;/code&gt;，一個類似 HashMap 的結構，其 Key 爲 ThreadLocal 對象的弱引用。&lt;/p&gt;
+&lt;p&gt;多線程因會有多個線程操作共享的資源而引發了線程安全的擔憂。線程安全要求&lt;strong&gt;原子性、可見性和有序性&lt;/strong&gt;。Java 提供了多種方式可以保證線程安全：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;synchronized 同步鎖，這是一個重量級鎖。可以使用當前類的 class 對象，當前類的對象或者任意對象對方法和代碼塊進行加鎖，方法結束或代碼塊結束則鎖自動釋放。當使用非靜態同步方法時，會使用當前對象爲鎖，因此多個非靜態同步方法共享同一鎖。Java 1.6 後引入&lt;strong&gt;偏向鎖&lt;/strong&gt;和&lt;strong&gt;輕量級鎖&lt;/strong&gt;的概念，使得 synchronized 不那麼「重」了。&lt;/li&gt;
+&lt;li&gt;volatile 關鍵字。使用該關鍵字修飾的變量在編譯時不會有寄存器緩存而是直接使用主存、不會進行代碼重排序優化，保證了可見性和有序性；在解釋執行時使用 CPU 內存屏障技術防止指令重排序。&lt;/li&gt;
+&lt;li&gt;CAS(Compare and Swap) 技術，相比於 synchronized，其假定操作是不會產生衝突的，將舊的預期值和內存中的值進行比較，若相同則更新內存中的值，否則自旋。因此被稱之爲「樂觀鎖」，而 synchronized 被稱之爲「悲觀鎖」。Java 中的 Atomic 類是典型的 CAS 實現。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;多線程操作共享資源還會出現死鎖。死鎖產生的條件是：&lt;strong&gt;互斥、請求/等待、不可剝奪和循環等待&lt;/strong&gt;。解決死鎖問題的關鍵是破壞死鎖產生的條件。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Java" scheme="https://linlshare@github.io/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>甲子話分類辭表（2020.12）</title>
@@ -80,7 +109,7 @@
     <link href="https://linlshare@github.io/2020/12/02/it/java/java-basic/"/>
     <id>https://linlshare@github.io/2020/12/02/it/java/java-basic/</id>
     <published>2020-12-01T22:20:10.000Z</published>
-    <updated>2020-12-02T07:05:32.442Z</updated>
+    <updated>2020-12-10T16:23:17.071Z</updated>
     
     
     <summary type="html">&lt;p&gt;Java 自 95 年誕生至今，已有 25 年的歷史。它是一種半編譯的語言，先將代碼編譯成字節碼，然後在 JVM 中解釋執行。&lt;/p&gt;

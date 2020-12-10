@@ -92,6 +92,61 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-it/java/java-concurrent" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/10/it/java/java-concurrent/" class="article-date">
+  <time datetime="2020-12-10T08:12:54.000Z" itemprop="datePublished">2020-12-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/10/it/java/java-concurrent/">Java 多線程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先區分進程和線程。進程是程序運行的基本單位，也是系統分配資源的最小單位；而線程是 CPU 調度的最小單位，一個進程可以有多個線程，而各個線程擁有獨立的程序計數器、虛擬機棧和本地方法棧，但共享同一個堆和方法區。爲著充分利用系統資源，減少 CPU 空等，多線程技術應運而生。系統使用時間片輪轉法分配 CPU 資源到各個線程，如果線程在分配的時間片內未能處理完任務，則會導致上下文切換。</p>
+<p>Java 中線程類爲 <code>Thread</code> ，其 <code>start</code> 方法會使線程進入 Runnable 狀態；其 <code>sleep</code> 方法會阻塞線程而不釋放鎖，跟 <code>Object.wait</code> 有別；其 <code>interrupt</code> 方法並不停止線程，而是設置一個標誌位通知線程應當關閉，線程可以根據該標誌位決定是否要停止運行。</p>
+<p>多個線程可以通過線程池進行統一管理，好處是還可以提前 Ready 好一些線程避免等待線程創建的時間損耗；還可以使用舊的線程，減少線程的頻繁創建和銷毀的資源損耗。線程池推薦直接使用 <code>ThreadPoolExecutor</code> 的構造方法去創建，以便設置合適的構造參數。調用 <code>ThreadPoolExecutor.execute</code> 可以將一個 <code>Runnable</code> 任務放入線程池處理； 調用<code>ThreadPoolExecutor.submit</code>  可以將一個 <code>Callable</code> 任務放入線程池處理，返回一個 <code>Future</code> 代表處理結果，後續通過調用 <code>Future.get</code> 獲取處理結果，其過程是阻塞的。</p>
+<p>Java 1.5 開始提供<code>AbstractQueuedSynchronizer</code>，用於創建多線程訪問共享資源的同步器，其內部使用一個名爲 CLH 的 FIFO 的雙向隊列進行資源分配。其常見實現類有：<code>ReentrantLock</code>、<code>ReadWriteLock</code> 和 <code>CountDownLatch</code> 。其中 <code>ReadWriteLock</code> 性能優於 <code>ReentrantLock</code> ，因爲兩個讀操作在 <code>ReadWriteLock</code> 中不互斥而在 <code>ReentrantLock</code> 中互斥。</p>
+<p>Java 1.8 開始提供了 <code>CompletableFuture</code> ，其實現了 <code>Future</code> 接口，並提供了基於回調的函數式異步編程方式和對<code>CompletableFuture</code> 的組合，使用者可以不關心底層的線程池，大大簡便了異步編程。</p>
+<p>Java 還提供了 ThreadLocal 類可以使得各個線程擁有變量的副本而不會相互影響，底層是使用 Thread 類的 <code>ThreadLocalMap</code>，一個類似 HashMap 的結構，其 Key 爲 ThreadLocal 對象的弱引用。</p>
+<p>多線程因會有多個線程操作共享的資源而引發了線程安全的擔憂。線程安全要求<strong>原子性、可見性和有序性</strong>。Java 提供了多種方式可以保證線程安全：</p>
+<ol>
+<li>synchronized 同步鎖，這是一個重量級鎖。可以使用當前類的 class 對象，當前類的對象或者任意對象對方法和代碼塊進行加鎖，方法結束或代碼塊結束則鎖自動釋放。當使用非靜態同步方法時，會使用當前對象爲鎖，因此多個非靜態同步方法共享同一鎖。Java 1.6 後引入<strong>偏向鎖</strong>和<strong>輕量級鎖</strong>的概念，使得 synchronized 不那麼「重」了。</li>
+<li>volatile 關鍵字。使用該關鍵字修飾的變量在編譯時不會有寄存器緩存而是直接使用主存、不會進行代碼重排序優化，保證了可見性和有序性；在解釋執行時使用 CPU 內存屏障技術防止指令重排序。</li>
+<li>CAS(Compare and Swap) 技術，相比於 synchronized，其假定操作是不會產生衝突的，將舊的預期值和內存中的值進行比較，若相同則更新內存中的值，否則自旋。因此被稱之爲「樂觀鎖」，而 synchronized 被稱之爲「悲觀鎖」。Java 中的 Atomic 類是典型的 CAS 實現。</li>
+</ol>
+<p>多線程操作共享資源還會出現死鎖。死鎖產生的條件是：<strong>互斥、請求/等待、不可剝奪和循環等待</strong>。解決死鎖問題的關鍵是破壞死鎖產生的條件。</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/12/10/it/java/java-concurrent/#more">繼續閱讀</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://linlshare@github.io/2020/12/10/it/java/java-concurrent/" data-id="ckij1o7kt00001dw8fznilzlx" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-language/min/gahzi-oi-hung-lui-ci-biao" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/12/08/language/min/gahzi-oi-hung-lui-ci-biao/" class="article-date">
@@ -557,7 +612,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 13.33px;">Java</a> <a href="/tags/日本語/" style="font-size: 10px;">日本語</a> <a href="/tags/潮劇/" style="font-size: 10px;">潮劇</a> <a href="/tags/潮州話/" style="font-size: 13.33px;">潮州話</a> <a href="/tags/甲子話/" style="font-size: 16.67px;">甲子話</a> <a href="/tags/聆聽音樂/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/詩經/" style="font-size: 10px;">詩經</a> <a href="/tags/閩南語/" style="font-size: 20px;">閩南語</a>
+      <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 16.67px;">Java</a> <a href="/tags/日本語/" style="font-size: 10px;">日本語</a> <a href="/tags/潮劇/" style="font-size: 10px;">潮劇</a> <a href="/tags/潮州話/" style="font-size: 13.33px;">潮州話</a> <a href="/tags/甲子話/" style="font-size: 16.67px;">甲子話</a> <a href="/tags/聆聽音樂/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/詩經/" style="font-size: 10px;">詩經</a> <a href="/tags/閩南語/" style="font-size: 20px;">閩南語</a>
     </div>
   </div>
 
@@ -573,7 +628,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -584,6 +639,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/12/10/it/java/java-concurrent/">Java 多線程</a>
+          </li>
         
           <li>
             <a href="/2020/12/08/language/min/gahzi-oi-hung-lui-ci-biao/">甲子話分類辭表（2020.12）</a>
@@ -599,10 +658,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2020/10/15/language/min/teochew-opera-ghêgdengcung/">在潮劇中學之《玉堂春》</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/11/music/listen-chopin-raindrop/">聆聽音樂：蕭邦之「雨滴」</a>
           </li>
         
       </ul>
