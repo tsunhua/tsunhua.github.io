@@ -187,8 +187,8 @@ System.out.println(scale.toString()); // 1.13
 基本類型的封裝類型是對象，Java 中的對象由以下部分組成：
 
 1. 對象頭（object header）：由 mark word 和 class pointer 組成。mark word 存儲了對象的 hashcode、GC信息和鎖信息；class pointer 存儲了指向類對象的指針。32 位的 JVM 上對象頭佔 8 個字節，mark word 和 class pointer 各佔一半。64 位的 JVM 默認開啟了壓縮指針選項（-XX+UseCompressedOops）後上對象頭佔用 12 個字節，mark word 佔用 8 個字節，class pointer 佔用 4 個字節。
-2. 實例數據（instance data）：
-3. 對齊填充（padding）
+2. 實例數據（instance data）：對象的有效信息。
+3. 對齊填充（padding）：Hotspot 虛擬機的自動內存管理系統要求對象起始地址必須是 8 字節的整數倍，當實例數據不足時需要進行對齊填充。
 
 可使用 `org.openjdk.jol` 工具查看一個對象佔用的字節大小，
 
