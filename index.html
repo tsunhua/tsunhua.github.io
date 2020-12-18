@@ -92,6 +92,70 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-it/java/java-jvm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/18/it/java/java-jvm/" class="article-date">
+  <time datetime="2020-12-17T19:30:38.000Z" itemprop="datePublished">2020-12-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/18/it/java/java-jvm/">JVM</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JVM(Java Virtual Machine)，即 Java 虛擬機，是操作系統上的一個程序，用於編譯、運行Java程序，使得 Java程序可以跨平台。關於 JVM 我們著重在內存區域、類的加載、對象的創建和內存管理四個部分。</p>
+<p>內存區域分爲堆、方法區、程序計數器、虛擬機棧和本地方法棧。其中堆和方法區是線程共享的，程序計數器、虛擬機棧和本地方法棧則是線程私有的。堆是一大塊內存，幾乎所有的對象實例都在這裡分配；方法區在JVM 規範中是堆的一部分，不同的 JVM 可以有不同的實現，就 HotSpot VM 而言，在 JDK1.8 之前使用永久代實現方法區，在JDK1.8及之後使用直接內存上的元空間實現；程序計數器存放下一條指令的地址；虛擬機棧的每一個棧幀保存著方法的局部變量表、操作數棧、動態連接和方法返回地址；本地方法棧類似虛擬機棧，不過是調用 native 方法，在 HotSpot VM中虛擬機棧和本地方法棧合而爲一。</p>
+<p>類的生命週期分爲加載、連接、初始化、使用和卸載四個過程，其中：</p>
+<ol>
+<li>加載：將 .class 文件以二進制字節流方式讀入虛擬機，並在方法區給靜態變量分配空間，在堆中生成 Class 對象作爲訪問靜態變量的入口。</li>
+<li>連接：分爲驗證、準備和解析三個階段，驗證階段驗證字節碼文件的合規性，準備階段將類變量賦予初始零值，解析階段將常量池中的符號引用轉爲直接引用。</li>
+<li>初始化：執行 <code>&lt;clinit&gt;</code> 方法。</li>
+</ol>
+<p>對象的創建過程依次是類加載檢查、分配內存、初始化零值、設置對象頭和執行<code>&lt;init&gt;</code> 方法。</p>
+<ol>
+<li>類加載檢查：檢查類是否加載完畢。</li>
+<li>分配內存：對象實例一般會分配在堆中，根據採用的垃圾回收器會選擇指針碰撞或空閒類表方式分配。JDK1.7之後啟用逃逸分析可以將未逃逸的對象分配到棧中。</li>
+<li>初始化零值：給對象的成員變量設置初始的零值。</li>
+<li>設置對象頭：對象頭包括所屬的類、對象哈希碼、GC分代年齡和鎖信息。</li>
+<li>執行 <code>&lt;init&gt;</code> 方法。</li>
+</ol>
+<p>Java 是自動內存管理的，內存的分配和回收由JVM進行控制。通常使用分代內存管理，分新生代、老年代和永久代(JDK1.8及之後無永久代)，新對象優先在新生代 Eden 區分配，大對象直接分配到老年代，持續存活的對象也會被轉移到老年代。</p>
+<p>內存回收涉及垃圾的判定、垃圾收集算法和垃圾收集器。</p>
+<p>判定垃圾通常有引用計數法和可達性分析算法。</p>
+<p>垃圾收集(GC)通常分部分收集(Partial GC)和整堆收集(Full GC)，部分收集分新生代收集(Minor GC / Young GC)、老年代收集(Major GC / Old GC)和混合收集(Mixed GC)</p>
+<p>垃圾收集算法通常有標記-清除算法、複製算法、標記-整理算法和分代收集算法。</p>
+<p>垃圾收集器中 ParNew 最早採用並行收集，CMS 最早採用並發收集。JDK1.8 中默認使用 Parallel Scavenge(新生代) + Parallel Old(老年代) 收集器，JDK9之後默認使用 G1 收集器。</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/12/18/it/java/java-jvm/#more">繼續閱讀</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://linlshare@github.io/2020/12/18/it/java/java-jvm/" data-id="ckitpy67w000025w8lm4nm2ke" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-it/java/java-concurrent" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/12/10/it/java/java-concurrent/" class="article-date">
@@ -554,52 +618,12 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Hello" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/01/Hello/" class="article-date">
-  <time datetime="2019-09-01T09:02:23.000Z" itemprop="datePublished">2019-09-01</time>
-</a>
+
+
+  <nav id="page-nav">
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/01/Hello/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>汝好，世界</p>
-<p>幸會，世界</p>
-<p>您好，世界</p>
-<p>Hello World</p>
-<p>こんにちは、世界</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://linlshare@github.io/2019/09/01/Hello/" data-id="ckig2yla3000078w89rc91cgm" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hello/">Hello</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一頁 &raquo;</a>
+  </nav>
 
 </section>
         
@@ -612,7 +636,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 16.67px;">Java</a> <a href="/tags/日本語/" style="font-size: 10px;">日本語</a> <a href="/tags/潮劇/" style="font-size: 10px;">潮劇</a> <a href="/tags/潮州話/" style="font-size: 13.33px;">潮州話</a> <a href="/tags/甲子話/" style="font-size: 16.67px;">甲子話</a> <a href="/tags/聆聽音樂/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/詩經/" style="font-size: 10px;">詩經</a> <a href="/tags/閩南語/" style="font-size: 20px;">閩南語</a>
+      <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/日本語/" style="font-size: 10px;">日本語</a> <a href="/tags/潮劇/" style="font-size: 10px;">潮劇</a> <a href="/tags/潮州話/" style="font-size: 13.33px;">潮州話</a> <a href="/tags/甲子話/" style="font-size: 16.67px;">甲子話</a> <a href="/tags/聆聽音樂/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/詩經/" style="font-size: 10px;">詩經</a> <a href="/tags/閩南語/" style="font-size: 20px;">閩南語</a>
     </div>
   </div>
 
@@ -628,7 +652,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -639,6 +663,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/12/18/it/java/java-jvm/">JVM</a>
+          </li>
         
           <li>
             <a href="/2020/12/10/it/java/java-concurrent/">Java 多線程</a>
@@ -654,10 +682,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2020/12/02/it/java/java-basic/">Java 基礎</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/15/language/min/teochew-opera-ghêgdengcung/">在潮劇中學之《玉堂春》</a>
           </li>
         
       </ul>

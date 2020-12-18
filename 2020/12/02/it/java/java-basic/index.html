@@ -36,7 +36,7 @@ ga('send', 'pageview');
 <meta property="og:image" content="https://linlshare@github.io/2020/12/02/it/java/java-basic/Untitled%203.png">
 <meta property="og:image" content="https://linlshare@github.io/2020/12/02/it/java/java-basic/Untitled%204.png">
 <meta property="og:image" content="https://linlshare@github.io/2020/12/02/it/java/java-basic/20201114_101407.png">
-<meta property="og:updated_time" content="2020-12-10T16:23:17.071Z">
+<meta property="og:updated_time" content="2020-12-17T08:48:01.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 基礎">
 <meta name="twitter:description" content="Java 自 95 年誕生至今，已有 25 年的歷史。它是一種半編譯的語言，先將代碼編譯成字節碼，然後在 JVM 中解釋執行。  它是一種面向對象的語言，封裝、繼承和多態它都有，類可以多實現但不支持多繼承，而接口可以多繼承。 它支持 8 種基本數據類型，同時還提供了其包裝類型，另外還提供了 BigDecimal 精確處理浮點數、提供了 BigInteger 處理大整數。 它的方法只有值傳遞，傳遞對">
@@ -223,8 +223,8 @@ ga('send', 'pageview');
 <h3 id="對象及其大小"><a href="#對象及其大小" class="headerlink" title="對象及其大小"></a>對象及其大小</h3><p>基本類型的封裝類型是對象，Java 中的對象由以下部分組成：</p>
 <ol>
 <li>對象頭（object header）：由 mark word 和 class pointer 組成。mark word 存儲了對象的 hashcode、GC信息和鎖信息；class pointer 存儲了指向類對象的指針。32 位的 JVM 上對象頭佔 8 個字節，mark word 和 class pointer 各佔一半。64 位的 JVM 默認開啟了壓縮指針選項（-XX+UseCompressedOops）後上對象頭佔用 12 個字節，mark word 佔用 8 個字節，class pointer 佔用 4 個字節。</li>
-<li>實例數據（instance data）：</li>
-<li>對齊填充（padding）</li>
+<li>實例數據（instance data）：對象的有效信息。</li>
+<li>對齊填充（padding）：Hotspot 虛擬機的自動內存管理系統要求對象起始地址必須是 8 字節的整數倍，當實例數據不足時需要進行對齊填充。</li>
 </ol>
 <p>可使用 <code>org.openjdk.jol</code> 工具查看一個對象佔用的字節大小，</p>
 <ul>
@@ -565,7 +565,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 16.67px;">Java</a> <a href="/tags/日本語/" style="font-size: 10px;">日本語</a> <a href="/tags/潮劇/" style="font-size: 10px;">潮劇</a> <a href="/tags/潮州話/" style="font-size: 13.33px;">潮州話</a> <a href="/tags/甲子話/" style="font-size: 16.67px;">甲子話</a> <a href="/tags/聆聽音樂/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/詩經/" style="font-size: 10px;">詩經</a> <a href="/tags/閩南語/" style="font-size: 20px;">閩南語</a>
+      <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/日本語/" style="font-size: 10px;">日本語</a> <a href="/tags/潮劇/" style="font-size: 10px;">潮劇</a> <a href="/tags/潮州話/" style="font-size: 13.33px;">潮州話</a> <a href="/tags/甲子話/" style="font-size: 16.67px;">甲子話</a> <a href="/tags/聆聽音樂/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/詩經/" style="font-size: 10px;">詩經</a> <a href="/tags/閩南語/" style="font-size: 20px;">閩南語</a>
     </div>
   </div>
 
@@ -581,7 +581,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">彙整</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -592,6 +592,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/12/18/it/java/java-jvm/">JVM</a>
+          </li>
         
           <li>
             <a href="/2020/12/10/it/java/java-concurrent/">Java 多線程</a>
@@ -607,10 +611,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2020/12/02/it/java/java-basic/">Java 基礎</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/15/language/min/teochew-opera-ghêgdengcung/">在潮劇中學之《玉堂春》</a>
           </li>
         
       </ul>
