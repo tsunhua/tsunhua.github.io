@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2020-12-18T03:36:16.992Z</updated>
+  <updated>2020-12-24T03:38:08.441Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go 基礎</title>
+    <link href="https://linlshare@github.io/2020/12/24/it/go/go-basic/"/>
+    <id>https://linlshare@github.io/2020/12/24/it/go/go-basic/</id>
+    <published>2020-12-23T19:35:18.000Z</published>
+    <updated>2020-12-24T03:38:08.441Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Go 又稱 Golang，是 Google 公司 2009 年發佈的一款開源編程語言，以簡潔而高效的代碼著稱。Go 目前使用 GOPATH 或 Go modules 管理項目中的第三方依賴，且不支持循環依賴。&lt;/p&gt;
+&lt;p&gt;Go 的基本數據類型有 16 種(不包含別名)，可謂豐富。要注意的是 string 也是基本數據類型，表示一個 UTF-8 字符串，底層是 byte 數組。單個字符使用一個 int32 的別名 rune 表示，其值爲 Unicode 字符碼點。&lt;/p&gt;
+&lt;p&gt;Go 的變量使用 var 關鍵字聲明，也可以使用短變量聲明；常量則是使用 const 關鍵字聲明。&lt;/p&gt;
+&lt;p&gt;Go 有 if 條件語句、for 循環語句、switch 選擇語句和 defer 延遲執行語句。Go 的 for 語句兼具其他語言的 while 語句；switch 語句每個 case 條件都支持運算，且默認自動 break；defer 語句可以立即計算參數值，然後在函數 return 前執行。&lt;/p&gt;
+&lt;p&gt;Go 的可見性跟標識符的首字母是否大寫相關，大寫則是導出的，包外可見；小寫則是非導出的，包外不可見。&lt;/p&gt;
+&lt;p&gt;Go 有指針，要注意 &lt;code&gt;&amp;amp;&lt;/code&gt; 是生成指向操作數的指針，而 &lt;code&gt;*&lt;/code&gt; 是獲取指針指向的底層值。&lt;/p&gt;
+&lt;p&gt;Go 將一些字段組合成一個結構體(struct) 。結構體支持隱式間接調用，即 p.X 等價於 (*p).X（p 爲結構體指針）。&lt;/p&gt;
+&lt;p&gt;Go 支持數組，更重要的是支持一種名爲切片(slice) 的動態數組。切片是一個數組片段的描述，包含指向數組的指針、片段的長度和容量。&lt;/p&gt;
+&lt;p&gt;Go 支持映射(map)。&lt;/p&gt;
+&lt;p&gt;Go 支持函數(function)的命名返回值、多值返回、作爲值傳遞和閉包。還有一種稱爲方法(method)的特殊函數，其帶有接收者參數，接收者可以是值接收者也可以是指針接收者，指針接收者可以更改接收者的值。&lt;/p&gt;
+&lt;p&gt;Go 支持將一些方法簽名組成接口(interface)。接口的實現是隱式的，不需要「implements」。一個結構體作爲接收者定義了接口中的所有方法，那麼該結構體就是實現了該接口。因爲隱式的緣故，建議接口方法盡可能少，以便管理。接口是值，可以傳遞。底層值是 nil 的接口，其方法可以被調用；接口本身爲 nil ，則意味著其不保存值也不保存具體類型；空接口(interface{})是包含零個函數的接口，不是爲 nil 接口。&lt;/p&gt;
+&lt;p&gt;Go 的異常處理很簡單，只有 Error，沒有 throws。&lt;/p&gt;
+&lt;p&gt;Go 支持 Go 程，一種 Go運行時管理的輕量級線程。Go 程之間可以通過信道(channel) 通信，通過 Mutex 或 RWMutex 共享互斥變量，通過 WaitGroup 等待執行完成。 &lt;/p&gt;
+&lt;p&gt;Go 中的信道還支持通過 for-range 循環讀取數據，當信道關閉時該循環自動退出。記住，只有發送方可以關閉信道，接收方不能。信道還支持 select 語句，其會&lt;strong&gt;阻塞到某一分支可以執行爲止&lt;/strong&gt;，如沒有分支可以執行且設定了default 語句，會一直執行 default 語句。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Go" scheme="https://linlshare@github.io/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>JVM</title>
@@ -221,12 +251,12 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/06/language/min/sigêng-giamgia/202010060948.jpg&quot; alt&gt;&lt;/p&gt;
 
-        &lt;div id=&quot;aplayer-oYSlCFyF&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+        &lt;div id=&quot;aplayer-QkPhPLlY&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
             &lt;pre class=&quot;aplayer-lrc-content&quot;&gt;&lt;/pre&gt;
         &lt;/div&gt;
         &lt;script&gt;
           var ap = new APlayer({
-            element: document.getElementById(&quot;aplayer-oYSlCFyF&quot;),
+            element: document.getElementById(&quot;aplayer-QkPhPLlY&quot;),
             narrow: false,
             autoplay: false,
             showlrc: false,
