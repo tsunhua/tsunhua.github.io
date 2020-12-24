@@ -16,6 +16,9 @@ language:
 - en
 timezone: Asia/Shanghai
 
+tip_img: https://linlshare.github.io/tip_img.jpg
+tip_text: 歡慶聖誕
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://linlshare@github.io
