@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2020-12-24T03:38:08.441Z</updated>
+  <updated>2020-12-31T14:46:29.368Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>十二生肖、干支紀年法與Go語言編程</title>
+    <link href="https://linlshare@github.io/2020/12/31/it/go/zodiac-ganzhi-go/"/>
+    <id>https://linlshare@github.io/2020/12/31/it/go/zodiac-ganzhi-go/</id>
+    <published>2020-12-31T06:41:52.000Z</published>
+    <updated>2020-12-31T14:46:29.368Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;如無特殊說明，本文標音採用甲子話拼音方案。甲子話系陸豐市甲子鎮通行的語言，屬閩南語潮汕話三甲片。&lt;/p&gt;
+&lt;h2 id=&quot;十二生肖&quot;&gt;&lt;a href=&quot;#十二生肖&quot; class=&quot;headerlink&quot; title=&quot;十二生肖&quot;&gt;&lt;/a&gt;十二生肖&lt;/h2&gt;&lt;p&gt;十二生肖本地讀音爲：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;鼠牛虎兔 /cu² ngu⁵ hao² tao³/&lt;/li&gt;
+&lt;li&gt;龍蛇馬羊 /lêng⁵ zua⁵ bhê² ion⁵/&lt;/li&gt;
+&lt;li&gt;猴雞狗豬 /gao⁵ goi¹ gao² du¹/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;干支紀年法&quot;&gt;&lt;a href=&quot;#干支紀年法&quot; class=&quot;headerlink&quot; title=&quot;干支紀年法&quot;&gt;&lt;/a&gt;干支紀年法&lt;/h2&gt;&lt;p&gt;「干」是天干，有 10：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;甲乙丙丁 /gah⁴ ig⁴ bian² dêng¹/&lt;/li&gt;
+&lt;li&gt;戊己庚辛 /bhao⁷ gi² gên¹ sing¹/&lt;/li&gt;
+&lt;li&gt;壬癸 /rim⁶ gui³/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;「支」是地支，有 12：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;子丑寅卯 /zu² tiu² ing⁵ bhao²/&lt;/li&gt;
+&lt;li&gt;辰巳午未 /sing⁵ zi⁶ ngao² bhi⁷/&lt;/li&gt;
+&lt;li&gt;申酉戌亥 /sing¹ iu² sug⁴ hai⁶/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;天干從甲開始，地支從子開始，天干地支相配形成 60 種組合，用來紀年。從甲子出發，60 年後又回到甲子，因此稱 60 年爲「一甲子」。&lt;/p&gt;
+&lt;p&gt;十二地支與十二生肖相對應，因此也用生肖紀年。如甲子年，地支爲「子」，對應生肖「鼠」，因此甲子年也稱之為「鼠年」。&lt;/p&gt;
+&lt;h2 id=&quot;問題&quot;&gt;&lt;a href=&quot;#問題&quot; class=&quot;headerlink&quot; title=&quot;問題&quot;&gt;&lt;/a&gt;問題&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;問題1：已知 2020 年是鼠年，請問 2021 年是什麼年？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;排在鼠之後的生肖是牛，因此 2021 年是牛年。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;問題2：已知 2020 年是庚子年 /gên¹ zu² ni⁵/，請問 2021 年是什麼年？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;庚之後爲辛，子之後爲丑，因此 2021 年是辛丑年 /sing¹ tiu² ni⁵/。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;問題3：已知 1024 年是甲子年，問最近過去的甲子年和將要到來的甲子年是公元多少年？&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
+    
+    <category term="Go" scheme="https://linlshare@github.io/tags/Go/"/>
+    
+    <category term="十二生肖" scheme="https://linlshare@github.io/tags/十二生肖/"/>
+    
+    <category term="干支紀年法" scheme="https://linlshare@github.io/tags/干支紀年法/"/>
+    
+  </entry>
   
   <entry>
     <title>Go 基礎</title>
