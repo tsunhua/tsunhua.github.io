@@ -1175,8 +1175,11 @@ a.article-title:hover {
   color: #666;
   font-size: 0.85em;
 }
-.article-entry ol li p {
-  margin-top: 0;
+.article-entry img {
+  max-height: 400px;
+}
+.article-entry p {
+  display: block;
 }
 .article-entry pre,
 .article-entry code {
