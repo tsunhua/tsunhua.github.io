@@ -1190,7 +1190,7 @@ a.article-title:hover {
   padding: 0;
 }
 .article-entry .highlight {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .article-entry .highlight pre {
   border: none;
