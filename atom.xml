@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2021-01-01T01:34:58.353Z</updated>
+  <updated>2021-01-01T16:07:23.985Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《Go 設計與實現》筆記之第一章 準備工作</title>
+    <link href="https://linlshare@github.io/2021/01/01/it/go/go-design-and-implementation-01/"/>
+    <id>https://linlshare@github.io/2021/01/01/it/go/go-design-and-implementation-01/</id>
+    <published>2021-01-01T07:50:50.000Z</published>
+    <updated>2021-01-01T16:07:23.985Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;深入學習 Go 語言的設計與實現之前要準備以下工作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;克隆 Go 倉庫源代碼並編譯它。&lt;/li&gt;
+&lt;li&gt;了解 Plan 9 彙編，知道 Go 的棧結構並能分析代碼的執行過程。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;彙編者，二進制代碼的文本形式也，其最大的特點就是不可移植。Plan 9 彙編是貝爾實驗室的九號計劃的產物，目前被用於 Go 程序編譯的中間代碼，因爲 Go 的作者 Rob Pike，同時也是 Plan 9 彙編的作者。&lt;/p&gt;
+&lt;p&gt;Plan 9 彙編指令與 Intel 等彙編等的不同在於：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一般情況下，命令的源操作數在先，目的操作數在後。 如同樣是將十六進制的 10 傳送到 AX寄存器，在 Plan 9 中是 &lt;code&gt;MOVQ $0x10, AX&lt;/code&gt; ，而在 Intel 彙編中是 &lt;code&gt;mov rax, 0x10&lt;/code&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;棧的調整通過硬件 SP 寄存器進行加減運算實現。而 Intel 彙編中通過 push 和 pop 命令實現。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;操作的數據長度取決於命令的後綴。而 Intel 彙編取決於寄存器。&lt;/p&gt;
+ &lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// plan 9 彙編&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MOVB $&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, DI      &lt;span class=&quot;comment&quot;&gt;// 1 byte&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MOVW $&lt;span class=&quot;number&quot;&gt;0x10&lt;/span&gt;, BX   &lt;span class=&quot;comment&quot;&gt;// 2 bytes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MOVD $&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, DX      &lt;span class=&quot;comment&quot;&gt;// 4 bytes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MOVQ $&lt;span class=&quot;number&quot;&gt;-10&lt;/span&gt;, AX     &lt;span class=&quot;comment&quot;&gt;// 8 bytes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// intel 彙編&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mov rax, &lt;span class=&quot;number&quot;&gt;0x1&lt;/span&gt;   &lt;span class=&quot;comment&quot;&gt;// 8 bytes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mov eax, &lt;span class=&quot;number&quot;&gt;0x100&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 4 bytes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mov ax, &lt;span class=&quot;number&quot;&gt;0x22&lt;/span&gt;   &lt;span class=&quot;comment&quot;&gt;// 2 bytes&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mov ah, &lt;span class=&quot;number&quot;&gt;0x33&lt;/span&gt;   &lt;span class=&quot;comment&quot;&gt;// 1 byte&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mov al, &lt;span class=&quot;number&quot;&gt;0x44&lt;/span&gt;   &lt;span class=&quot;comment&quot;&gt;// 1 byte&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通過分析 Plan 9 彙編代碼我們可以繪製出如下的棧結構：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/01/01/it/go/go-design-and-implementation-01/Untitled.png&quot; alt&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Go" scheme="https://linlshare@github.io/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>十二生肖、干支紀年法與Go語言編程</title>
@@ -54,9 +89,9 @@
     
     
     
-    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
-    
     <category term="Go" scheme="https://linlshare@github.io/tags/Go/"/>
+    
+    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
     <category term="十二生肖" scheme="https://linlshare@github.io/tags/十二生肖/"/>
     
@@ -263,11 +298,11 @@
     
     
     
-    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
+    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
     
     <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
     
-    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
+    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
   </entry>
   
@@ -299,12 +334,12 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/06/language/min/sigêng-giamgia/202010060948.jpg&quot; alt&gt;&lt;/p&gt;
 
-        &lt;div id=&quot;aplayer-FWLrnDXu&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+        &lt;div id=&quot;aplayer-KGDmjCcQ&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
             &lt;pre class=&quot;aplayer-lrc-content&quot;&gt;&lt;/pre&gt;
         &lt;/div&gt;
         &lt;script&gt;
           var ap = new APlayer({
-            element: document.getElementById(&quot;aplayer-FWLrnDXu&quot;),
+            element: document.getElementById(&quot;aplayer-KGDmjCcQ&quot;),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -327,11 +362,11 @@
     
     
     
-    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
-    
     <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
     <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
+    
+    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
     
   </entry>
   
@@ -351,9 +386,9 @@
     
     <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
-    
     <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
+    
+    <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
   </entry>
   
