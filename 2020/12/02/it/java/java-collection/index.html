@@ -229,7 +229,7 @@ ga('send', 'pageview');
 <h3 id="正確使用-Arrays-asList"><a href="#正確使用-Arrays-asList" class="headerlink" title="正確使用 Arrays.asList"></a><strong>正確使用 Arrays.asList</strong></h3><p>如果非要在 <code>foreach</code> 循環中刪除元素，還可以使用 <code>CopyOnWriteArrayList</code>，此集合是 <code>fail-safe</code> 的。<code>CopyOnWriteArrayList</code> 修改元素時會 copy 一個新列表進行修改，不會改變迭代中的列表，因此是安全的，但會產生新的列表作爲代價。</p>
 <p>Arrays 工具類有一個靜態方法 <code>asList(T... a)</code>，能將<strong>對象</strong>數組包裝成一個 List，底層數據依然是原數組，原數組改變，List 也隨之改變，但 List 本身的 <code>add</code>/<code>remove</code>/<code>clear</code> 並不可用，調用會拋出 <code>UnsupportedOperationException</code>。</p>
 <p>Arrays 類中關於 <code>asList</code> 方法的代碼如下：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">List&lt;T&gt; <span class="title">asList</span><span class="params">(T... a)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 這裏的 ArrayList 是 Arrays 類中定義的私有靜態類，不是 java.util.ArrayList</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">List&lt;T&gt; <span class="title">asList</span><span class="params">(T... a)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 這裏的 ArrayList 是 Arrays 類中定義的私有靜態類，不是 java.util.ArrayList</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;(a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>爲什麼 <code>asList</code> 方法傳入的必須是對象數組呢？</p>
 <p>你看上面的代碼，泛型，沒錯泛型只能是對象啊，基本類型是不行的。</p>
@@ -310,7 +310,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://linlshare@github.io/2020/12/02/it/java/java-collection/" data-id="ckjd1nyhu0009pnw8nwd39ayg" class="article-share-link">分享</a>
+      <a data-url="https://linlshare@github.io/2020/12/02/it/java/java-collection/" data-id="ckjdnktun0009clw8vypi5koh" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>

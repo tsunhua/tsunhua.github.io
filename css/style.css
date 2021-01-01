@@ -1164,11 +1164,8 @@ a.article-title:hover {
   line-height: 24px;
   white-space: pre-wrap;
   word-wrap: break-word;
-  background: #fff;
-  border: 1px solid #e5e5e5;
+  background: #2d2d2d;
   padding: 7px 15px;
-  border-radius: 2px;
-  text-shadow: 0 0 1px #fff;
   overflow: auto;
   position: relative;
   font-size: 0.93em;
@@ -1191,6 +1188,9 @@ a.article-title:hover {
   background: none;
   text-shadow: none;
   padding: 0;
+}
+.article-entry .highlight {
+  border-radius: 10px;
 }
 .article-entry .highlight pre {
   border: none;
@@ -1228,6 +1228,7 @@ a.article-title:hover {
 }
 .article-entry .highlight .line {
   height: 24px;
+  color: #fff;
 }
 .article-entry .highlight .line.marked {
   background: #515151;
@@ -1278,9 +1279,11 @@ a.article-title:hover {
 .article-entry .gist .gist-file .gist-meta a:hover {
   text-decoration: underline;
 }
-pre .comment,
-pre .title {
+pre .comment {
   color: #999;
+}
+pre .title {
+  color: #fc6;
 }
 pre .variable,
 pre .attribute,

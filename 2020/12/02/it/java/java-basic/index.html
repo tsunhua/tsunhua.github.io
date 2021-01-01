@@ -234,7 +234,7 @@ ga('send', 'pageview');
 </ul>
 <p>結論：在 64 位開啟指針壓縮的環境下，Object 對象佔用 16 個字節，Integer 對象也佔用 16 個字節。</p>
 <h3 id="String、StringBuffer-和-String-Builder-的區別"><a href="#String、StringBuffer-和-String-Builder-的區別" class="headerlink" title="String、StringBuffer 和 String Builder 的區別"></a>String、StringBuffer 和 String Builder 的區別</h3><p>String 類使用 final 修飾字符數組或字節數組來保存字符串，所以 String 對象是不可變的。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">String</span> </span>&#123;</span><br><span class="line">	<span class="comment">// Java 9 之前</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span>[] value;</span><br><span class="line">	<span class="comment">// Java 9 之後</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">byte</span>[] value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">String</span> </span>&#123;</span><br><span class="line"> <span class="comment">// Java 9 之前</span></span><br><span class="line"> <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">char</span>[] value;</span><br><span class="line"> <span class="comment">// Java 9 之後</span></span><br><span class="line"> <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">byte</span>[] value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>StringBuilder  和 StringBuffer 都繼承自 AbstractStringBuilder，AbstractStringBuilder 使用字符數組來保存字符串，但沒有使用 final 關鍵字修飾，所以這兩者是可變的。</p>
 <p>下面從不同角度比較下此三者：</p>
@@ -519,7 +519,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://linlshare@github.io/2020/12/02/it/java/java-basic/" data-id="ckjd1nyhv000apnw8orjczeq6" class="article-share-link">分享</a>
+      <a data-url="https://linlshare@github.io/2020/12/02/it/java/java-basic/" data-id="ckjdnktun000aclw8329zddp4" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
