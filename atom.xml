@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2021-01-01T16:07:23.985Z</updated>
+  <updated>2021-01-10T15:25:39.912Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《Go 設計與實現》筆記之第二章 編譯原理</title>
+    <link href="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/"/>
+    <id>https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/</id>
+    <published>2021-01-10T07:21:40.000Z</published>
+    <updated>2021-01-10T15:25:39.912Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;詞法和語法分析 lexical and grammar analysis&lt;/li&gt;
+&lt;li&gt;類型檢查 type check&lt;/li&gt;
+&lt;li&gt;中間代碼生成 IR(intermediate representation) generation&lt;/li&gt;
+&lt;li&gt;機器碼生成 machine code generation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生成 Token 序列。&lt;/p&gt;
+&lt;p&gt;語法分析是將 Token 序列按照 LALR(1)（向前查看和自底向上解析）的解析文法進行解析，生成一棵AST (抽象語法樹 )。&lt;/p&gt;
+&lt;p&gt;類型檢查分靜態類型檢查和動態類型檢查，靜態類型檢查會在編譯期對變量賦值、返回值和函數參數進行類型檢查；動態類型檢查在代碼運行時進行，可以實現向下類型轉換、延遲綁定和反射等功能。&lt;/p&gt;
+&lt;p&gt;中間代碼生成階段首先會進行 ssaconfig 的初始化，緩存可能需要用到的類型和指針；然後進行遍歷和替換，將內建函數 make、map、channel、new、select、panic、recover 等等替換成 runtime 包的函數。最後不斷地進行中間代碼生成，優化代碼，生成類似彙編代碼的代碼。&lt;/p&gt;
+&lt;p&gt;機器碼生成階段分兩個部分：一是 SSA 中間代碼降級、針對特定CPU架構的中間代碼優化和重寫，最後生成相當接近特定架構彙編代碼的指令；二是將特定架構的指令轉成二進制代碼。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Go" scheme="https://linlshare@github.io/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>《Go 設計與實現》筆記之第一章 準備工作</title>
