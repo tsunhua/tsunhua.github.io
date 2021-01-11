@@ -5,7 +5,7 @@ tags:
 - Go
 ---
 
-編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：
+編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：
 
 1. 詞法和語法分析 lexical and grammar analysis
 2. 類型檢查 type check
