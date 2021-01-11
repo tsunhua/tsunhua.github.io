@@ -21,21 +21,21 @@ ga('send', 'pageview');
   
   <title>《Go 設計與實現》筆記之第二章 編譯原理 | 編舟堂</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：  詞法和語法分析 lexical and grammar analysis 類型檢查 type check 中間代碼生成 IR(intermediate representation) generation 機器碼生成 machine code generation  詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生">
+  <meta name="description" content="編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：  詞法和語法分析 lexical and grammar analysis 類型檢查 type check 中間代碼生成 IR(intermediate representation) generation 機器碼生成 machine code generation  詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生">
 <meta name="keywords" content="Go">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Go 設計與實現》筆記之第二章 編譯原理">
 <meta property="og:url" content="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/index.html">
 <meta property="og:site_name" content="編舟堂">
-<meta property="og:description" content="編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：  詞法和語法分析 lexical and grammar analysis 類型檢查 type check 中間代碼生成 IR(intermediate representation) generation 機器碼生成 machine code generation  詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生">
+<meta property="og:description" content="編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：  詞法和語法分析 lexical and grammar analysis 類型檢查 type check 中間代碼生成 IR(intermediate representation) generation 機器碼生成 machine code generation  詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/Untitled.png">
 <meta property="og:image" content="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/Untitled%201.png">
 <meta property="og:image" content="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/Untitled%202.png">
-<meta property="og:updated_time" content="2021-01-10T15:25:39.912Z">
+<meta property="og:updated_time" content="2021-01-11T02:47:39.949Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Go 設計與實現》筆記之第二章 編譯原理">
-<meta name="twitter:description" content="編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：  詞法和語法分析 lexical and grammar analysis 類型檢查 type check 中間代碼生成 IR(intermediate representation) generation 機器碼生成 machine code generation  詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生">
+<meta name="twitter:description" content="編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：  詞法和語法分析 lexical and grammar analysis 類型檢查 type check 中間代碼生成 IR(intermediate representation) generation 機器碼生成 machine code generation  詞法分析是將源代碼視爲字符串序列，對各個字符串進行標記，生">
 <meta name="twitter:image" content="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/Untitled.png">
   
   
@@ -69,6 +69,8 @@ ga('send', 'pageview');
         <a id="main-nav-toggle" class="nav-icon"></a>
         
         <a class="main-nav-link" href="/">主頁</a>
+        
+        <a class="main-nav-link" href="http://139.199.66.91:8080">複習</a>
         
         <a class="main-nav-link" href="/atom.xml">RSS</a>
         
@@ -118,7 +120,7 @@ ga('send', 'pageview');
               <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-概述"><span class="toc-number">1.</span> <span class="toc-text">2.1 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-預備知識"><span class="toc-number">1.1.</span> <span class="toc-text">2.1.1 預備知識</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-2-編譯原理"><span class="toc-number">1.2.</span> <span class="toc-text">2.1.2 編譯原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-詞法和語法分析"><span class="toc-number">2.</span> <span class="toc-text">2.2 詞法和語法分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1-詞法分析"><span class="toc-number">2.1.</span> <span class="toc-text">2.2.1 詞法分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2-語法分析"><span class="toc-number">2.2.</span> <span class="toc-text">2.2.2 語法分析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-類型檢查"><span class="toc-number">3.</span> <span class="toc-text">2.3 類型檢查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-中間代碼生成"><span class="toc-number">4.</span> <span class="toc-text">2.4 中間代碼生成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-機器碼生成"><span class="toc-number">5.</span> <span class="toc-text">2.5 機器碼生成</span></a></li></ol>
           </div>
         
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：</p>
 <ol>
 <li>詞法和語法分析 lexical and grammar analysis</li>
 <li>類型檢查 type check</li>
@@ -310,7 +312,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/" data-id="ckjrahvke0000new8gyh96nw1" class="article-share-link">分享</a>
+      <a data-url="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/" data-id="ckjrywmdi00092kw8a1lzsbls" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/">Go</a></li></ul>
@@ -434,6 +436,8 @@ ga('send', 'pageview');
     <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">主頁</a>
+  
+    <a href="http://139.199.66.91:8080" class="mobile-nav-link">複習</a>
   
     <a href="/atom.xml" class="mobile-nav-link">RSS</a>
   

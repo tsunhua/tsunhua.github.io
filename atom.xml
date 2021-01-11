@@ -6,7 +6,7 @@
   <link href="https://linlshare@github.io/atom.xml" rel="self"/>
   
   <link href="https://linlshare@github.io/"/>
-  <updated>2021-01-10T15:25:39.912Z</updated>
+  <updated>2021-01-11T02:47:39.949Z</updated>
   <id>https://linlshare@github.io/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/"/>
     <id>https://linlshare@github.io/2021/01/10/it/go/go-design-and-implementation-02/</id>
     <published>2021-01-10T07:21:40.000Z</published>
-    <updated>2021-01-10T15:25:39.912Z</updated>
+    <updated>2021-01-11T02:47:39.949Z</updated>
     
     
-    <summary type="html">&lt;p&gt;編譯原理這一章將 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：&lt;/p&gt;
+    <summary type="html">&lt;p&gt;編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;詞法和語法分析 lexical and grammar analysis&lt;/li&gt;
 &lt;li&gt;類型檢查 type check&lt;/li&gt;
@@ -117,9 +117,9 @@
     
     
     
-    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
-    
     <category term="Go" scheme="https://linlshare@github.io/tags/Go/"/>
+    
+    <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
     <category term="十二生肖" scheme="https://linlshare@github.io/tags/十二生肖/"/>
     
@@ -328,9 +328,9 @@
     
     <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
-    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
-    
     <category term="潮州話" scheme="https://linlshare@github.io/tags/潮州話/"/>
+    
+    <category term="潮劇" scheme="https://linlshare@github.io/tags/潮劇/"/>
     
   </entry>
   
@@ -362,12 +362,12 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/06/language/min/sigêng-giamgia/202010060948.jpg&quot; alt&gt;&lt;/p&gt;
 
-        &lt;div id=&quot;aplayer-JyhyOuSd&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+        &lt;div id=&quot;aplayer-WMDrJmUt&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
             &lt;pre class=&quot;aplayer-lrc-content&quot;&gt;&lt;/pre&gt;
         &lt;/div&gt;
         &lt;script&gt;
           var ap = new APlayer({
-            element: document.getElementById(&quot;aplayer-JyhyOuSd&quot;),
+            element: document.getElementById(&quot;aplayer-WMDrJmUt&quot;),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -390,9 +390,9 @@
     
     
     
-    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
-    
     <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
+    
+    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
     
     <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
     
