@@ -362,12 +362,12 @@
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;/2020/10/06/language/min/sigêng-giamgia/202010060948.jpg&quot; alt&gt;&lt;/p&gt;
 
-        &lt;div id=&quot;aplayer-WMDrJmUt&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
+        &lt;div id=&quot;aplayer-TLoLKlRi&quot; class=&quot;aplayer aplayer-tag-marker&quot; style=&quot;margin-bottom: 20px;&quot;&gt;
             &lt;pre class=&quot;aplayer-lrc-content&quot;&gt;&lt;/pre&gt;
         &lt;/div&gt;
         &lt;script&gt;
           var ap = new APlayer({
-            element: document.getElementById(&quot;aplayer-WMDrJmUt&quot;),
+            element: document.getElementById(&quot;aplayer-TLoLKlRi&quot;),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -392,9 +392,9 @@
     
     <category term="甲子話" scheme="https://linlshare@github.io/tags/甲子話/"/>
     
-    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
-    
     <category term="閩南語" scheme="https://linlshare@github.io/tags/閩南語/"/>
+    
+    <category term="詩經" scheme="https://linlshare@github.io/tags/詩經/"/>
     
   </entry>
   
