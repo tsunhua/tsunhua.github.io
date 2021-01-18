@@ -95,7 +95,7 @@ theme_config:
   # Header
   menu:
     主頁: /
-    複習: http://139.199.66.91:8080
+    複習: http://139.199.66.91:8080/review
     RSS: /atom.xml
 
   # Content
