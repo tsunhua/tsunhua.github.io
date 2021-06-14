@@ -493,7 +493,7 @@ Java 因爲編譯出的字節碼並不能直接在機器上運行，因而效率
 
 ### 集合
 
-見 [Java 集合](https://linlshare.github.io/2020/12/02/it/java/java-collection/) 
+見 [Java 集合](https://tsunhua.github.io/2020/12/02/it/java/java-collection/) 
 
 ### 反射機制
 
@@ -604,7 +604,7 @@ try (Scanner scanner = new Scanner(new File("src/main/resources/test.txt"))) {
 
 ### 多線程
 
-見 [Java 多線程](https://linlshare.github.io/2020/12/10/it/java/java-concurrent/) 
+見 [Java 多線程](https://tsunhua.github.io/2020/12/10/it/java/java-concurrent/) 
 
 ### 文件與 I/O 流
 

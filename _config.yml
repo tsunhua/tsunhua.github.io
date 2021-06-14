@@ -8,7 +8,7 @@ subtitle: 語言 · 人文 · 科技
 description: 在一座孤島中，目之所及皆是無明煩惱。我決心編就一葉扁舟，在苦海中行進，以期到達般若彼岸。
 keywords: 漢字,閩南語,福建話,潮州話,甲子話,IT,編程,Java,Python,Go,AWS,雲原生
 author: Hua
-qrcode: https://linlshare.github.io/qrcode.jpg
+qrcode: https://tsunhua.github.io/qrcode.jpg
 favicon: favicon.ico
 language: 
 - zh-TW
@@ -16,7 +16,7 @@ language:
 - en
 timezone: Asia/Shanghai
 
-tip_img: https://linlshare.github.io/tip_img.png
+tip_img: https://tsunhua.github.io/tip_img.png
 tip_text: 2021一定要牛哦
 
 # URL
@@ -87,7 +87,7 @@ theme: kiss
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://linlshare@github.com/linlshare/linlshare.github.io.git
+  repository: https://linlshare@github.com/linlshare/tsunhua.github.io.git
   branch: master
 
 
