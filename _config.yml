@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 編舟堂
-subtitle: 語言 · 人文 · 科技
-description: 在一座孤島中，目之所及皆是無明煩惱。我決心編就一葉扁舟，在苦海中行進，以期到達般若彼岸。
-keywords: 漢字,閩南語,福建話,潮州話,甲子話,IT,編程,Java,Python,Go,AWS,雲原生
+title: 不輟集
+subtitle: Lshare‘s  Note
+description: 筆耕不輟，日有所知，月無忘其所能
+keywords: 漢字,閩南語,福建話,潮州話,甲子話,編程語言,Java,Go
 author: Hua
 qrcode: https://tsunhua.github.io/qrcode.jpg
 favicon: favicon.ico
@@ -17,7 +17,7 @@ language:
 timezone: Asia/Shanghai
 
 # tip_img: https://tsunhua.github.io/tip_img.png
-tip_text: 汝著愛忍耐，愛找覓家己的路來行
+tip_text: 筆耕不輟，日有所知，月無忘其所能
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -98,6 +98,7 @@ theme_config:
     主頁: /
     典合網: https://dicthub.cn/
     RSS: /atom.xml
+    GitHub: https://github.com/tsunhua
 
   # Content
   excerpt_link: 繼續閱讀
