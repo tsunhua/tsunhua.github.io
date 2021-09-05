@@ -19,9 +19,9 @@ Which make me suffocating
 我努力地呼吸
 I try hard to breathe
 想到兒時的烏婆嶺
-think of the Oubo hill
+Think of the Oubo hill
 那兒風吹樹葉陽光正好
-where the wind brows the leaves, the sunshine is perfect
+Where the wind brows the leaves, the sunshine is perfect
 我跑步去到那裡
 And I go running
 

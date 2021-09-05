@@ -17,7 +17,9 @@ language:
 timezone: Asia/Shanghai
 
 # tip_img: https://tsunhua.github.io/tip_img.png
-tip_text: 筆耕不輟，日有所知，月無忘其所能
+tip_text: 
+- 精力善用
+- 筆耕不輟，日有所知，月無忘其所能
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
