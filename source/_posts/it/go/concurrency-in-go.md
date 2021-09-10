@@ -4,9 +4,8 @@ date: 2021-09-08 21:41:30
 p: it/go/concurrency-in-go.md
 tags:
 - Go
+- TODO
 ---
-
-
 
 *Concurrency in Go* is an excellent book written by Katherine Cox-Buday. And It is impressive and drive me to learn deeply about Go.
 
@@ -39,7 +38,6 @@ Concurrency is hard but significant. It is the multicore processors' time, and M
 並發難而重要。這是一個多核處理器的時代，摩爾定律已經過時了。我們應該通過充分利用多核心來提升程序的性能。據阿姆達爾定律，程序潛在性能從用並行的方式實現問題的解決方案獲得。
 
 
-
 What concurrency troubles us is that it force us to take attention to what we don't need to care before:
 
 1. Race condition
@@ -55,8 +53,7 @@ What concurrency troubles us is that it force us to take attention to what we do
 4. 死鎖、活鎖及餓死
 
 
-
-The so-called race condition is the problem occurred  when two or more operations must be executed in order, but the program doesn't guarantee it.
+The so-called race condition is the problem occurred  when two or more operations must be executed in order, but the program doesn't guarantee it. For Example:
 
 所謂競態條件就是當兩項或多項操作是有序的而程序未能保證其有序執行而引發的錯誤情況。例如：
 
@@ -75,6 +72,10 @@ We cannot guarantee that the write operation to data or the read operation is th
 因對 data 的寫操作和讀操作是並發的，我們無法保證誰先誰後，因而產生競態條件和結果的不確定性。
 
 
+// TODO
 
+Atomicity means that the operation is indivisible and uninterruptible in particular context.
 
+原子性意味著操作在特定的上下文中是不可分割和不可中斷的。在社會中，我是不可分割的個體，但在生物學上我可以分割成各種器官，進一步到細胞，到分子、原子、質子...可見在宏觀世界具備原子性的東西到微觀世界並不見得如此。
 
+在MySQL事務中，我們
