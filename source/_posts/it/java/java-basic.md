@@ -1,6 +1,7 @@
 ---
 title: Java 基礎
 p: it/java/java-basic.md
+date: 2020-11-08 12:23:00
 tags:
 - Java
 ---

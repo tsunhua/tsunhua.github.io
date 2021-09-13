@@ -1,32 +1,32 @@
-language: node_js
-sudo: required
-node_js: stable
+# language: node_js
+# sudo: required
+# node_js: stable
 
-branches:
-  only:
-  - dev
+# branches:
+#   only:
+#   - dev
 
-install:
-- npm install
-- npm install hexo-cli --save
-- npm install hexo-deployer-git --save
+# install:
+# - npm install
+# - npm install hexo-cli --save
+# - npm install hexo-deployer-git --save
 
-before_script:
-- export TZ='Asia/Shanghai'
-- git config --global user.name "linlshare"
-- git config --global user.email "linlshare@gmail.com"
-- sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
+# before_script:
+# - export TZ='Asia/Shanghai'
+# - git config --global user.name "linlshare"
+# - git config --global user.email "linlshare@gmail.com"
+# - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 
-script:
-- hexo clean
-- hexo g -d
+# script:
+# - hexo clean
+# - hexo g -d
 
-notifications:
-  webhooks:
-    urls:
-      - https://us-central1-blog-3d4cb.cloudfunctions.net/travisPush
-    on_success: always # default: always
-    on_failure: never # default: always
-    on_start:   never # default: never
-    on_cancel:  never # default: always
-    on_error:   never # default: always
+# notifications:
+#   webhooks:
+#     urls:
+#       - https://us-central1-blog-3d4cb.cloudfunctions.net/travisPush
+#     on_success: always # default: always
+#     on_failure: never # default: always
+#     on_start:   never # default: never
+#     on_cancel:  never # default: always
+#     on_error:   never # default: always

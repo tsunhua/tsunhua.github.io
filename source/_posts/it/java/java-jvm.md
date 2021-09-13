@@ -1,6 +1,7 @@
 ---
 title: JVM
 p: it/java/java-jvm.md
+date: 2020-11-18 11:37:00
 tags:
 - Java
 ---

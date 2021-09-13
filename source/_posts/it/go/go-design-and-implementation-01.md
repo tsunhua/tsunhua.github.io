@@ -1,6 +1,7 @@
 ---
 title: 《Go 設計與實現》筆記之第一章 準備工作
 p: it/go/go-design-and-implementation-01.md
+date: 2021-01-02 12:15:00
 tags:
 - Go
 ---

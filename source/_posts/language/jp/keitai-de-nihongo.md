@@ -1,6 +1,7 @@
 ---
 title: 携帯で日本語（手机上的日语）
 p: language/jp/keitai-de-nihongo.md
+date: 2019-09-07 09:06:00
 tags:
 - 日本語
 ---

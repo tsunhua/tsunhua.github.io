@@ -1,6 +1,7 @@
 ---
 title: 聆聽音樂：蕭邦之「雨滴」
 p: music/listen-chopin-raindrop
+date: 2020-10-11 23:23:00
 tags:
 - 聆聽音樂
 ---

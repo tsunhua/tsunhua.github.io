@@ -1,6 +1,7 @@
 ---
 title: 詩經·秦風‧蒹葭 (甲子話注音版)
 p: language/min/sigêng-giamgia
+date: 2020-10-06 14:10:00
 tags:
 - 詩經
 - 甲子話

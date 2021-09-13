@@ -1,6 +1,7 @@
 ---
 title: Go 基礎
 p: it/go/go-basic.md
+date: 2020-11-24 11:39:00
 tags:
 - Go
 ---

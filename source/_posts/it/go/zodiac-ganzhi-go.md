@@ -1,6 +1,7 @@
 ---
 title: 十二生肖、干支紀年法與Go語言編程
 p: it/go/zodiac-ganzhi-go.md
+date: 2020-11-31 23:57:00
 tags:
 - 甲子話
 - 十二生肖

@@ -1,6 +1,7 @@
 ---
 title: 甲子話分類辭表（2020.12）
 p: language/min/gahzi-oi-hung-lui-ci-biao
+date: 2020-11-08 20:24:00
 tags:
 - 甲子話
 - 閩南語

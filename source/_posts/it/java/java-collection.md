@@ -1,6 +1,7 @@
 ---
 title: Java 集合
 p: it/java/java-collection.md
+date: 2020-11-08 12:23:00
 tags:
 - Java
 ---

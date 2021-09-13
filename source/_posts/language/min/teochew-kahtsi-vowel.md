@@ -1,6 +1,7 @@
 ---
 title: 潮州話與甲子話韻母差異（稿）
 p: language/min/vowel
+date: 2020-11-04 22:44:00
 tags:
 - 閩南語
 - 潮州話
