@@ -10,7 +10,7 @@ tags:
 
 ![Àng(甕)](nang-tu-kang-im/ang.jpg)
 
-Sènn Nguáng(阮) kâi nâng tsôi--ik sǐ hoh--ǒi tsia̍h-tsiú--âi. Ǔ tse̍k--ji̍k, Nguáng-hâm(阮咸) kah i--âi tso̍k-nâng tsia̍h tsiú, ēng tuā àng. Tsia̍h-tiānn-nînn, ǔ tse̍k--kûng tu phīnn-tioh phang-bhī tshong--ji̍p-lâi. Suà tsôi--ik tsia̍h tsiú.
+Sènn Nguáng(阮) kâi nâng tsôi`--`ik sǐ hoh`--`ǒi tsia̍h-tsiú`--`âi. Ǔ tse̍k`--`ji̍k, Nguáng-hâm(阮咸) kah i`--`âi tso̍k-nâng tsia̍h tsiú, ēng tuā àng. Tsia̍h-tiānn-nînn, ǔ tse̍k`--`kûng tu phīnn-tioh phang-bhī tshong`--`ji̍p-lâi. Suà tsôi`--`ik tsia̍h tsiú.
 
 <!--more-->
 
