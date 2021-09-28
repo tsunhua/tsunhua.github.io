@@ -47,7 +47,7 @@ What concurrency troubles us is that it force us to take attention to what we do
 
 並發困擾我們之處在於其迫使我們關注我們之前無需關心的東西：
 
-1. 競態條件
+1. 競態
 2. 原子性
 3. 內存訪問同步
 4. 死鎖、活鎖及餓死
@@ -55,7 +55,7 @@ What concurrency troubles us is that it force us to take attention to what we do
 
 The so-called race condition is the problem occurred  when two or more operations must be executed in order, but the program doesn't guarantee it. For Example:
 
-所謂競態條件就是當兩項或多項操作是有序的而程序未能保證其有序執行而引發的錯誤情況。例如：
+所謂競態就是當兩項或多項操作是有序的而程序未能保證其有序執行而引發的錯誤情況。例如：
 
 ```go
 var data = 0
@@ -69,13 +69,56 @@ println(data)
 
 We cannot guarantee that the write operation to data or the read operation is the first, because they're run in concurrency, so it causes the race condition and the undetermined result.
 
-因對 data 的寫操作和讀操作是並發的，我們無法保證誰先誰後，因而產生競態條件和結果的不確定性。
+因對 data 的寫操作和讀操作是並發的，我們無法保證誰先誰後，因而產生競態和結果的不確定性。
+
+Atomicity means that the operation is indivisible and uninterruptible in particular context. 
+
+原子性意味著操作在特定的上下文中是不可分割和不可中斷的。這裏要強調下上下文，因為在進程中爲具備原子性的操作，在操作系統中可能不是；在操作系統中是的，在機器中可能不是；在機器中是的，在整個應用中可能不是。
+
+大部分語句都不具備原子性，比如函數、方法等，又比如 i++（可以分爲取值、增值和賦值三個操作）。
+
+Critical section, the section of program that needs to exclusive access to a shared resource.
+
+臨界區段：需要獨佔訪問共享資源的代碼段。
+
+可以通過內存訪問同步可以解決數據爭用（data race），但無法解決競態（race condition）。如下：
+
+```go
+var memoryAccess sync.Mutex
+var value int
+go func(){
+  memoryAccess.Lock()
+  value++
+  memoryAccess.Unlock()
+}()
+
+memoryAccess.Lock()
+if value == 0{
+  fmt.Printf("the value is %d.\n", value)
+}else{
+  fmt.Printf("the value is %d.\n", value)
+}
+memoryAccess.Unlock()
+```
 
 
-// TODO
 
-Atomicity means that the operation is indivisible and uninterruptible in particular context.
+死鎖是並發的進程相互等待的情況。
 
-原子性意味著操作在特定的上下文中是不可分割和不可中斷的。在社會中，我是不可分割的個體，但在生物學上我可以分割成各種器官，進一步到細胞，到分子、原子、質子...可見在宏觀世界具備原子性的東西到微觀世界並不見得如此。
+死鎖的四個條件：
 
-在MySQL事務中，我們
+1. 互斥：資源是互斥訪問的
+2. 等待條件：進程持有一項資源的同時又等待另一項資源
+3. 不可搶佔：資源一旦被一個進程持有，其他進程不可搶佔，只能等待持有者釋放
+4. 循環等待：進程間相互持有對方所需的資源。
+
+條件1和3是描述資源的屬性，互斥訪問且不可搶佔；條件2和4描述進程的狀況，持有對方需要的資源的同時又在等待對方持有的資源。
+
+
+
+活鎖是並發的進程仍在運行，但沒能改變程序的狀態。
+
+餓死是一個並發的進程無法獲取需要的所有資源以進行工作。死鎖及活鎖情況下，所有進程都是同等餓死，沒有工作是可以完成的。
+
+## Go的並發哲學
+
