@@ -8,11 +8,11 @@ tags:
 - 閩南語
 ---
 
-Lâu Lêng(劉伶) sâinn`--`sî tsia̍h tsiú huàng-tsòng, ǔ`--`sî nann tshù-lǎi tǹg-pe̍h-pe̍h. Nâng thói-tioh i, tsang i kiàng-siàu, A-lêng(阿伶) tànn: "uá ínn thinn-tī uî lâu-pâng, pâng-kainn uî khòu-thâu, níng-hiá-nâng nǹg uá khòu-thâu muā`--`âi mō?"
+Lâu Lêng(劉伶) sâinn`--`sî tsia̍h tsiú huàng-tsòng, ǔ`--`sî nā tshù-lǎi tǹg-pe̍h-pe̍h. Nâng thói-tioh i, tsang i kiàng-siàu, A-lêng(阿伶) tànn: "uá ínn thinn-tī uî lâu-pâng, pâng-kainn uî khòu-thâu, níng-hiá-nâng nǹg uá khòu-thâu muā`--`âi mō?"
 
 <!--more-->
 
-劉伶先時食酒放縱，有時nann茨內褪白白。儂睇著伊，tsang伊見笑，阿伶呾：「我以天地爲樓房，房間爲褲頭，恁遐儂鑽我褲頭摩來麼！」
+劉伶先時食酒放縱，有時 nā 茨內褪白白。儂睇著伊，tsang 伊見笑，阿伶呾：「我以天地爲樓房，房間爲褲頭，恁遐儂鑽我褲頭摩來麼！」
 
 ------
 
