@@ -18,7 +18,7 @@ Tsòi hí siáu-jî bô-lǎi, khoi-thâu ǒ pak nâinn-phâng.
 
 <!--more-->
 
-{% aplayer "清平樂·村居" "Lim" "/language/min/tsheng-pheng-ngak-tshng-ku/清平樂-村居.m4a" "/music.png" %}
+{% aplayer "清平樂·村居" "Lim" "/language/min/tsheng-pheng-ngak-tshng-ku/清平樂·村居.m4a" "/music.png" %}
 
 -----
 
