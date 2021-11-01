@@ -10,7 +10,7 @@ tags:
 
 ![](sigêng-giamgia/202010060948.jpg)
 
-{% aplayer "蒹葭" "Hua" "2020/10/06/language/min/sigêng-giamgia/蒹葭.m4a" "/music.png" %}
+{% aplayer "蒹葭" "Hua" "/language/min/sigêng-giamgia/蒹葭.m4a" "/music.png" %}
 
 蒹葭[^1]蒼蒼[^2]，白露爲霜。所謂伊人，在水一方。溯洄[^3]從之，道阻且長。溯游[^4]從之，宛在水中央。[^5]
 giam¹ gia¹ cng¹ cng¹, bêh⁸ lao³ ui⁵ sng¹. so² ui³ i¹ ring⁵‚ do¹ zui² zêg⁸ hng¹. sog⁴ hoi⁵ ciong⁵ zu¹‚ dao⁶ zo² cian² dng⁵. sog⁴ iu⁵ ciong⁵ zu¹‚ uang² do¹ zui² dang¹ ng¹.
