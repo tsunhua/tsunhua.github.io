@@ -145,7 +145,7 @@ func printBytes(bs []byte) {
 ```
 
 
-结果：
+結果：
 
 ```
 9 080c1205446f6b6b79
