@@ -17,7 +17,11 @@ JSON 全稱爲 JavaScript Object Notation`（JavaScript對象標記）`，即 JS
 
 ## protobuf 是什麼？
 
-protobuf 全稱爲 Protocol Buffers`（“協議緩衝”）`，是一種數據壓縮性能優秀的數據存儲和交換格式。其採用二進制編碼，通常跟 gRPC 一起使用。2001年 Google公司內部誕生了proto1版本，並隨後在2008年以BSD協議開源了proto2，2016年釋出proto3正式版。對於 proto2，官方推出了針對 C++、Java、C# 和 Python 語言的 protobuf編譯器 protoc；而在 proto3 中，增加了對 Dart、GO、Kotlin 和 Ruby 的官方支持。另外，第三方有提供對 JavaScript 和 PHP 等等語言的支持。
+protobuf 全稱爲 Protocol Buffers`（“協議緩衝”）`，是一種數據壓縮性能優秀的數據存儲和交換格式。其採用二進制編碼，通常跟 gRPC 一起使用。
+
+2001年 Google公司內部誕生了proto1版本，並隨後在2008年以BSD協議開源了proto2，2016年釋出proto3正式版。
+
+對於 proto2，官方推出了針對 C++、Java、C# 和 Python 語言的 protobuf編譯器 protoc；而在 proto3 中，增加了對 Dart、GO、Kotlin 和 Ruby 的官方支持。另外，第三方有提供對 JavaScript 和 PHP 等等語言的支持。
 
 <!--more-->
 
