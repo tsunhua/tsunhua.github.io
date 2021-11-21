@@ -9,7 +9,7 @@ tags:
 - Java
 ---
 
-Protocol Buffers`（简称 protobuf）`，是 Google 推出的一种数据交换格式，采用 varint 和 zigzag 等二进制编码，数据压缩效果显著，可用来传输数据或持久化数据。
+Protocol Buffers`（簡稱 protobuf）`，是 Google 推出的一種數據交換格式，採用 Varint 和 ZigZag 等二進制編碼，數據壓縮效果顯著，可用來傳輸數據或持久化數據。
 
 ## JSON 是什麼？
 
