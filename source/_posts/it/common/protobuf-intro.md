@@ -5,7 +5,7 @@ date: 2021-11-21 14:12:51
 tags:
 - protobuf
 - JSON
-- GO
+- Go
 - Java
 ---
 
@@ -213,6 +213,8 @@ Varint 即 Variable int，可變長整型編碼，是 protobuf 中最主要的�
 ### protobuf 編碼規則
 
 一般來說，在protobuf 中每個字段拆分成四個部分進行編碼，依次是：
+
+![protobuf 字段結構](protobuf-intro/protobuf-field-structure.jpeg)
 
 1. number：字段序號；
 2. type：字段類型，佔用 3 個比特位，與 number 一起構成字段標識 tag，佔用一個或多個字節，採用 Varint 編碼；其取值含義見下表；
