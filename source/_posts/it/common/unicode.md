@@ -7,6 +7,7 @@ tags:
 - UTF-8
 - UTF-16
 - BOM
+mathjax: true
 ---
 
 開始介紹 Unicode 之前，我們先來做一道不定項選擇題。
@@ -129,7 +130,7 @@ UTF-16 編碼包含 BE （big endian）和 LE（little endian）版本，大端�
 | Smallest code point        | 0000   | 0000    | 0000       | 0000          | 0000    | 0000       | 0000          |
 | Largest code point         | 10FFFF | 10FFFF  | 10FFFF     | 10FFFF        | 10FFFF  | 10FFFF     | 10FFFF        |
 | Code unit size             | 8 bits | 16 bits | 16 bits    | 16 bits       | 32 bits | 32 bits    | 32 bits       |
-| Byte order                 | N/A    | <BOM>   | big-endian | little-endian | <BOM>   | big-endian | little-endian |
+| Byte order                 | N/A    | \<BOM\>   | big-endian | little-endian | \<BOM\>   | big-endian | little-endian |
 | Fewest bytes per character | 1      | 2       | 2          | 2             | 4       | 4          | 4             |
 | Most bytes per character   | 4      | 4       | 4          | 4             | 4       | 4          | 4             |
 
@@ -142,7 +143,7 @@ BOM字符的 UTF-8 編碼為 EF BB BF。UTF-8有 BOM編碼的文件會以 BOM �
 UTF-8 不需要 BOM 來指定是小端還是大端字節序，但是可以通過 BOM 來區分是 UTF-8 編碼還是其他編碼。
 
 ```css
-問題6：請完成下列實操，並說說你對UTF-8編碼、BOM和CRLF的理解
+問題7：請完成下列實操，並說說你對UTF-8編碼、BOM和CRLF的理解
 
 1. 在 Windows 中打開記事本，輸入「好」，然後另存為 UTF-8 編碼的文本文件 a.txt；
 2. 使用 vim 打開 a.txt，執行命令 「%!xxd」 可以將文本轉為 16 進制形式；
@@ -150,6 +151,39 @@ UTF-8 不需要 BOM 來指定是小端還是大端字節序，但是可以通過
 4. 使用 notepad++ 或 vim 創建一個 b.txt，輸入「好」，按同樣方式獲取並解讀 16 進制串；
 5. 在 a.txt 和 b.txt 中增加一個換行，再次獲取並解讀 16 進制串。
 ```
+
+## 問題答案
+
+**（問題1）**CF。Unicode 採用邏輯序（logical order）編碼文本，比如會對英文從左到右編碼，而對希伯來文從右到左編碼，見：http://www.unicode.org/versions/Unicode3.0.0/ch02.pdf。UTF-16 編碼至少需要 2 個字節，ASCII 碼只需要 1 個字節，不兼容。
+
+**（問題2）**3。很明顯1、2、3分別是3個字符。
+
+**（問題3）**3。計算過程：$2^2<5<2^3$, 可編碼爲：000 金、001 木、010 水、011 火、100 土，剩餘 101、110 和 111 三個碼點。
+
+**（問題4）**1,114,112。計算過程：$16^5+16^4$
+
+**（問題5）**65536，63488。計算過程：$16^4-(16^3-8*16^2)$
+
+**（問題6）**0x41，0x0041。UTF-8表示A佔用1個字節，UTF-16則是佔用2個字節。
+
+**（問題7）**
+
+（1）「好」
+Windows記事本：efbb bfe5 a5bb 0a
+Vim：e5a5 bb0a
+- efbb bf 是 BOM
+- e5 a5bb 是「好」的UTF-8 編碼，1110 0101 1010 0101 1011 1101
+- 0a 是 LF '\n'，換行符
+
+（2）「好」+換行
+Windows記事本：efbb bfe5 a5bb 0d0a
+Vim：e5a5 bb0a
+
+- 0d 是 CR '\r' ，回車
+
+結論：
+1. Windows記事本中的UTF-8編碼默認是帶BOM的，而Notepad++或Vim編輯器中的UTF-8編碼是無BOM的；
+2. Windows記事本中的換行符默認是 CRLF，而Notepad++或Vim編輯器中是Unix風格的 LF。
 
 ## 延伸閱讀
 
@@ -159,36 +193,3 @@ UTF-8 不需要 BOM 來指定是小端還是大端字節序，但是可以通過
 - [Java的char類型和Unicode](https://kkua.github.io/post/java-char-type-and-unicode/)
 - [utf16編碼格式](https://www.cnblogs.com/dragon2012/p/5020259.html)
 - [2.5 unicode — Unicode码点、UTF-8/16编码](https://docs.kilvn.com/The-Golang-Standard-Library-by-Example/chapter02/02.5.html)
-
-## 問題答案
-
-1. CF。Unicode 採用邏輯序（logical order）編碼文本，比如會對英文從左到右編碼，而對希伯來文從右到左編碼，見：http://www.unicode.org/versions/Unicode3.0.0/ch02.pdf。UTF-16 編碼至少需要 2 個字節，ASCII 碼只需要 1 個字節，不兼容。
-
-2. 3。很明顯1、2、3分別是3個字符。
-
-3. 3。計算過程：$2^2<5<2^3$, 可編碼爲：000 金、001 木、010 水、011 火、100 土，剩餘 101、110 和 111 三個碼點。
-
-4. 1,114,112。計算過程：$16^5+16^4$
-
-5. 65536，63488。計算過程：$16^4-(16^3-8*16^2)$
-
-6. 0x41，0x0041。UTF-8表示A佔用1個字節，UTF-16則是佔用2個字節。
-
-7. ```css
-   （1）「好」
-   記事本：efbb bfe5 a5bb 0a
-   Vim：e5a5 bb0a
-   - efbb bf 是 BOM
-   - e5 a5bb 是「好」的UTF-8 編碼，1110 0101 1010 0101 1011 1101
-   - 0a 是 LF '\n'，換行符
-   
-   （2）「好」+換行
-   記事本：efbb bfe5 a5bb 0d0a
-   Vim：e5a5 bb0a
-   - 0d CR '\r' 回車
-   
-   結論：
-   1. Windows記事本中的UTF-8編碼默認是帶BOM的，而Notepad++或Vim編輯器中的UTF-8編碼是無BOM的；
-   2. Windows記事本中的換行符默認是 CRLF，而Notepad++或Vim編輯器中是Unix風格的 LF。
-   ```
-   
