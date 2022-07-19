@@ -41,6 +41,7 @@ Perry 和 Wolf 如何得出該模型呢？
 
 ```
 Cup
+
 [C] a small container shaped like a bowl, usually with a handle, used for drinking tea, coffee, etc.
 ```
 
@@ -48,6 +49,7 @@ Cup
 
 ```
 杯子
+
 【可數名詞】一種小的容器，狀似碗，通常有個把手，用來喝茶或咖啡等等。
 ```
 
@@ -55,14 +57,14 @@ Cup
 
 ## 軟件架構的直觀
 
-Perry 和 Wolf 審視了當前的軟件架構，並與已有的建築架構学科進行類比，建構了軟件架構的直觀：
+Perry 和 Wolf 審視了當前的軟件架構，並與已有的建築架構学科進行類比，建構了軟件架構的直觀（intuition）：
 
 1. 軟件架構是多視圖的（multiple views）。架構應該是多個面向的，正如建築架構會提供立面圖和平面圖一樣。
 2. 軟件架構是有不同架構風格的（architecture styles）。正如建築架構有哥特式、羅馬式等不同的風格，軟件架構也有不同風格，並且架構風格約束著架構元素以及它們之間的關係。
-3. 架構（風格）是跟工程原理（engineering Principle）密切相关的。不同的架構風格需要不同的工程原理。
+3. 架構（風格）是跟工程原理（engineering principle）密切相关的。不同的架構風格需要不同的工程原理。
 4. 架构風格是跟質料（materials）密切相關的。正如摩天大樓不能用木頭構建。
 
-再者，從軟件製品的整個生產流程看，架構處在`需求-架構-設計-實現`流程中的一環，溝通著問題域（需求）和解域（實現）。
+再者，從軟件製品的整個生產流程看，架構處在 `需求-架構-設計-實現` 流程中的一環，溝通著問題域（需求）和解域（實現）。
 
 * 需求：決定著系統中的用戶需要的信息和處理過程。
 * 架構：關心元素、交互和約束。
@@ -71,7 +73,7 @@ Perry 和 Wolf 審視了當前的軟件架構，並與已有的建築架構学�
 
 可見，架構的上下文（context）即是需求、設計和實現。
 
-還有，架構會隨著新需求（通常是定制化的需求）不斷演進，稍有不慎可能導致架構腐化（Architectural erosion）或架構偏移（Architectural drift）。架構腐化是架構不斷被違反導致的，架構的違反增加了系統的脆性，從而導致災難；而架構偏移是由於對架構的頓感，這種頓感導致架構變得模糊不清，很容易演變成架構違反以至腐化。
+還有，架構會隨著新需求（通常是定制化的需求）不斷演進，稍有不慎可能導致架構腐化（architectural erosion）或架構偏移（architectural drift）。架構腐化是架構不斷被違反導致的，架構的違反增加了系統的脆性，從而導致災難；而架構偏移是由於對架構的頓感，這種頓感導致架構變得模糊不清，很容易演變成架構違反以至腐化。
 
 爲避免演進過程架構的腐化和偏移，我們期望有這樣的架構規範：
 
@@ -124,6 +126,10 @@ Perry 和 Wolf 審視了當前的軟件架構，並與已有的建築架構学�
 2. 數據視圖：從數據元素的視角看到的是系統的處理流（processing flow）。
 3. 連接視圖：從連接元素的視角看到的是處理元素之間的互動，一個處理元素的輸出是另一個處理元素的輸入，輸入輸出的數據元素在連接協議中定義。
 
+Perry 和 Wolf 說是有 3 種視圖，但是只給了 2 種，可能是連接視圖沒有畫的必要性。
+
+處理視圖展現了數據流，數據視圖展現了處理流，有趣。處理視圖強調了處理元素的主觀能動性，數據在其中被處理和流轉；而數據視圖強調了數據本身的變化，處理過程是數據產生變化的原因。
+
 ![處理視圖](software-architecture-and-kants-philosophy/3-views-processing.png)
 
 ![數據視圖](software-architecture-and-kants-philosophy/3-views-data.png)
@@ -134,6 +140,7 @@ Perry 和 Wolf 審視了當前的軟件架構，並與已有的建築架構学�
 ### 4+1 視圖
 
 三視圖是從架構元素的視角觀察得出的，我們能否從用戶角度觀察呢？
+
 Rational 軟件公司的 Philippe Kruchten 就是這樣思考的，他於 1995 在 IEEE Software 上發表了題為 *Architectual Blueprints--The "4+1" View Model of Software Architecture* 的論文探討了 4+1 視圖。 
 
 4+1 視圖是從用戶視角觀察的，不同用戶的視角得出不同的視圖，4+1 時圖共整理了 5 種視圖，即：
@@ -142,31 +149,47 @@ Rational 軟件公司的 Philippe Kruchten 就是這樣思考的，他於 1995 �
 2. 處理視圖，從集成方的視角，關注的是性能和伸縮性。
 3. 開發視圖，從開發者的視角，關注的是軟件管理。
 4. 物理視圖，從系統工程師/運維人員的視角，關注的是拓撲、通信。
-5. 場景視圖，串聯以上 4 種視圖。
+5. 場景視圖，場景串聯以上 4 種視圖，講述某個場景如何被實現。
 
 ![4+1視圖](software-architecture-and-kants-philosophy/4+1-views.png)
 
 ### 5 視圖
 
-CSAI顧問團架構設計專家組於2009年11月在第六屆中國軟體大會上公開發布了一種軟體架構設計方法 ADMEMS，即 Architecture Design Method has been Extended to Method System。其包括 3 個階段和 1 個貫穿環節：
+CSAI 的架構師們於2009年11月在第六屆中國軟件大會上提出了一種軟件架構設計方法 ADMEMS（Architecture Design Method has been Extended to Method System）。
 
-1. 預備架構階段（PA）：關注充分理解需求，把握需求特點。
-2. 概念架構階段（CA）：關注功能、質量、約束等等。
-3. 細化架構階段（RA）：使用 5 視圖。
+該方法上承需求、下接實現，包括 3 個階段和 1 個貫穿環節，即：
+
+1. 預備架構階段（PA, Pre-Architecture）：關注充分理解需求，把握需求特點。
+2. 概念架構階段（CA, Conceptual Architecture）：關注功能、質量、約束等等。
+3. 細化架構階段（RA, Refined Architecture）：使用 5 視圖。
 4. 貫穿環節：對非功能性目標的考量。
 
-所謂的 5 視圖包含：
+所謂的 5 視圖包括：
 
-1. 邏輯視圖，面向對象或結構化，關注職責劃分和職責間協作。
-2. 運行視圖，面向控制流，關注控制流及其組織。
-3. 物理視圖，面向節點，關注物理節點及其拓撲。
-4. 數據視圖，面向Table或文件，關注持久化數據單元和數據存儲格式。
-5. 開發視圖，面向文件，關注程序單元及其組織。
+1. 邏輯視圖：面向對象或結構化，關注職責劃分和職責間協作。
+2. 運行視圖：面向控制流，關注控制流及其組織。
+3. 物理視圖：面向節點，關注物理節點及其拓撲。
+4. 數據視圖：面向Table或文件，關注持久化數據單元和數據存儲格式。
+5. 開發視圖：面向文件，關注程序單元及其組織。
 
 ![5視圖](software-architecture-and-kants-philosophy/5-views.png)
+
+### C4 模型
+
+架構師 Simon Brown 在 2006 年到 2011 年間基於 UML 和 4+1 視圖構建了 C4 模型（C4 model），並隨後創辦了 c4model.com 宣傳該模型。2018 年，他在 InfoQ 上發表了題爲 *The C4 Model for Software Architecture* 的文章，受到廣泛關注。
+
+C4 是四個首字母爲 C 的單詞的統稱，即：上下文（Context）、容器（Container）、組件（Component）和代碼（Code）。
+
+![C4 模型](software-architecture-and-kants-philosophy/c4-model.jpg)
+
+C4 模型體現了一種頂層設計、逐步細化的思維方式。它就像使用地圖軟件一般，逐步放大，獲取所關注級別的信息。首先從系統的上下文開始，梳理此系統與別的系統之間的關係；然後再深入到系統內部，看內部各個容器（包括應用程序、微服務或數據存儲等等）之間的交互；然後繼續深入到某個容器內部，看容器中各個組件（或功能模塊）之間如何交互；最後如果有必要還可以深入到代碼級別，看看內部各個類之間如何交互。
+
+綜合上面提到的眾多視圖，顯見架構視圖是上承需求、下接實現的；架構視圖是頂層設計、逐步細化的；架構視圖可以從架構元素的角度觀察，也可以從用戶角度觀察。每種視圖模型都各自的優點，可以視團隊規模、面向的用戶以及系統的複雜度選擇。
 
 ## 參考
 
 1. [Dewayne E. Perry & Alexander L. Wolf, *Foundations for the Study of Software Architecture*](https://www.ics.uci.edu/~andre/ics223w2006/perrywolf.pdf)
 2. [Philippe Kruchten, *Architectural Blueprints—The “4+1” View Model of Software Architecture*](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)
-3. 溫昱, 《軟件架構設計(第2版)》p176
+3. 溫昱著《軟件架構設計(第2版)》, p176
+4. [Simon Brown 著, 无明譯 《用于软件架构的 C4 模型》](https://www.infoq.cn/article/c4-architecture-model)
+5. [Simon Brown, *The C4 Model for Software Architecture*](https://www.infoq.com/articles/C4-architecture-model/)
