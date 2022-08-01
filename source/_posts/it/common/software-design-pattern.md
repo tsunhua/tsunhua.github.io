@@ -66,7 +66,66 @@ date: 2022-07-31 21:11:51
 
 在這裡我想擴展下，按照設計模式的概念，應該是有的。設計模式是實踐中總結出來的應對重複問題的解決方案的核心，不管是用面向對象設計還是面向過程設計，都是存在設計模式的。
 
-同樣，問題的核心還是在於識別和分離變化。
+同樣，問題的核心還是在於識別和分離變化。區別在於兩者使用的工具不同：面向過程使用函數封裝變化，面向對象使用接口或抽象類封裝變化。
+
+舉個例子，我們知道貓和人類跑的方式是不一樣的，貓是四條腿跑的，而人是兩條腿跑的。這是一個變化項，需要封裝。
+
+在面向對象設計中，我們通常會封裝出一個 Runner 接口，並讓貓和人類實現該接口，達到封裝變化的目的。下面以 Go 語言爲例，編碼如下：
+
+```go
+// 首先有一個 Runner接口
+type Runner interface {
+	Run()
+}
+
+// Cat 實現了 Runner接口
+type Cat struct{}
+func (c Cat) Run() {
+	println("Cat Run")
+}
+
+// Human 實現了 Runner接口
+type Human struct{}
+func (h Human) Run() {
+	println("Human Run")
+}
+
+func main() {
+	var runner Runner
+	runner = Cat{}
+	runner.Run()
+    // 現在可以方便地更換 Runner實現
+	runner = Human{}
+	runner.Run()
+}
+```
+
+在面向過程設計中，我們可以使用函數封裝。面向對象設計中的接口是對象方法簽名的集合，同樣我們可以使用函數簽名抽離出跑步行爲，使用 Go 語言編碼如下：
+
+```go
+func main() {
+	// Cat 的 Run行爲
+  runner := func() {
+		println("Cat Run")
+	}
+	Run(runner)
+
+  // Human 的 Run行爲
+	runner = func() {
+		println("Human Run")
+	}
+	Run(runner)
+}
+
+// Run 方法跟具體的 Runner無關
+func Run(runner func()) {
+	runner()
+}
+```
+
+其實，面向對象設計中的接口最小的粒度（除了空接口）即單個方法簽名，跟面向過程中的單個函數簽名是一致的。函數即面向對象設計中的方法。
+
+面向對象設計中接口的概念可以很好地控制抽象的粒度（接口中包含的方法的多寡），這是面向過程設計所不具備的。
 
 ## 再談「復用」
 
