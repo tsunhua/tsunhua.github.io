@@ -104,6 +104,9 @@ theme_config:
 
   # Content
   excerpt_link: 繼續閱讀
+
+  banner: "https://tsunhua.github.io/moon.jpg"
+
   # Sidebar
   sidebar: right
   widgets:
