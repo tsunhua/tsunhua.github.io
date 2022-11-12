@@ -104,6 +104,18 @@ theme_config:
 
   # Content
   excerpt_link: 繼續閱讀
+  # Sidebar
+  sidebar: right
+  widgets:
+  - tip
+  - recent_posts
+  # - category
+  - tagcloud
+  - qrcode
+  # - archive
+
+  # Miscellaneous
+  google_analytics: UA-128207704-1
 
 
 # feed
