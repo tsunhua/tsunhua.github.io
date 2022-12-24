@@ -98,7 +98,7 @@ theme_config:
   # Header
   menu:
     主頁: /
-    典合網: https://dicthub.cn/
+    閩南語書寫: https://hokkien-writing.github.io/
     RSS: /atom.xml
     GitHub: https://github.com/tsunhua
 
