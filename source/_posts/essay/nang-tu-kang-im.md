@@ -4,8 +4,7 @@ p: language/min/nang-tu-kang-im
 date: 2021-09-28 22:16:00
 tags:
 - 魏晉風流
-- 甲子話
-- 閩南語
+- 閩語文
 ---
 
 ![Àng(甕)](nang-tu-kang-im/ang.jpg)

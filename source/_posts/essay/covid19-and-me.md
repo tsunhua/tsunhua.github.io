@@ -4,6 +4,7 @@ p: essay/covid19-and-me.md
 tags:
   - 隨筆
   - 新冠
+  - 閩語文
 date: 2022-12-24 22:56:42
 ---
 

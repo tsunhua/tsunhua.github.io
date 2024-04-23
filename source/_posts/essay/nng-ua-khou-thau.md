@@ -4,8 +4,7 @@ date: 2021-09-29 21:38:48
 p: language/min/nng-ua-khou-thau
 tags:
 - 魏晉風流
-- 甲子話
-- 閩南語
+- 閩語文
 ---
 
 Lâu Lêng(劉伶) sâinn`--`sî tsia̍h tsiú huàng-tsòng, ǔ`--`sî nā tshù-lǎi tǹg-pe̍h-pe̍h. Nâng thói-tioh i, tsang i kiàng-siàu, A-lêng(阿伶) tànn: "uá ínn thinn-tī uî lâu-pâng, pâng-kainn uî khòu-thâu, níng-hiá-nâng nǹg uá khòu-thâu muā`--`âi mō?"
