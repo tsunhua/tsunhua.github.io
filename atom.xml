@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>不輟集</title>
   <icon>https://tsunhua@github.io/favicon.ico</icon>
-  <subtitle>Lshare‘s  Note</subtitle>
+  <subtitle>Everybody Keep Yourself Alive</subtitle>
   <link href="https://tsunhua@github.io/atom.xml" rel="self"/>
   
   <link href="https://tsunhua@github.io/"/>
-  <updated>2023-01-01T15:49:12.985Z</updated>
+  <updated>2024-04-23T11:39:54.571Z</updated>
   <id>https://tsunhua@github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tsunhua@github.io/essay/first-day-in-2023/"/>
     <id>https://tsunhua@github.io/essay/first-day-in-2023/</id>
     <published>2023-01-01T15:36:42.000Z</published>
-    <updated>2023-01-01T15:49:12.985Z</updated>
+    <updated>2024-04-23T11:39:54.571Z</updated>
     
     
     <summary type="html">&lt;p&gt;透早起身，靜坐四个字久，然後體目睇世界。&lt;/p&gt;
@@ -33,6 +33,8 @@
     
     <category term="隨筆" scheme="https://tsunhua@github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
+    <category term="閩語文" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
   </entry>
   
   <entry>
@@ -40,7 +42,7 @@
     <link href="https://tsunhua@github.io/essay/covid19-and-me/"/>
     <id>https://tsunhua@github.io/essay/covid19-and-me/</id>
     <published>2022-12-24T14:56:42.000Z</published>
-    <updated>2022-12-25T03:11:47.936Z</updated>
+    <updated>2024-04-23T11:44:36.390Z</updated>
     
     
     <summary type="html">&lt;p&gt;​最近全國攏在佮新冠病毒共存，我也&lt;strong&gt;穢着&lt;/strong&gt;（ùe–tio̍h, 感染）了，時間是2022年12月20日​。&lt;/p&gt;
@@ -53,6 +55,8 @@
     <category term="隨筆" scheme="https://tsunhua@github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
     <category term="新冠" scheme="https://tsunhua@github.io/tags/%E6%96%B0%E5%86%A0/"/>
+    
+    <category term="閩語文" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
   </entry>
   
@@ -337,57 +341,11 @@
   </entry>
   
   <entry>
-    <title>《破陣子·爲陳同甫賦壯詞以寄之》陸豐甲子話閩羅注音朗讀</title>
-    <link href="https://tsunhua@github.io/language/min/phua-ting-tsu-ui-tang-thong-phou/"/>
-    <id>https://tsunhua@github.io/language/min/phua-ting-tsu-ui-tang-thong-phou/</id>
-    <published>2021-11-02T23:38:07.000Z</published>
-    <updated>2021-11-02T23:57:16.649Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;《Puà-tīng-tsú, Uî Tâng Thông-phóu hù tsàng-sû í kià tsu》Sing Khì-tsi̍p&lt;/p&gt;
-&lt;p&gt;Tsuì-lí thiàu teng khàng kiàm, māng hôi tshoi kak liâng êng.&lt;br&gt;Pueh-peh lí hung hui-ě tsià, ngou-tsa̍p hînn huang sài-guā siann.&lt;br&gt;Sua-tiônn tsiu tiám piânn.&lt;/p&gt;
-&lt;p&gt;Bé zak te̍k-lû pue-khuài, keng jû phek-le̍h hînn kiann.&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="閩南語" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
-    
-    <category term="甲子話" scheme="https://tsunhua@github.io/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/"/>
-    
-    <category term="宋詞" scheme="https://tsunhua@github.io/tags/%E5%AE%8B%E8%A9%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《清平樂·村居》陸豐甲子話閩羅注音朗讀</title>
-    <link href="https://tsunhua@github.io/language/min/tsheng-pheng-ngak-tshng-ku/"/>
-    <id>https://tsunhua@github.io/language/min/tsheng-pheng-ngak-tshng-ku/</id>
-    <published>2021-10-30T15:22:00.000Z</published>
-    <updated>2021-11-01T22:54:00.524Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;《Tshêng-phêng-nga̍k Tshng-ku》Sing Khì-tsi̍p&lt;/p&gt;
-&lt;p&gt;Mâu-siâm ti-siáu, khoi-tsiōnn tshenn-tshenn tsháu.&lt;br&gt;Tsuì-lí ngôu-im siang mǐ-háu, pe̍h-huak suî ke ong-áu.&lt;/p&gt;
-&lt;p&gt;Tǎi-jî tû tāu khoi-tang, Tiong-jî tsiànn tsik koi-lâng.&lt;br&gt;Tsòi hí siáu-jî bô-lǎi, khoi-thâu ǒ pak nâinn-phâng.&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="閩南語" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
-    
-    <category term="甲子話" scheme="https://tsunhua@github.io/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/"/>
-    
-    <category term="宋詞" scheme="https://tsunhua@github.io/tags/%E5%AE%8B%E8%A9%9E/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Nǹg uá khòu-thâu(鑽我褲頭)</title>
-    <link href="https://tsunhua@github.io/language/min/nng-ua-khou-thau/"/>
-    <id>https://tsunhua@github.io/language/min/nng-ua-khou-thau/</id>
+    <link href="https://tsunhua@github.io/essay/nng-ua-khou-thau/"/>
+    <id>https://tsunhua@github.io/essay/nng-ua-khou-thau/</id>
     <published>2021-09-29T13:38:48.000Z</published>
-    <updated>2021-09-29T15:43:39.497Z</updated>
+    <updated>2024-04-23T11:53:34.462Z</updated>
     
     
     <summary type="html">&lt;p&gt;Lâu Lêng(劉伶) sâinn&lt;code&gt;--&lt;/code&gt;sî tsia̍h tsiú huàng-tsòng, ǔ&lt;code&gt;--&lt;/code&gt;sî nā tshù-lǎi tǹg-pe̍h-pe̍h. Nâng thói-tioh i, tsang i kiàng-siàu, A-lêng(阿伶) tànn: “uá ínn thinn-tī uî lâu-pâng, pâng-kainn uî khòu-thâu, níng-hiá-nâng nǹg uá khòu-thâu muā&lt;code&gt;--&lt;/code&gt;âi mō?”&lt;/p&gt;</summary>
@@ -395,9 +353,7 @@
     
     
     
-    <category term="閩南語" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
-    
-    <category term="甲子話" scheme="https://tsunhua@github.io/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/"/>
+    <category term="閩語文" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
     <category term="魏晉風流" scheme="https://tsunhua@github.io/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/"/>
     
@@ -405,21 +361,19 @@
   
   <entry>
     <title>nâng-tu-kāng-ím(人豬共飲)</title>
-    <link href="https://tsunhua@github.io/language/min/nang-tu-kang-im/"/>
-    <id>https://tsunhua@github.io/language/min/nang-tu-kang-im/</id>
+    <link href="https://tsunhua@github.io/essay/nang-tu-kang-im/"/>
+    <id>https://tsunhua@github.io/essay/nang-tu-kang-im/</id>
     <published>2021-09-28T14:16:00.000Z</published>
-    <updated>2021-09-29T13:57:12.979Z</updated>
+    <updated>2024-04-23T11:52:51.439Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/language/min/nang-tu-kang-im/ang.jpg&quot; alt=&quot;Àng(甕)&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/essay/nang-tu-kang-im/ang.jpg&quot; alt=&quot;Àng(甕)&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Sènn Nguáng(阮) kâi nâng tsôi&lt;code&gt;--&lt;/code&gt;ik sǐ hoh&lt;code&gt;--&lt;/code&gt;ǒi tsia̍h-tsiú&lt;code&gt;--&lt;/code&gt;âi. Ǔ tse̍k&lt;code&gt;--&lt;/code&gt;ji̍k, Nguáng Hâm(阮咸) kah i&lt;code&gt;--&lt;/code&gt;âi tso̍k-nâng tsia̍h tsiú, ēng tuā àng. Tsia̍h-tiānn-nînn, ǔ tse̍k&lt;code&gt;--&lt;/code&gt;kûng tu phīnn-tioh phang-bhī tshong&lt;code&gt;--&lt;/code&gt;ji̍p-lâi. Suà tsôi&lt;code&gt;--&lt;/code&gt;ik tsia̍h tsiú.&lt;/p&gt;</summary>
     
     
     
     
-    <category term="閩南語" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
-    
-    <category term="甲子話" scheme="https://tsunhua@github.io/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/"/>
+    <category term="閩語文" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
     <category term="魏晉風流" scheme="https://tsunhua@github.io/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/"/>
     
@@ -430,7 +384,7 @@
     <link href="https://tsunhua@github.io/essay/seeing-and-hearing-in-guilin/"/>
     <id>https://tsunhua@github.io/essay/seeing-and-hearing-in-guilin/</id>
     <published>2021-09-22T06:50:26.000Z</published>
-    <updated>2021-09-23T12:15:23.909Z</updated>
+    <updated>2024-04-23T11:38:01.007Z</updated>
     
     
     <summary type="html">&lt;p&gt;中秋假期，跟著杜同學及其同事大雄前往廣西桂林旅遊，導遊姓張。這是我第一次跟團旅遊，種種見聞令人難忘，不妨一書以待「後之覽者亦將有感於斯文」。&lt;/p&gt;</summary>
@@ -442,8 +396,6 @@
     
     <category term="遊記" scheme="https://tsunhua@github.io/tags/%E9%81%8A%E8%A8%98/"/>
     
-    <category term="普通話" scheme="https://tsunhua@github.io/tags/%E6%99%AE%E9%80%9A%E8%A9%B1/"/>
-    
   </entry>
   
   <entry>
@@ -451,7 +403,7 @@
     <link href="https://tsunhua@github.io/language/min/how-to-select-pinyin-for-minnan-language/"/>
     <id>https://tsunhua@github.io/language/min/how-to-select-pinyin-for-minnan-language/</id>
     <published>2021-09-15T15:49:00.000Z</published>
-    <updated>2021-09-17T14:34:14.564Z</updated>
+    <updated>2024-04-23T11:47:34.279Z</updated>
     
     
     <summary type="html">&lt;p&gt;閩南語各個分支，甚至同個分支，使用了酷㩼毋平樣亓拼音方案，交流上酷毋方便，且讓人迷惑，毋知愛怎樣選擇。這次咱來談談幾種拼音方案，睇睇伊儂亓區別，佮提供幾點選擇亓意見。&lt;/p&gt;
@@ -463,7 +415,48 @@
     
     
     
+    <category term="閩語文" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
     <category term="閩南語" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遊清暉園</title>
+    <link href="https://tsunhua@github.io/essay/visit-qinghui-garden/"/>
+    <id>https://tsunhua@github.io/essay/visit-qinghui-garden/</id>
+    <published>2021-09-12T12:56:00.000Z</published>
+    <updated>2024-04-23T11:36:52.057Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;透早睇了一頃《哥倫比亞的倒影》，內底是呾木心先生著紐約哥倫比亞大學行走時亓所見所想。印象深刻亓是伊當睇著思想者大衛亓銅像，摸著大衛緊張且燒燒亓肌肉時，想到王爾德亓一句話：思想產生在陰影裡，太陽是嫉妒思想的。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://tsunhua@github.io/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="閩語文" scheme="https://tsunhua@github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
+    <category term="遊記" scheme="https://tsunhua@github.io/tags/%E9%81%8A%E8%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>頭痛</title>
+    <link href="https://tsunhua@github.io/essay/headache/"/>
+    <id>https://tsunhua@github.io/essay/headache/</id>
+    <published>2021-09-10T16:26:47.000Z</published>
+    <updated>2021-09-12T17:29:01.816Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;頭好痛啊，顱骨一陣陣地刺痛，頭顱恐怕要炸裂了。&lt;br&gt;腿挪不動了，腳一步步仍在原地，腿腳肯定被下咒了。&lt;/p&gt;
+&lt;p&gt;身體雖困於此，靈魂卻在外遊來蕩去。&lt;br&gt;想出去找回靈魂，卻不知去向何方。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://tsunhua@github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
   </entry>
   
