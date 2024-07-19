@@ -24,7 +24,7 @@ ga('send', 'pageview');
   <meta name="description" content="最近讀了《設計模式: 可復用面向對象軟件的基礎》（Design Patterns: Elements of Reusable Object-Oriented Software）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發">
 <meta property="og:type" content="article">
 <meta property="og:title" content="軟件設計模式·復用·變化">
-<meta property="og:url" content="https://tsunhua@github.io/it/common/software-design-pattern/index.html">
+<meta property="og:url" content="https://blog.tsunhualim.top/it/common/software-design-pattern/index.html">
 <meta property="og:site_name" content="不輟集">
 <meta property="og:description" content="最近讀了《設計模式: 可復用面向對象軟件的基礎》（Design Patterns: Elements of Reusable Object-Oriented Software）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發">
 <meta property="og:locale" content="zh_TW">
@@ -43,7 +43,7 @@ ga('send', 'pageview');
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="不輟集" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="不輟集" type="application/atom+xml">
 </head>
 
 <body>
@@ -64,6 +64,26 @@ ga('send', 'pageview');
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          
+            <a class="main-nav-link" href="/">頭頁</a>
+          
+        
+          
+            <a class="main-nav-link" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+          
+        
+          
+            <a class="main-nav-link" href="/atom.xml">RSS</a>
+          
+        
+          
+            <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+          
+        
+      </nav>
+      <!-- <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
         <a class="main-nav-link" href="/">頭頁</a>
@@ -74,20 +94,21 @@ ga('send', 'pageview');
         
         <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
         
-      </nav>
+      </nav> -->
       <nav id="sub-nav">
         
         <a id="nav-search-btn" class="nav-icon" title="搜尋"></a>
       </nav>
       <div id="search-form-wrap">
-        <!-- <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://tsunhua@github.io"></form> -->
-        <form action="//cn.bing.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" class="search-form-input" placeholder="搜尋">
-          <button type="submit" class="search-form-submit"></button>
-          <input type="hidden" name="sitesearch" value="url">
-        </form>
+        <div class="search-form">
+          <input type="search" id="local-search-input" name="q" results="0" placeholder="搜尋"
+            class="search-form-input" />
+        </div>
       </div>
     </div>
+
+    <div id="local-search-result" class="local-search-result-cls"></div>
+
   </div>
 </header>
       <div class="outer">
@@ -164,10 +185,10 @@ ga('send', 'pageview');
 <p>同樣，問題的核心還是在於識別和分離變化。區別在於兩者使用的工具不同：面向過程使用函數封裝變化，面向對象使用接口或抽象類封裝變化。</p>
 <p>舉個例子，我們知道貓和人類跑的方式是不一樣的，貓是四條腿跑的，而人是兩條腿跑的。這是一個變化項，需要封裝。</p>
 <p>在面向對象設計中，我們通常會封裝出一個 Runner 接口，並讓貓和人類實現該接口，達到封裝變化的目的。下面以 Go 語言爲例，編碼如下：</p>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 首先有一個 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Runner <span class="keyword">interface</span> &#123;</span><br><span class="line">  Run()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Cat 實現了 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Cat <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c Cat)</span> <span class="title">Run</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="built_in">println</span>(<span class="string">&quot;Cat Run&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Human 實現了 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Human <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(h Human)</span> <span class="title">Run</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="built_in">println</span>(<span class="string">&quot;Human Run&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="keyword">var</span> runner Runner</span><br><span class="line">  runner = Cat&#123;&#125;</span><br><span class="line">  runner.Run()</span><br><span class="line">    <span class="comment">// 現在可以方便地更換 Runner實現</span></span><br><span class="line">  runner = Human&#123;&#125;</span><br><span class="line">  runner.Run()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 首先有一個 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Runner <span class="keyword">interface</span> &#123;</span><br><span class="line">  Run()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Cat 實現了 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Cat <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c Cat)</span></span> Run() &#123;</span><br><span class="line">  <span class="built_in">println</span>(<span class="string">&quot;Cat Run&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Human 實現了 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Human <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(h Human)</span></span> Run() &#123;</span><br><span class="line">  <span class="built_in">println</span>(<span class="string">&quot;Human Run&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="keyword">var</span> runner Runner</span><br><span class="line">  runner = Cat&#123;&#125;</span><br><span class="line">  runner.Run()</span><br><span class="line">    <span class="comment">// 現在可以方便地更換 Runner實現</span></span><br><span class="line">  runner = Human&#123;&#125;</span><br><span class="line">  runner.Run()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>在面向過程設計中，我們可以使用函數封裝。面向對象設計中的接口是對象方法簽名的集合，同樣我們可以使用函數簽名抽離出跑步行爲，使用 Go 語言編碼如下：</p>
-<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="comment">// Cat 的 Run行爲</span></span><br><span class="line">  runner := <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Cat Run&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  Run(runner)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Human 的 Run行爲</span></span><br><span class="line">  runner = <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Human Run&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  Run(runner)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Run 方法跟具體的 Runner無關</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Run</span><span class="params">(runner <span class="keyword">func</span>()</span>)</span> &#123;</span><br><span class="line">  runner()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="comment">// Cat 的 Run行爲</span></span><br><span class="line">  runner := <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Cat Run&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  Run(runner)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Human 的 Run行爲</span></span><br><span class="line">  runner = <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Human Run&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  Run(runner)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Run 方法跟具體的 Runner無關</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Run</span><span class="params">(runner <span class="keyword">func</span>()</span></span>) &#123;</span><br><span class="line">  runner()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>其實，面向對象設計中的接口最小的粒度（除了空接口）即單個方法簽名，跟面向過程中的單個函數簽名是一致的。函數即面向對象設計中的方法。</p>
 <p>面向對象設計中接口的概念可以很好地控制抽象的粒度（接口中包含的方法的多寡），這是面向過程設計所不具備的。</p>
@@ -178,7 +199,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://tsunhua@github.io/it/common/software-design-pattern/" data-id="clvcc2zpv000ylf9k3le9a9s2" class="article-share-link">分享</a>
+      <a data-url="https://blog.tsunhualim.top/it/common/software-design-pattern/" data-id="clystuqc6000v3ii34hw3d6t2" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/" rel="tag">設計模式</a></li></ul>
@@ -293,7 +314,7 @@ ga('send', 'pageview');
       <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款"
           style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
       <br />
-      Writed by
+      Edited by
       <a xmlns:cc="http: //creativecommons.org/ns#" target="_blank" href="https://github.com/tsunhua" property="cc:attributionName"
         rel="cc:attributionURL noopener">Hua
       </a>
@@ -312,18 +333,29 @@ ga('send', 'pageview');
     </div>
     <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">頭頁</a>
+    
+      <a class="mobile-nav-link mobile-nav-main" href="/">頭頁</a>
+    
   
-    <a target="_blank" rel="noopener" href="https://hokkien-writing.github.io/" class="mobile-nav-link">閩南語書寫</a>
+    
+      <a class="mobile-nav-link mobile-nav-main" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+    
   
-    <a href="/atom.xml" class="mobile-nav-link">RSS</a>
+    
+      <a class="mobile-nav-link mobile-nav-main" href="/atom.xml">RSS</a>
+    
   
-    <a target="_blank" rel="noopener" href="https://github.com/tsunhua" class="mobile-nav-link">GitHub</a>
+    
+      <a class="mobile-nav-link mobile-nav-main" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+    
   
 </nav>
+
     
 
 <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/search.js"></script> 
+
 
 
   

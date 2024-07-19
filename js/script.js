@@ -12,6 +12,8 @@
     setTimeout(function () {
       isSearchAnim = false;
       callback && callback();
+      $('#local-search-input').val('');
+      $('#local-search-result').html('');
     }, searchAnimDuration);
   };
 
@@ -135,4 +137,35 @@
 
     $container.removeClass('mobile-nav-on');
   });
+
+  jQuery(document).ready(function($) {
+    $('#mobile-nav .mobile-nav-main').each(function() {
+      // 检查当前项是否有子菜单
+      var hasSubmenu = $(this).children('.submenu').length > 0;
+  
+      if (hasSubmenu) {
+        var submenuId = $(this).data('submenu');
+        var $submenu = $('#submenu_' + submenuId);
+  
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          $submenu.toggle(); // 显示或隐藏对应子菜单
+          $(this).toggleClass('active'); // 切换active类
+        });
+  
+        // 如果子菜单初始状态下是隐藏的，确保点击时显示
+        if (!$submenu.is(':visible')) {
+          $submenu.hide();
+        }
+  
+        // 添加子菜单项的点击事件
+        $submenu.find('a').on('click', function(e) {
+          e.preventDefault();
+          window.location.href = $(this).attr('href'); // 跳转到子菜单项的链接
+        });
+      }
+    });
+  });
+  
+
 })(jQuery);
