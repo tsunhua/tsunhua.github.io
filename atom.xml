@@ -6,7 +6,7 @@
   <link href="https://blog.tsunhualim.top/atom.xml" rel="self"/>
   
   <link href="https://blog.tsunhualim.top/"/>
-  <updated>2024-08-03T14:42:30.896Z</updated>
+  <updated>2024-08-03T14:55:42.512Z</updated>
   <id>https://blog.tsunhualim.top/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://blog.tsunhualim.top/it/python/python-memory/"/>
     <id>https://blog.tsunhualim.top/it/python/python-memory/</id>
     <published>2024-08-03T14:38:00.000Z</published>
-    <updated>2024-08-03T14:42:30.896Z</updated>
+    <updated>2024-08-03T14:55:42.512Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;內存管理&quot;&gt;&lt;a href=&quot;#內存管理&quot; class=&quot;headerlink&quot; title=&quot;內存管理&quot;&gt;&lt;/a&gt;內存管理&lt;/h2&gt;&lt;p&gt;Python 採用以引用計數法為主，以標記-清除算法和分代收集為輔的內存管理策略。&lt;/p&gt;
 &lt;p&gt;標記-清除算法會從根節點出發標記所有「活動對象」，然後再將沒有標記到的對象標記為「非活動對象」進行回收。因此該算法可以用來解決循環引用導致的內存洩漏問題。&lt;/p&gt;
 &lt;p&gt;分代收集算法會將內存對象分到三個世代中，每個代觸發回收時只回收當前代，並將存活的對象轉移到下一代，對象所在世代越久遠的越不可能是垃圾，觸發回收的頻率越低。因此該算法通過空間換時間的方式提高了垃圾回收效率。&lt;/p&gt;
-&lt;h2 id=&quot;OOM-問題分析&quot;&gt;&lt;a href=&quot;#OOM-問題分析&quot; class=&quot;headerlink&quot; title=&quot;OOM 問題分析&quot;&gt;&lt;/a&gt;OOM 問題分析&lt;/h2&gt;&lt;p&gt;當進程中有大量線程在等待執行，或者有大對象未被及時釋放時，會造成系統內存資源緊張，甚至 OOM（內存溢出），從而服務進程被 kil。&lt;/p&gt;</summary>
+&lt;h2 id=&quot;OOM-問題分析&quot;&gt;&lt;a href=&quot;#OOM-問題分析&quot; class=&quot;headerlink&quot; title=&quot;OOM 問題分析&quot;&gt;&lt;/a&gt;OOM 問題分析&lt;/h2&gt;&lt;p&gt;當進程中有大量線程在等待執行，或者有大對象未被及時釋放時，會造成系統內存資源緊張，甚至 OOM（內存溢出），從而服務進程被 kill。&lt;/p&gt;</summary>
     
     
     
