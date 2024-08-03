@@ -5,6 +5,7 @@ p: it/go/go-tool-pprof
 tags:
 - Go
 - pprof
+- 代碼家
 ---
 
 pprof 是 program profiling（程序分析）的縮寫，是 Go程序中重要的性能分析工具，包含兩個部分：

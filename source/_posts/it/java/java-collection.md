@@ -4,6 +4,7 @@ p: it/java/java-collection.md
 date: 2020-11-08 12:23:00
 tags:
 - Java
+- 代碼家
 ---
 
 Java 集合分 List、Set、Map 三大類，其中 List 和 Set 實現了 Collection 接口。List 的特點是數據有序、可重複；Set 的特點是數據無序、不可重複；Map 存儲鍵值映射，Key 不可重複，Value 可重複，且一個 Key 只能對應一個 Value。

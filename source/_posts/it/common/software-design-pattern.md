@@ -2,7 +2,8 @@
 title: 軟件設計模式·復用·變化
 p: it/commmon/software-design-pattern
 tags:
-  - 設計模式
+	- 設計模式
+	- 代碼家
 date: 2022-07-31 21:11:51
 ---
 

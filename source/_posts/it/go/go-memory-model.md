@@ -4,6 +4,7 @@ p: it/go/go-memory-model.md
 date: 2021-12-31 10:50:00
 tags:
 - Go
+- 代碼家
 ---
 
 本文講述在何種情況下，一個協程（goroutine）中寫入的變量值可被另一個協程中觀察到。

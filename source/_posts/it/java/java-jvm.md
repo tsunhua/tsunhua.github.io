@@ -4,6 +4,7 @@ p: it/java/java-jvm.md
 date: 2020-11-18 11:37:00
 tags:
 - Java
+- 代碼家
 ---
 
 JVM(Java Virtual Machine)，即 Java 虛擬機，是操作系統上的一個程序，用於編譯、運行Java程序，使得 Java程序可以跨平台。關於 JVM 我們著重在內存區域、類的加載、對象的創建和內存管理四個部分。

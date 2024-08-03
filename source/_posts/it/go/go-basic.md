@@ -4,6 +4,7 @@ p: it/go/go-basic.md
 date: 2020-11-24 11:39:00
 tags:
 - Go
+- 代碼家
 ---
 
 Go 又稱 Golang，是 Google 公司 2009 年發佈的一款開源編程語言，以簡潔而高效的代碼著稱。Go 目前使用 GOPATH 或 Go modules 管理項目中的第三方依賴，且不支持循環依賴。

@@ -4,9 +4,6 @@ p: it/common/unicode
 date: 2021-12-20 21:06:00
 tags:
 - Unicode
-- UTF-8
-- UTF-16
-- BOM
 mathjax: true
 ---
 

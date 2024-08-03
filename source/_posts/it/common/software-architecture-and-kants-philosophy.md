@@ -2,6 +2,7 @@
 title: 軟件架構與康德的哲學理論
 p: it/commmon/software-architecture-and-kants-philosophy
 tags:
+	- 代碼家
   - 軟件架構
   - 哲學
 date: 2022-07-16 23:45:26

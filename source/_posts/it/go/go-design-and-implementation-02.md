@@ -4,6 +4,7 @@ p: it/go/go-design-and-implementation-02.md
 date: 2021-01-10 23:27:00
 tags:
 - Go
+- 代碼家
 ---
 
 編譯原理這一章講 Go 的源代碼是如何變成二進制碼的，可分爲四個過程：

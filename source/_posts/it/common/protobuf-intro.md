@@ -3,10 +3,8 @@ title: 比較 JSON 和 protobuf 並介紹 protobuf編碼、語法及 protobuf ov
 p: it/common/protobuf_intro
 date: 2021-11-21 14:12:51
 tags:
+- 代碼家
 - protobuf
-- JSON
-- Go
-- Java
 ---
 
 Protocol Buffers`（簡稱 protobuf）`，是 Google 推出的一種數據交換格式，採用 Varint 和 ZigZag 等二進制編碼，數據壓縮效果顯著，可用來傳輸數據或持久化數據。
