@@ -6,7 +6,7 @@
   <link href="https://blog.tsunhualim.top/atom.xml" rel="self"/>
   
   <link href="https://blog.tsunhualim.top/"/>
-  <updated>2024-07-28T02:51:04.872Z</updated>
+  <updated>2024-08-03T14:42:30.896Z</updated>
   <id>https://blog.tsunhualim.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python 程序內存管理及OOM問題分析</title>
+    <link href="https://blog.tsunhualim.top/it/python/python-memory/"/>
+    <id>https://blog.tsunhualim.top/it/python/python-memory/</id>
+    <published>2024-08-03T14:38:00.000Z</published>
+    <updated>2024-08-03T14:42:30.896Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;內存管理&quot;&gt;&lt;a href=&quot;#內存管理&quot; class=&quot;headerlink&quot; title=&quot;內存管理&quot;&gt;&lt;/a&gt;內存管理&lt;/h2&gt;&lt;p&gt;Python 採用以引用計數法為主，以標記-清除算法和分代收集為輔的內存管理策略。&lt;/p&gt;
+&lt;p&gt;標記-清除算法會從根節點出發標記所有「活動對象」，然後再將沒有標記到的對象標記為「非活動對象」進行回收。因此該算法可以用來解決循環引用導致的內存洩漏問題。&lt;/p&gt;
+&lt;p&gt;分代收集算法會將內存對象分到三個世代中，每個代觸發回收時只回收當前代，並將存活的對象轉移到下一代，對象所在世代越久遠的越不可能是垃圾，觸發回收的頻率越低。因此該算法通過空間換時間的方式提高了垃圾回收效率。&lt;/p&gt;
+&lt;h2 id=&quot;OOM-問題分析&quot;&gt;&lt;a href=&quot;#OOM-問題分析&quot; class=&quot;headerlink&quot; title=&quot;OOM 問題分析&quot;&gt;&lt;/a&gt;OOM 問題分析&lt;/h2&gt;&lt;p&gt;當進程中有大量線程在等待執行，或者有大對象未被及時釋放時，會造成系統內存資源緊張，甚至 OOM（內存溢出），從而服務進程被 kil。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Python" scheme="https://blog.tsunhualim.top/tags/Python/"/>
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python 程序如何做到高效且穩健？</title>
     <link href="https://blog.tsunhualim.top/it/python/python-efficient/"/>
     <id>https://blog.tsunhualim.top/it/python/python-efficient/</id>
     <published>2024-07-28T02:49:00.000Z</published>
-    <updated>2024-07-28T02:51:04.872Z</updated>
+    <updated>2024-08-03T14:39:18.804Z</updated>
     
     
     <summary type="html">&lt;p&gt;Python 幾乎是每個程序員都會使用的語言，但大多數人都將 Python 視為腳本語言，在需要的時候運行一下，進行數據處理或抓取等。大部分情況下都是一次性的工作（Job），很少有人會將其作爲長期運行的後端服務。這是爲何？&lt;/p&gt;
@@ -31,6 +53,8 @@
     
     
     <category term="Python" scheme="https://blog.tsunhualim.top/tags/Python/"/>
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
   </entry>
   
@@ -104,7 +128,7 @@
     <link href="https://blog.tsunhualim.top/it/common/software-design-pattern/"/>
     <id>https://blog.tsunhualim.top/it/common/software-design-pattern/</id>
     <published>2022-07-31T13:11:51.000Z</published>
-    <updated>2022-08-01T15:05:58.050Z</updated>
+    <updated>2024-08-03T14:39:14.395Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近讀了《設計模式: 可復用面向對象軟件的基礎》（&lt;em&gt;Design Patterns: Elements of Reusable Object-Oriented Software&lt;/em&gt;）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發行了典藏版。本人借閱的正是這典藏版。&lt;/p&gt;
@@ -117,6 +141,8 @@
     
     <category term="設計模式" scheme="https://blog.tsunhualim.top/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
     
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
   </entry>
   
   <entry>
@@ -124,7 +150,7 @@
     <link href="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/"/>
     <id>https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/</id>
     <published>2022-07-16T15:45:26.000Z</published>
-    <updated>2022-07-19T14:32:38.125Z</updated>
+    <updated>2024-08-03T14:39:32.806Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近讀了一篇名爲 &lt;em&gt;Foundations for the Study of Software Architecture&lt;/em&gt; 的論文。它是由 AT&amp;amp;T 公司的 Dewayne E. Perry 和卡羅拉大學的 Alexander L. Wolf 於 1992 聯合署名發表。&lt;/p&gt;
@@ -142,6 +168,8 @@
     <category term="哲學" scheme="https://blog.tsunhualim.top/tags/%E5%93%B2%E5%AD%B8/"/>
     
     <category term="軟件架構" scheme="https://blog.tsunhualim.top/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/"/>
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
   </entry>
   
@@ -197,7 +225,7 @@
     <link href="https://blog.tsunhualim.top/it/go/go-memory-model/"/>
     <id>https://blog.tsunhualim.top/it/go/go-memory-model/</id>
     <published>2021-12-31T02:50:00.000Z</published>
-    <updated>2022-01-04T14:29:04.413Z</updated>
+    <updated>2024-08-03T14:41:09.777Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文講述在何種情況下，一個協程（goroutine）中寫入的變量值可被另一個協程中觀察到。&lt;/p&gt;
@@ -209,6 +237,8 @@
     
     <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
     
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
   </entry>
   
   <entry>
@@ -216,7 +246,7 @@
     <link href="https://blog.tsunhualim.top/it/common/net-io/"/>
     <id>https://blog.tsunhualim.top/it/common/net-io/</id>
     <published>2021-12-29T08:30:00.000Z</published>
-    <updated>2022-01-04T14:29:39.570Z</updated>
+    <updated>2024-08-03T14:44:09.024Z</updated>
     
     
     <summary type="html">&lt;p&gt;區分幾個概念：&lt;/p&gt;
@@ -231,6 +261,8 @@
     
     <category term="net" scheme="https://blog.tsunhualim.top/tags/net/"/>
     
+    <category term="TODO" scheme="https://blog.tsunhualim.top/tags/TODO/"/>
+    
   </entry>
   
   <entry>
@@ -238,7 +270,7 @@
     <link href="https://blog.tsunhualim.top/it/go/go-scheduler/"/>
     <id>https://blog.tsunhualim.top/it/go/go-scheduler/</id>
     <published>2021-12-27T03:00:00.000Z</published>
-    <updated>2022-01-04T14:29:22.579Z</updated>
+    <updated>2024-08-03T14:41:12.051Z</updated>
     
     
     <summary type="html">&lt;p&gt;現在有三種常見的線程模型，包括：&lt;/p&gt;
@@ -254,6 +286,8 @@
     
     <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
     
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
   </entry>
   
   <entry>
@@ -261,7 +295,7 @@
     <link href="https://blog.tsunhualim.top/it/common/unicode/"/>
     <id>https://blog.tsunhualim.top/it/common/unicode/</id>
     <published>2021-12-20T13:06:00.000Z</published>
-    <updated>2021-12-20T14:35:45.797Z</updated>
+    <updated>2024-08-03T14:40:21.152Z</updated>
     
     
     <summary type="html">&lt;p&gt;開始介紹 Unicode 之前，我們先來做一道不定項選擇題。&lt;/p&gt;
@@ -280,12 +314,6 @@
     
     <category term="Unicode" scheme="https://blog.tsunhualim.top/tags/Unicode/"/>
     
-    <category term="UTF-8" scheme="https://blog.tsunhualim.top/tags/UTF-8/"/>
-    
-    <category term="UTF-16" scheme="https://blog.tsunhualim.top/tags/UTF-16/"/>
-    
-    <category term="BOM" scheme="https://blog.tsunhualim.top/tags/BOM/"/>
-    
   </entry>
   
   <entry>
@@ -293,7 +321,7 @@
     <link href="https://blog.tsunhualim.top/it/go/go-tool-pprof/"/>
     <id>https://blog.tsunhualim.top/it/go/go-tool-pprof/</id>
     <published>2021-12-04T12:51:15.000Z</published>
-    <updated>2021-12-04T13:46:28.144Z</updated>
+    <updated>2024-08-03T14:41:15.161Z</updated>
     
     
     <summary type="html">&lt;p&gt;pprof 是 program profiling（程序分析）的縮寫，是 Go程序中重要的性能分析工具，包含兩個部分：&lt;/p&gt;
@@ -309,6 +337,8 @@
     
     <category term="pprof" scheme="https://blog.tsunhualim.top/tags/pprof/"/>
     
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
   </entry>
   
   <entry>
@@ -316,7 +346,7 @@
     <link href="https://blog.tsunhualim.top/it/common/protobuf-intro/"/>
     <id>https://blog.tsunhualim.top/it/common/protobuf-intro/</id>
     <published>2021-11-21T06:12:51.000Z</published>
-    <updated>2021-12-04T13:02:03.865Z</updated>
+    <updated>2024-08-03T14:40:12.752Z</updated>
     
     
     <summary type="html">&lt;p&gt;Protocol Buffers&lt;code&gt;（簡稱 protobuf）&lt;/code&gt;，是 Google 推出的一種數據交換格式，採用 Varint 和 ZigZag 等二進制編碼，數據壓縮效果顯著，可用來傳輸數據或持久化數據。&lt;/p&gt;
@@ -328,13 +358,9 @@
     
     
     
-    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
-    
-    <category term="Java" scheme="https://blog.tsunhualim.top/tags/Java/"/>
-    
     <category term="protobuf" scheme="https://blog.tsunhualim.top/tags/protobuf/"/>
     
-    <category term="JSON" scheme="https://blog.tsunhualim.top/tags/JSON/"/>
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
   </entry>
   
@@ -436,27 +462,6 @@
     <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
     <category term="閩南語" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>遊清暉園</title>
-    <link href="https://blog.tsunhualim.top/essay/visit-qinghui-garden/"/>
-    <id>https://blog.tsunhualim.top/essay/visit-qinghui-garden/</id>
-    <published>2021-09-12T12:56:00.000Z</published>
-    <updated>2024-04-23T11:36:52.057Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;透早睇了一頃《哥倫比亞的倒影》，內底是呾木心先生著紐約哥倫比亞大學行走時亓所見所想。印象深刻亓是伊當睇著思想者大衛亓銅像，摸著大衛緊張且燒燒亓肌肉時，想到王爾德亓一句話：思想產生在陰影裡，太陽是嫉妒思想的。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
-    
-    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
-    
-    <category term="遊記" scheme="https://blog.tsunhualim.top/tags/%E9%81%8A%E8%A8%98/"/>
     
   </entry>
   
