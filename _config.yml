@@ -90,7 +90,7 @@ theme: kiss
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github_main:tsunhua/tsunhua.github.io.git
+  repository: git@github.com:tsunhua/tsunhua.github.io.git
   branch: master
 
 
