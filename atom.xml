@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>不輟集</title>
+  <icon>https://blog.tsunhualim.top/favicon.ico</icon>
+  <subtitle>Keep Yourself Alive</subtitle>
+  <link href="https://blog.tsunhualim.top/atom.xml" rel="self"/>
+  
+  <link href="https://blog.tsunhualim.top/"/>
+  <updated>2025-06-15T09:19:55.262Z</updated>
+  <id>https://blog.tsunhualim.top/</id>
+  
+  <author>
+    <name>Hua</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>書寫漢語的另一種方式——表音方塊字「補字」的誕生</title>
+    <link href="https://blog.tsunhualim.top/language/han/another-way-to-write-chinese/"/>
+    <id>https://blog.tsunhualim.top/language/han/another-way-to-write-chinese/</id>
+    <published>2025-06-14T16:42:00.000Z</published>
+    <updated>2025-06-15T09:19:55.262Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;注意：本文中的「漢語」指代普通話、閩南語、粵語、客語、吳語等等所有方言的集合。「漢語拼音」指代普通話拼音，不包括其他方言。這是「漢語拼音」的侷限。「台羅拼音」指代閩南語台灣話羅馬字拼音。「粵語拼音」指代香港語言學學會粵語拼音方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h1&gt;&lt;p&gt;漢字很長一段時間以來是中華大地乃至鄰國如現今的日本、朝鮮、韓國、越南等的主流書寫形式，儘管這片大地上的人們說著不同的方言。&lt;/p&gt;
+&lt;p&gt;如今漢字依然是中華大地的主流，而鄰國在二戰後普遍採用了新創制的表音文字，如日本的假名、朝韓的諺文、越南的國語字，間或夾雜些許漢字。&lt;/p&gt;
+&lt;p&gt;無疑，各種語言都應該有恰當的書寫形式，以便文化的傳承和發展。鄰國採用他種書寫形式，除了民族國家的因素外，必定是其語言中有跟漢字不相適應的地方。&lt;/p&gt;
+&lt;p&gt;拿日本來說，其語言文法本來就跟漢語不一樣。在沒有漢字傳入之前，他們是通過口耳相傳的方式傳承文化；漢字傳入後，才有了紙面上的紀錄，但終究是「言文殊途」。例如：「私」在漢語中是個單音節詞，有「我」的意思；而日語中表達「我」含義的詞卻是多音節詞，讀作「watashi」。在日本發明假名之前，表達「我」是借用漢字「私」表示；發明假名之後，表達「我」就可以直接寫作「わたし」。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;漢語拼音: &lt;strong&gt;wǒ&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;漢語漢字: &lt;strong&gt;我&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;日語羅馬字: &lt;strong&gt;watashi&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;日語漢字: &lt;strong&gt;私&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;日語假名: &lt;strong&gt;わたし&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="漢語" scheme="https://blog.tsunhualim.top/tags/%E6%BC%A2%E8%AA%9E/"/>
+    
+    <category term="輔字" scheme="https://blog.tsunhualim.top/tags/%E8%BC%94%E5%AD%97/"/>
+    
+    <category term="表音方塊字" scheme="https://blog.tsunhualim.top/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>做一個「不成材」的人</title>
+    <link href="https://blog.tsunhualim.top/essay/be-myself/"/>
+    <id>https://blog.tsunhualim.top/essay/be-myself/</id>
+    <published>2024-11-22T14:22:00.000Z</published>
+    <updated>2025-06-14T16:18:37.995Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我病了，基因突變了，準備給醫生割一刀了。&lt;/p&gt;
+&lt;p&gt;回首過去三十年來，在燈火闌珊處，雖偶有良師益友相伴，心中依然焦躁不安。一直以來被培養成材，成爲特定用途的器物，以求在社會中發揮功用，有工作有收入能生存。如今，這器物也有壞的時候了。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="思考" scheme="https://blog.tsunhualim.top/tags/%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 程序內存管理及OOM問題分析</title>
+    <link href="https://blog.tsunhualim.top/it/python/python-memory/"/>
+    <id>https://blog.tsunhualim.top/it/python/python-memory/</id>
+    <published>2024-08-03T14:38:00.000Z</published>
+    <updated>2025-06-14T16:18:38.129Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;內存管理&quot;&gt;&lt;a href=&quot;#內存管理&quot; class=&quot;headerlink&quot; title=&quot;內存管理&quot;&gt;&lt;/a&gt;內存管理&lt;/h2&gt;&lt;p&gt;Python 採用以引用計數法為主，以標記-清除算法和分代收集為輔的內存管理策略。&lt;/p&gt;
+&lt;p&gt;標記-清除算法會從根節點出發標記所有「活動對象」，然後再將沒有標記到的對象標記為「非活動對象」進行回收。因此該算法可以用來解決循環引用導致的內存洩漏問題。&lt;/p&gt;
+&lt;p&gt;分代收集算法會將內存對象分到三個世代中，每個代觸發回收時只回收當前代，並將存活的對象轉移到下一代，對象所在世代越久遠的越不可能是垃圾，觸發回收的頻率越低。因此該算法通過空間換時間的方式提高了垃圾回收效率。&lt;/p&gt;
+&lt;h2 id=&quot;OOM-問題分析&quot;&gt;&lt;a href=&quot;#OOM-問題分析&quot; class=&quot;headerlink&quot; title=&quot;OOM 問題分析&quot;&gt;&lt;/a&gt;OOM 問題分析&lt;/h2&gt;&lt;p&gt;當進程中有大量線程在等待執行，或者有大對象未被及時釋放時，會造成系統內存資源緊張，甚至 OOM（內存溢出），從而服務進程被 kill。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="Python" scheme="https://blog.tsunhualim.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 程序如何做到高效且穩健？</title>
+    <link href="https://blog.tsunhualim.top/it/python/python-efficient/"/>
+    <id>https://blog.tsunhualim.top/it/python/python-efficient/</id>
+    <published>2024-07-28T02:49:00.000Z</published>
+    <updated>2025-06-14T16:18:38.129Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Python 幾乎是每個程序員都會使用的語言，但大多數人都將 Python 視為腳本語言，在需要的時候運行一下，進行數據處理或抓取等。大部分情況下都是一次性的工作（Job），很少有人會將其作爲長期運行的後端服務。這是爲何？&lt;/p&gt;
+&lt;p&gt;Python 是一門解釋型的語言，其依賴於 Python解釋器（或直譯器，官方的且最流行的是 CPython解釋器）來加載源代碼然後解釋運行。解釋運行使得 Python可以在終端中直接運行 &lt;code&gt;python&lt;/code&gt; 即可開始一邊寫代碼一邊看運行結果，對用戶相當友好，但與之同時也帶來了無可避免的性能問題，從而難以成為後端服務的主流。主流如 Java、Go 都是編譯型的語言，意味著源代碼需要先編譯成二進制文件（在Java中是字節碼），然後直接在運行時（在Java中是JVM）中運行，且在編譯成二進制文件的過程中通常會進行若干優化，使得運行的程序更加高效。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="Python" scheme="https://blog.tsunhualim.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年頭一日</title>
+    <link href="https://blog.tsunhualim.top/essay/first-day-in-2023/"/>
+    <id>https://blog.tsunhualim.top/essay/first-day-in-2023/</id>
+    <published>2023-01-01T15:36:42.000Z</published>
+    <updated>2025-06-14T16:18:37.996Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;透早起身，靜坐四个字久，然後體目睇世界。&lt;/p&gt;
+&lt;p&gt;這個熟悉又陌生个世界。&lt;/p&gt;
+&lt;p&gt;行去外口食个腸粉，路上幾個阿叔阿嬸行來行去，有儂正去上街，有儂上街正轉來。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>穢着新冠之後</title>
+    <link href="https://blog.tsunhualim.top/essay/covid19-and-me/"/>
+    <id>https://blog.tsunhualim.top/essay/covid19-and-me/</id>
+    <published>2022-12-24T14:56:42.000Z</published>
+    <updated>2025-06-14T16:18:37.995Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​最近全國攏在佮新冠病毒共存，我也&lt;strong&gt;穢着&lt;/strong&gt;（ùe–tio̍h, 感染）了，時間是2022年12月20日​。&lt;/p&gt;
+&lt;p&gt;到今已經第六日了，情況好​㩼囉。&lt;/p&gt;
+&lt;p&gt;好在我早有預備 &lt;strong&gt;加減&lt;/strong&gt;（ke-kiám, 一點）藥、礦泉水、肉佮菜，生病期間免&lt;strong&gt;煩惱&lt;/strong&gt;（huân-ló, 擔心）東煩惱西。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="新冠" scheme="https://blog.tsunhualim.top/tags/%E6%96%B0%E5%86%A0/"/>
+    
+    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新時代生存守則</title>
+    <link href="https://blog.tsunhualim.top/essay/live-in-the-new-era/"/>
+    <id>https://blog.tsunhualim.top/essay/live-in-the-new-era/</id>
+    <published>2022-11-04T14:34:28.000Z</published>
+    <updated>2025-06-14T16:18:37.996Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/essay/live-in-the-new-era/rule.jpg&quot; alt=&quot;小謝爾頓S1EP13&quot;&gt;&lt;/p&gt;
+&lt;p&gt;自 19 年末以降，我們就進入了一個嶄新的時代，一個戴口罩的時代，一個做核酸的時代，一個進門先看健康碼、行程卡的時代，一個出門甚至不出門都可能被隔離的時代。&lt;/p&gt;
+&lt;p&gt;每個時代都有每個時代的生存之道，拒絕適應時代變化的人不是偉人就是塵埃。作爲大多數普通人通常很難改變時代，即使可能也無法驟然改變。爲了不淪爲塵埃（直白點就是苟活著），從現在開始（可能對有些人來說已經晚了）適應「新時代」才是比較務實的選擇。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="新時代" scheme="https://blog.tsunhualim.top/tags/%E6%96%B0%E6%99%82%E4%BB%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>軟件設計模式·復用·變化</title>
+    <link href="https://blog.tsunhualim.top/it/common/software-design-pattern/"/>
+    <id>https://blog.tsunhualim.top/it/common/software-design-pattern/</id>
+    <published>2022-07-31T13:11:51.000Z</published>
+    <updated>2025-06-14T16:18:38.067Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近讀了《設計模式: 可復用面向對象軟件的基礎》（&lt;em&gt;Design Patterns: Elements of Reusable Object-Oriented Software&lt;/em&gt;）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發行了典藏版。本人借閱的正是這典藏版。&lt;/p&gt;
+&lt;p&gt;此書討論的主題是如何構建可復用的面向對象軟件，並引出 23 種設計模式。&lt;/p&gt;
+&lt;p&gt;本人閱讀此書後，結合自己以往設計的經驗作是文，發表自己的一些體悟。&lt;/p&gt;
+&lt;h2 id=&quot;什麼是設計模式&quot;&gt;&lt;a href=&quot;#什麼是設計模式&quot; class=&quot;headerlink&quot; title=&quot;什麼是設計模式&quot;&gt;&lt;/a&gt;什麼是設計模式&lt;/h2&gt;&lt;p&gt;追本溯源，設計模式的概念是源自建築學的，特別是模式語言之父克里斯托弗·亞歷山大（Christopher Alexander）思想。他在1977年出版的 &lt;em&gt;A Pattern Language&lt;/em&gt; 這樣說道：&lt;strong&gt;每一個模式描述了一個在我們身邊不斷發生的重複的問題以及該問題的解決方案的核心。&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="設計模式" scheme="https://blog.tsunhualim.top/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>軟件架構與康德的哲學理論</title>
+    <link href="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/"/>
+    <id>https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/</id>
+    <published>2022-07-16T15:45:26.000Z</published>
+    <updated>2025-06-14T16:18:38.063Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近讀了一篇名爲 &lt;em&gt;Foundations for the Study of Software Architecture&lt;/em&gt; 的論文。它是由 AT&amp;amp;T 公司的 Dewayne E. Perry 和卡羅拉大學的 Alexander L. Wolf 於 1992 聯合署名發表。&lt;/p&gt;
+&lt;p&gt;這篇論文不得了，光看名字就覺得很重要，這可是研究軟件架構的基石啊。文中提出了一個重要的軟件架構模型，即：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Software Architecture = &amp;#123; Elements, Form, Rationale &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;翻譯過來就是：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;軟件架構 = &amp;#123; 元素, 形式, 理論依據 &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Perry 和 Wolf 如何得出該模型呢？&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="哲學" scheme="https://blog.tsunhualim.top/tags/%E5%93%B2%E5%AD%B8/"/>
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="軟件架構" scheme="https://blog.tsunhualim.top/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>觀電影《飛越瘋人院》後的一點思考</title>
+    <link href="https://blog.tsunhualim.top/essay/thinking-about-the-cuckoos-nest/"/>
+    <id>https://blog.tsunhualim.top/essay/thinking-about-the-cuckoos-nest/</id>
+    <published>2022-07-13T15:21:00.000Z</published>
+    <updated>2025-06-14T16:18:38.028Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;電影《飛越瘋人院》（One Flew Over the Cuckoo’s Nest）是基於 1962 年肯·克西（Ken Kesey）的同名小說改編，1975年上映，並獲得當年的第48屆奧斯卡五項大獎。男主角是藍道爾·麥克莫菲（Randle McMurphy），由傑克·尼克爾森（Jack Nicholson）扮演，女主角是護士拉契特（Ratched），由路易斯·弗萊徹（Louise Fletcher）扮演。&lt;/p&gt;
+&lt;p&gt;麥克莫菲是一個罪犯，很好鬥，還曾經強姦了 15歲的少女，入獄後為了擺脫勞改，申請去了精神病院。在病院裏面，他發現只有少數人是跟他一樣是罪犯，而大多數居然是自願進來的。這令他很不解，明明他們都抱怨病院的不好，為什麼還不離開呢。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="電影" scheme="https://blog.tsunhualim.top/tags/%E9%9B%BB%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《純粹理性批判》閱讀筆記一：導言</title>
+    <link href="https://blog.tsunhualim.top/essay/criteque-of-pure-reason-i/"/>
+    <id>https://blog.tsunhualim.top/essay/criteque-of-pure-reason-i/</id>
+    <published>2022-07-10T13:41:00.000Z</published>
+    <updated>2025-06-14T16:18:37.996Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;《純粹理性批判》是德國哲學家康德（Kant）於1781年寫的（1787年再版），在世界上影響深遠，與他寫的另外兩本《實踐理性批判》和《判斷力批判》合稱三大批判。&lt;/p&gt;
+&lt;p&gt;《純粹理性批判》出版後，頭幾年根本沒人讀懂，因為這本書實在太枯燥無味了，甚至還被誤讀。即使是現在，要讀懂這本書也不是件容易的事。本人閱讀的是商務印書館2011年出版的《漢譯世界學術名著叢書：純粹理性批判》，藍公武譯著。譯文頗有古意，非常簡練，需要慢慢讀、重複讀，不然很容易陷入迷霧。&lt;/p&gt;
+&lt;p&gt;本書探討的核心問題是先天綜合命題如何可能，又可分為四個問題：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;純粹數學如何可能？&lt;/li&gt;
+&lt;li&gt;純粹自然科學如何可能？&lt;/li&gt;
+&lt;li&gt;視為自然傾向的玄學（形而上學）如何可能？&lt;/li&gt;
+&lt;li&gt;視為學問的玄學（形而上學）如何可能？&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="哲學" scheme="https://blog.tsunhualim.top/tags/%E5%93%B2%E5%AD%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go內存模型</title>
+    <link href="https://blog.tsunhualim.top/it/go/go-memory-model/"/>
+    <id>https://blog.tsunhualim.top/it/go/go-memory-model/</id>
+    <published>2021-12-31T02:50:00.000Z</published>
+    <updated>2025-06-14T16:18:38.074Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文講述在何種情況下，一個協程（goroutine）中寫入的變量值可被另一個協程中觀察到。&lt;/p&gt;
+&lt;h2 id=&quot;先發生（happens-before）&quot;&gt;&lt;a href=&quot;#先發生（happens-before）&quot; class=&quot;headerlink&quot; title=&quot;先發生（happens before）&quot;&gt;&lt;/a&gt;先發生（happens before）&lt;/h2&gt;&lt;p&gt;讓我們來理清下時間的發生順序。&lt;/p&gt;
+&lt;p&gt;如果事件 e1在事件 e2 之前發生，那麼事件 e2 在事件 e1 之後發生。同樣，如果 e1 既不在事件 e2 之前也不在 e2 之後發生，那麼事件 e1 和 e2 同時發生。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>網絡I/O</title>
+    <link href="https://blog.tsunhualim.top/it/common/net-io/"/>
+    <id>https://blog.tsunhualim.top/it/common/net-io/</id>
+    <published>2021-12-29T08:30:00.000Z</published>
+    <updated>2025-06-14T16:18:38.061Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;區分幾個概念：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同步（synchronous）和異步（asynchronous）是消息通知的機制，是從消息發送方的角度看；&lt;/li&gt;
+&lt;li&gt;阻塞（blocking）和非阻塞（non-blocking）是線程等待通知的過程，是從接收方的角度看。&lt;br&gt;多路復用是指單一線程監聽多個文件描述符（file descriptor）。&lt;/li&gt;
+&lt;li&gt;邊緣觸發（edge-trigger）和水平觸發（level-trigger）是當文件描述符關聯的內核緩衝區變化時通知應用程序的兩種方式。邊緣觸發是當狀態變化時通知，水平觸發是只要滿足條件就一直通知。&lt;br&gt;epoll 默認是使用水平觸發，但提供邊緣觸發模式。&lt;br&gt;所謂水平觸發，就是只要達到某個限定的水平就一直通知；而邊緣觸發是處在上升沿或下降沿的時候觸發。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+    <category term="net" scheme="https://blog.tsunhualim.top/tags/net/"/>
+    
+    <category term="TODO" scheme="https://blog.tsunhualim.top/tags/TODO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go調度器</title>
+    <link href="https://blog.tsunhualim.top/it/go/go-scheduler/"/>
+    <id>https://blog.tsunhualim.top/it/go/go-scheduler/</id>
+    <published>2021-12-27T03:00:00.000Z</published>
+    <updated>2025-06-14T16:18:38.074Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;現在有三種常見的線程模型，包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;N:1，即 N 個用戶線程對應一個系統線程，節省上下文（context switch）切換開銷；&lt;/li&gt;
+&lt;li&gt;1:1，即 1 個用戶線程對應一個系統線程，充分利用多個核心（multi-core）；&lt;/li&gt;
+&lt;li&gt;M:N，即 M 個用戶線程對應 N 個系統線程，節省上下文開銷並充分利用多個核心。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go的線程調度模型就是 M:N。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unicode 字符集及UTF編碼入門</title>
+    <link href="https://blog.tsunhualim.top/it/common/unicode/"/>
+    <id>https://blog.tsunhualim.top/it/common/unicode/</id>
+    <published>2021-12-20T13:06:00.000Z</published>
+    <updated>2025-06-14T16:18:38.067Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;開始介紹 Unicode 之前，我們先來做一道不定項選擇題。&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;問題&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;：請問以下說法正確的是（）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;A&lt;/span&gt;. 所有中文字符都可用 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 編碼，並佔用 &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; 個字節。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;B&lt;/span&gt;. 字符串可以直接轉成字節數組，字節數組可以直接轉成字符串。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;C. 文本的編碼順序跟其書寫順序一致，不一定是按從左到右從上到下順序。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;D. 帶 BOM 的文本一定是 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 編碼，不帶 BOM 的文本不一定是 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 編碼。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;E. Unicode、GBK 和 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 都是不同的編碼方式。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;F. UTF-&lt;span class=&quot;number&quot;&gt;16&lt;/span&gt; 不兼容 ASCII 碼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;G. 十進制的數字可以轉成二進制，因此不需要編碼。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;答案文章末尾揭曉，如果著急想對答案可以先翻到末尾核對；如果想知道為什麼，那就帶著問題繼續往下看吧。&lt;/p&gt;
+&lt;h2 id=&quot;字符集&quot;&gt;&lt;a href=&quot;#字符集&quot; class=&quot;headerlink&quot; title=&quot;字符集&quot;&gt;&lt;/a&gt;字符集&lt;/h2&gt;&lt;p&gt;Unicode 是一種國際通用的字符集。&lt;/p&gt;
+&lt;p&gt;什麼是字符？計算機中的字符分為兩種：打印字符和非打印字符。打印字符包括數字、字母、漢字、假名、標點符號等等，非打印字符又稱之為控制字符，常見的有：回車（’&#92;r’，U+000D）、換行（’&#92;n’，U+000A）等等。&lt;/p&gt;
+&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;問題&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;：數字 &lt;span class=&quot;number&quot;&gt;123&lt;/span&gt; 由（）個字符組成？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;什麼是字符集？字符集就是字符的集合，不同的字符集包含的字符類型和數量可能不一樣。Unicode 是字符集的一種。&lt;/p&gt;
+&lt;p&gt;字符之所以能被計算機處理，其中最為關鍵的是字符能夠被正確地編碼和解碼。字符的編碼是字符在對應字符集中的序號。此序號是一個整數，稱之為字符碼點 （code point）。不同的字符集可能會對同樣的字符有不同的碼點表示，甚至沒有表示（並不是所有字符在字符集中都有定義）。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Unicode" scheme="https://blog.tsunhualim.top/tags/Unicode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>介紹Go程序性能分析工具 pprof</title>
+    <link href="https://blog.tsunhualim.top/it/go/go-tool-pprof/"/>
+    <id>https://blog.tsunhualim.top/it/go/go-tool-pprof/</id>
+    <published>2021-12-04T12:51:15.000Z</published>
+    <updated>2025-06-14T16:18:38.075Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;pprof 是 program profiling（程序分析）的縮寫，是 Go程序中重要的性能分析工具，包含兩個部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;數據採集，由編譯到程序中的 pprof 庫實現。pprof 庫主要是指 “runtime/pprof” 包，另有 “net/http/pprof” 包引用 “runtime/pprof” 並以 HTTP 接口形式提供實時性能數據。&lt;/li&gt;
+&lt;li&gt;數據分析，使用 &lt;code&gt;go tool pprof &amp;lt;source&amp;gt;&lt;/code&gt; 工具分析採集到的數據。 &lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
+    
+    <category term="pprof" scheme="https://blog.tsunhualim.top/tags/pprof/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>比較 JSON 和 protobuf 並介紹 protobuf編碼、語法及 protobuf over HTTP 示例</title>
+    <link href="https://blog.tsunhualim.top/it/common/protobuf-intro/"/>
+    <id>https://blog.tsunhualim.top/it/common/protobuf-intro/</id>
+    <published>2021-11-21T06:12:51.000Z</published>
+    <updated>2025-06-14T16:18:38.061Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Protocol Buffers&lt;code&gt;（簡稱 protobuf）&lt;/code&gt;，是 Google 推出的一種數據交換格式，採用 Varint 和 ZigZag 等二進制編碼，數據壓縮效果顯著，可用來傳輸數據或持久化數據。&lt;/p&gt;
+&lt;h2 id=&quot;JSON-是什麼？&quot;&gt;&lt;a href=&quot;#JSON-是什麼？&quot; class=&quot;headerlink&quot; title=&quot;JSON 是什麼？&quot;&gt;&lt;/a&gt;JSON 是什麼？&lt;/h2&gt;&lt;p&gt;JSON 全稱爲 JavaScript Object Notation&lt;code&gt;（JavaScript對象標記）&lt;/code&gt;，即 JS對象的字符串表示。其採用文本編碼，是現今最通用的數據交換格式。2001年3月，State Software公司的聯合創始人設計了此種格式，並隨後進行了標準化。現在有 ECMA-404（2013年）和 RFC-8259（2017年）兩種標準。&lt;/p&gt;
+&lt;h2 id=&quot;protobuf-是什麼？&quot;&gt;&lt;a href=&quot;#protobuf-是什麼？&quot; class=&quot;headerlink&quot; title=&quot;protobuf 是什麼？&quot;&gt;&lt;/a&gt;protobuf 是什麼？&lt;/h2&gt;&lt;p&gt;protobuf 全稱爲 Protocol Buffers&lt;code&gt;（“協議緩衝”）&lt;/code&gt;，是一種數據壓縮性能優秀的數據存儲和交換格式。其採用二進制編碼，通常跟 gRPC 一起使用。&lt;/p&gt;
+&lt;p&gt;2001年 Google公司內部誕生了proto1版本，並隨後在2008年以BSD協議開源了proto2，2016年釋出proto3正式版。&lt;/p&gt;
+&lt;p&gt;對於 proto2，官方推出了針對 C++、Java、C# 和 Python 語言的 protobuf編譯器 protoc；而在 proto3 中，增加了對 Dart、GO、Kotlin 和 Ruby 的官方支持。另外，第三方有提供對 JavaScript 和 PHP 等等語言的支持。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    
+    <category term="protobuf" scheme="https://blog.tsunhualim.top/tags/protobuf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>關於我存在的一點思考</title>
+    <link href="https://blog.tsunhualim.top/essay/think-about-me/"/>
+    <id>https://blog.tsunhualim.top/essay/think-about-me/</id>
+    <published>2021-11-09T22:35:32.000Z</published>
+    <updated>2025-06-14T16:18:38.026Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;過去我時常在想一個問題，就是：人生有何意義？&lt;/p&gt;
+&lt;p&gt;我問父母，父母告訴我三頓有得吃就好了；&lt;br&gt;我問老師，老師告訴我這不用考；&lt;br&gt;我問書本，書本說回首往事的時候不會後悔；&lt;br&gt;我問佛陀，佛陀拈花微笑不語。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="我思" scheme="https://blog.tsunhualim.top/tags/%E6%88%91%E6%80%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nǹg uá khòu-thâu(鑽我褲頭)</title>
+    <link href="https://blog.tsunhualim.top/essay/nng-ua-khou-thau/"/>
+    <id>https://blog.tsunhualim.top/essay/nng-ua-khou-thau/</id>
+    <published>2021-09-29T13:38:48.000Z</published>
+    <updated>2025-06-14T16:18:37.997Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Lâu Lêng(劉伶) sâinn&lt;code&gt;--&lt;/code&gt;sî tsia̍h tsiú huàng-tsòng, ǔ&lt;code&gt;--&lt;/code&gt;sî nā tshù-lǎi tǹg-pe̍h-pe̍h. Nâng thói-tioh i, tsang i kiàng-siàu, A-lêng(阿伶) tànn: “uá ínn thinn-tī uî lâu-pâng, pâng-kainn uî khòu-thâu, níng-hiá-nâng nǹg uá khòu-thâu muā&lt;code&gt;--&lt;/code&gt;âi mō?”&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
+    <category term="魏晉風流" scheme="https://blog.tsunhualim.top/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nâng-tu-kāng-ím(人豬共飲)</title>
+    <link href="https://blog.tsunhualim.top/essay/nang-tu-kang-im/"/>
+    <id>https://blog.tsunhualim.top/essay/nang-tu-kang-im/</id>
+    <published>2021-09-28T14:16:00.000Z</published>
+    <updated>2025-06-14T16:18:37.996Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/essay/nang-tu-kang-im/ang.jpg&quot; alt=&quot;Àng(甕)&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Sènn Nguáng(阮) kâi nâng tsôi&lt;code&gt;--&lt;/code&gt;ik sǐ hoh&lt;code&gt;--&lt;/code&gt;ǒi tsia̍h-tsiú&lt;code&gt;--&lt;/code&gt;âi. Ǔ tse̍k&lt;code&gt;--&lt;/code&gt;ji̍k, Nguáng Hâm(阮咸) kah i&lt;code&gt;--&lt;/code&gt;âi tso̍k-nâng tsia̍h tsiú, ēng tuā àng. Tsia̍h-tiānn-nînn, ǔ tse̍k&lt;code&gt;--&lt;/code&gt;kûng tu phīnn-tioh phang-bhī tshong&lt;code&gt;--&lt;/code&gt;ji̍p-lâi. Suà tsôi&lt;code&gt;--&lt;/code&gt;ik tsia̍h tsiú.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    
+    <category term="魏晉風流" scheme="https://blog.tsunhualim.top/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/"/>
+    
+  </entry>
+  
+</feed>

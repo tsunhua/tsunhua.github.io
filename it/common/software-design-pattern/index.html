@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <html lang="en"></html>
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-128207704-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>軟件設計模式·復用·變化 | 不輟集</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最近讀了《設計模式: 可復用面向對象軟件的基礎》（Design Patterns: Elements of Reusable Object-Oriented Software）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發">
+<meta property="og:type" content="article">
+<meta property="og:title" content="軟件設計模式·復用·變化">
+<meta property="og:url" content="https://blog.tsunhualim.top/it/common/software-design-pattern/index.html">
+<meta property="og:site_name" content="不輟集">
+<meta property="og:description" content="最近讀了《設計模式: 可復用面向對象軟件的基礎》（Design Patterns: Elements of Reusable Object-Oriented Software）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2022-07-31T13:11:51.000Z">
+<meta property="article:modified_time" content="2025-06-14T16:18:38.067Z">
+<meta property="article:author" content="Hua">
+<meta property="article:tag" content="代碼家">
+<meta property="article:tag" content="設計模式">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="shortcut icon" href="favicon.ico" />
+  
+  
+  
+    <link href="//fonts.font.im/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="不輟集" type="application/atom+xml">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">不輟集</a>
+      </h1>
+      
+      <h2 id="subtitle-wrap">
+        <a href="/" id="subtitle">Keep Yourself Alive</a>
+      </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          
+            <a class="main-nav-link" href="/">頭頁</a>
+          
+        
+          
+            <a class="main-nav-link" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+          
+        
+          
+            <a class="main-nav-link" href="/atom.xml">RSS</a>
+          
+        
+          
+            <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+          
+        
+      </nav>
+      <!-- <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+        <a class="main-nav-link" href="/">頭頁</a>
+        
+        <a class="main-nav-link" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+        
+        <a class="main-nav-link" href="/atom.xml">RSS</a>
+        
+        <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+        
+      </nav> -->
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜尋"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <div class="search-form">
+          <input type="search" id="local-search-input" name="q" results="0" placeholder="搜尋"
+            class="search-form-input" />
+        </div>
+      </div>
+    </div>
+
+    <div id="local-search-result" class="local-search-result-cls"></div>
+
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-it/common/software-design-pattern" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/it/common/software-design-pattern/" class="article-date">
+  <time datetime="2022-07-31T13:11:51.000Z" itemprop="datePublished">2022-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      軟件設計模式·復用·變化
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+          <div id="toc" class="toc-article">
+              <strong class="toc-title">目錄</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">什麼是設計模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%B0%8D%E8%B1%A1%E8%BB%9F%E4%BB%B6%E4%B8%AD%E7%9A%84%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">面向對象軟件中的設計模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%AF%E5%90%A6%E6%9C%89%E9%9D%A2%E5%90%91%E9%81%8E%E7%A8%8B%E8%BB%9F%E4%BB%B6%E4%B8%AD%E7%9A%84%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">是否有面向過程軟件中的設計模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%8D%E8%AB%87%E3%80%8C%E5%BE%A9%E7%94%A8%E3%80%8D"><span class="toc-number">4.</span> <span class="toc-text">再談「復用」</span></a></li></ol>
+          </div>
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近讀了《設計模式: 可復用面向對象軟件的基礎》（<em>Design Patterns: Elements of Reusable Object-Oriented Software</em>）一書，由埃里克·伽瑪（Erich Gamma）等著。此書英文版於 1995 年始發行。中文版我看的是機械工業出版社的版本(該出版社翻譯的書籍向來是詰屈聱牙的，這次也不例外)。該出版社於 2000 發行第一版，2019 年又發行了典藏版。本人借閱的正是這典藏版。</p>
+<p>此書討論的主題是如何構建可復用的面向對象軟件，並引出 23 種設計模式。</p>
+<p>本人閱讀此書後，結合自己以往設計的經驗作是文，發表自己的一些體悟。</p>
+<h2 id="什麼是設計模式"><a href="#什麼是設計模式" class="headerlink" title="什麼是設計模式"></a>什麼是設計模式</h2><p>追本溯源，設計模式的概念是源自建築學的，特別是模式語言之父克里斯托弗·亞歷山大（Christopher Alexander）思想。他在1977年出版的 <em>A Pattern Language</em> 這樣說道：<strong>每一個模式描述了一個在我們身邊不斷發生的重複的問題以及該問題的解決方案的核心。</strong></p>
+<span id="more"></span>
+
+<p>爲什麼我們要從建築學借來設計模式的概念呢？</p>
+<p>首先，我們從軟件架構開始就是從建築架構中學來的，再借借設計模式的概念也不稀奇。更為重要的是，軟件設計過程中同樣會出現重複的問題，如果我們能從實踐中總結出解決該問題的核心，那麼以後我們的工作就只要識別出問題並復用對應的設計模式解決就好了，大大降低設計的難度。</p>
+<h2 id="面向對象軟件中的設計模式"><a href="#面向對象軟件中的設計模式" class="headerlink" title="面向對象軟件中的設計模式"></a>面向對象軟件中的設計模式</h2><p>面向對象設計就是將整個軟件系統拆分成一個對象集合。每個對象具備一定的職責，並與其他對象進行協作，共同完成軟件的功能。</p>
+<p>在進一步討論面向對象軟件中的設計模式之前，有必要先釐清幾個面向對象軟件中的概念。</p>
+<ul>
+<li><strong>對象</strong>。對象就是數據以及對數據的操作的結合體。數據就是對象的屬性，在代碼中稱之爲成員變量；對數據的操作就是對象的行爲，在代碼中稱之爲成員方法。</li>
+<li><strong>對象的接口</strong>。接口是對象的接口，是對象行為的抽象，是對象成員方法的簽名(或稱型構)的集合。</li>
+<li><strong>對象的類型</strong>。類型是對象所實現接口的標識。一個對象可實現多個接口，因而可表現爲多類型。</li>
+<li><strong>接口的繼承</strong>。一個接口可以包含另一個接口，實現接口方法的擴展。另一個接口類型稱爲這個接口類型的超類型(supertype)，而這個接口類型是另一個接口類型的子類型(subtype)。</li>
+<li><strong>多態</strong>。運行時可替換具有相同接口的對象，此種特性稱之爲多態。接口是對象間交互的協議，多態者就是允許針對接口協議有不同的實現。</li>
+<li><strong>類</strong>。類是對象的描述，描述對象的數據及操作。類通過實例化成爲對象。</li>
+<li><strong>類的繼承</strong>。一個類可以包含另一個類，包括成員變量和方法。被包含者稱之爲父類，反之稱之爲子類。子類以白盒方式知曉父類的可見的變量和方法，並可以重寫之、擴展之。</li>
+</ul>
+<p>由以上概念可知，面向對象軟件中復用代碼的機制有兩種：</p>
+<ol>
+<li><strong>類繼承</strong>。類繼承是一種白盒復用，子類可以知曉父類的內部細節。</li>
+<li><strong>對象組合</strong>。對象組合是一種黑盒復用，一個對象組合了另一個對象，但並不知曉該對象內部的實現細節。</li>
+</ol>
+<p>值得注意的是，復用代碼的機制很多，我們這裡討論的是面向對象軟件中的復用代碼機制。比如，我定義一個公共函數，每次需要我就調用這個函數，這同樣實現了代碼復用，只不過不是面向對象中的復用。</p>
+<p>優良的設計總是「<strong>高內聚、低耦合</strong>」的。所謂「內聚」是指對象職責的內聚，便於復用，而「耦合」是指一個對象對另一個對象細節的鈍感程度，越遲鈍耦合越低，就越能應對未來的變化。</p>
+<p>我們常說「<strong>組合優於繼承</strong>」，就是出於這樣的考慮。組合對被組合對象內部細節無感，因而是低耦合的；而繼承反之，是高耦合的。</p>
+<p>我們還說「<strong>面向接口編程，而不是面向實現編程</strong>」，也是這個道理。接口是對象方法的抽象，是對象間交互的協議，因爲多態的緣故，可以方便地使用新的實現動態綁定，因而是低耦合的；反之，面向具體的實現則是高耦合的。</p>
+<p>設計模式如何幫助我們在進行面向對象設計時實現「高內聚、低耦合」的優良設計呢？</p>
+<p>我的理解是分離變和不變的部分，讓未來可能變化的部分能夠變化，用四個字說就是「<strong>封裝變化</strong>」。</p>
+<p>變化總是在進行的，無視變化將造成軟件的大災難，即<strong>重新設計</strong>。重新設計好比建築過程中的拆掉重建，是一種很大的浪費和損耗。設計模式要求在復用代碼的同時考慮可變的部分，對可變的部分進行封裝（或者說抽象），爲未來的變化留下可能。</p>
+<p>最常見的變化有：</p>
+<ul>
+<li>依賴的具體實現類；</li>
+<li>依賴的軟硬件平台；</li>
+<li>依賴的第三方代碼庫；</li>
+<li>依賴的具體算法等等。</li>
+</ul>
+<p>當依賴具體時，要知道具體未來可預知的變化是否在可接受範圍內，否則當具體變化時，很可能需要重新設計。當依賴抽象時，具體如何變化都不影響調用。</p>
+<h2 id="是否有面向過程軟件中的設計模式"><a href="#是否有面向過程軟件中的設計模式" class="headerlink" title="是否有面向過程軟件中的設計模式"></a>是否有面向過程軟件中的設計模式</h2><p>伽馬書中沒有討論面向過程軟件中的設計模式。</p>
+<p>在這裡我想擴展下，按照設計模式的概念，應該是有的。設計模式是實踐中總結出來的應對重複問題的解決方案的核心，不管是用面向對象設計還是面向過程設計，都是存在設計模式的。</p>
+<p>同樣，問題的核心還是在於識別和分離變化。區別在於兩者使用的工具不同：面向過程使用函數封裝變化，面向對象使用接口或抽象類封裝變化。</p>
+<p>舉個例子，我們知道貓和人類跑的方式是不一樣的，貓是四條腿跑的，而人是兩條腿跑的。這是一個變化項，需要封裝。</p>
+<p>在面向對象設計中，我們通常會封裝出一個 Runner 接口，並讓貓和人類實現該接口，達到封裝變化的目的。下面以 Go 語言爲例，編碼如下：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 首先有一個 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Runner <span class="keyword">interface</span> &#123;</span><br><span class="line">  Run()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Cat 實現了 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Cat <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c Cat)</span></span> Run() &#123;</span><br><span class="line">  <span class="built_in">println</span>(<span class="string">&quot;Cat Run&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Human 實現了 Runner接口</span></span><br><span class="line"><span class="keyword">type</span> Human <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(h Human)</span></span> Run() &#123;</span><br><span class="line">  <span class="built_in">println</span>(<span class="string">&quot;Human Run&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="keyword">var</span> runner Runner</span><br><span class="line">  runner = Cat&#123;&#125;</span><br><span class="line">  runner.Run()</span><br><span class="line">    <span class="comment">// 現在可以方便地更換 Runner實現</span></span><br><span class="line">  runner = Human&#123;&#125;</span><br><span class="line">  runner.Run()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在面向過程設計中，我們可以使用函數封裝。面向對象設計中的接口是對象方法簽名的集合，同樣我們可以使用函數簽名抽離出跑步行爲，使用 Go 語言編碼如下：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  <span class="comment">// Cat 的 Run行爲</span></span><br><span class="line">  runner := <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Cat Run&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  Run(runner)</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Human 的 Run行爲</span></span><br><span class="line">  runner = <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Human Run&quot;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  Run(runner)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Run 方法跟具體的 Runner無關</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Run</span><span class="params">(runner <span class="keyword">func</span>()</span></span>) &#123;</span><br><span class="line">  runner()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其實，面向對象設計中的接口最小的粒度（除了空接口）即單個方法簽名，跟面向過程中的單個函數簽名是一致的。函數即面向對象設計中的方法。</p>
+<p>面向對象設計中接口的概念可以很好地控制抽象的粒度（接口中包含的方法的多寡），這是面向過程設計所不具備的。</p>
+<h2 id="再談「復用」"><a href="#再談「復用」" class="headerlink" title="再談「復用」"></a>再談「復用」</h2><p>讀完本文，你是否對伽馬書中所說的「復用」有更多的理解？</p>
+<p>在我看來，書中的「復用」是有多重含義的：</p>
+<p>一是指<strong>模式的復用</strong>。不斷用之前總結的設計模式來解決不斷出現的重複的問題；<br>二是指<strong>對象的復用</strong>。使用繼承、組合等方式實現對象的復用，不斷重用不變的代碼。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.tsunhualim.top/it/common/software-design-pattern/" data-id="cmbwgq5yk000y7ofq99cghbeb" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/" rel="tag">設計模式</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/essay/live-in-the-new-era/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          新時代生存守則
+        
+      </div>
+    </a>
+  
+  
+    <a href="/it/common/software-architecture-and-kants-philosophy/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">軟件架構與康德的哲學理論</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+    <h3 class="widget-title">貼示</h3>
+    <div class="widget" style="min-height: 50px;">
+        <img src="" height="50px" style="float: left; margin-right: 10px" />
+        <div style="font-size:medium; color:palevioletred;padding-top: 4px;">
+           <ul>
+                
+                    <li>
+                        *
+                        精力善用
+                    </li>
+                
+                    <li>
+                        *
+                        筆耕不輟，日有所知，月無忘其所能
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/language/han/another-way-to-write-chinese/">書寫漢語的另一種方式——表音方塊字「補字」的誕生</a>
+          </li>
+        
+          <li>
+            <a href="/essay/be-myself/">做一個「不成材」的人</a>
+          </li>
+        
+          <li>
+            <a href="/it/python/python-memory/">Python 程序內存管理及OOM問題分析</a>
+          </li>
+        
+          <li>
+            <a href="/it/python/python-efficient/">Python 程序如何做到高效且穩健？</a>
+          </li>
+        
+          <li>
+            <a href="/essay/first-day-in-2023/">2023年頭一日</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">專輯</h3>
+    <div class="widget tagcloud">
+      <!-- <a href="/tags/Go/" style="font-size: 17.14px;">Go</a> <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 12.86px;">Java</a> <a href="/tags/Python/" style="font-size: 11.43px;">Python</a> <a href="/tags/TODO/" style="font-size: 11.43px;">TODO</a> <a href="/tags/Unicode/" style="font-size: 10px;">Unicode</a> <a href="/tags/net/" style="font-size: 10px;">net</a> <a href="/tags/pprof/" style="font-size: 10px;">pprof</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" style="font-size: 20px;">代碼家</a> <a href="/tags/%E5%8D%81%E4%BA%8C%E7%94%9F%E8%82%96/" style="font-size: 10px;">十二生肖</a> <a href="/tags/%E5%93%B2%E5%AD%B8/" style="font-size: 11.43px;">哲學</a> <a href="/tags/%E5%B9%B2%E6%94%AF%E7%B4%80%E5%B9%B4%E6%B3%95/" style="font-size: 10px;">干支紀年法</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 10px;">思考</a> <a href="/tags/%E6%88%91%E6%80%9D/" style="font-size: 10px;">我思</a> <a href="/tags/%E6%96%B0%E5%86%A0/" style="font-size: 10px;">新冠</a> <a href="/tags/%E6%96%B0%E6%99%82%E4%BB%A3/" style="font-size: 10px;">新時代</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 10px;">日本語</a> <a href="/tags/%E6%BC%A2%E8%AA%9E/" style="font-size: 10px;">漢語</a> <a href="/tags/%E6%BD%AE%E5%8A%87/" style="font-size: 10px;">潮劇</a> <a href="/tags/%E6%BD%AE%E5%B7%9E%E8%A9%B1/" style="font-size: 11.43px;">潮州話</a> <a href="/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/" style="font-size: 12.86px;">甲子話</a> <a href="/tags/%E8%81%86%E8%81%BD%E9%9F%B3%E6%A8%82/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/" style="font-size: 10px;">表音方塊字</a> <a href="/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">設計模式</a> <a href="/tags/%E8%A9%A9%E7%B6%93/" style="font-size: 10px;">詩經</a> <a href="/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/" style="font-size: 10px;">軟件架構</a> <a href="/tags/%E8%BC%94%E5%AD%97/" style="font-size: 10px;">輔字</a> <a href="/tags/%E9%81%8A%E8%A8%98/" style="font-size: 11.43px;">遊記</a> <a href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" style="font-size: 14.29px;">閩南語</a> <a href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" style="font-size: 15.71px;">閩語文</a> <a href="/tags/%E9%9A%A8%E7%AD%86/" style="font-size: 18.57px;">隨筆</a> <a href="/tags/%E9%9B%BB%E5%BD%B1/" style="font-size: 10px;">電影</a> <a href="/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/" style="font-size: 11.43px;">魏晉風流</a> -->
+      <ul class="classtest-list" itemprop="keywords"><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a><span class="classtest-list-count">15</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%9A%A8%E7%AD%86/" rel="tag">隨筆</a><span class="classtest-list-count">11</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/Go/" rel="tag">Go</a><span class="classtest-list-count">8</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" rel="tag">閩語文</a><span class="classtest-list-count">6</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" rel="tag">閩南語</a><span class="classtest-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    <div class="widget-wrap">
+    <h3 class="widget-title">二維碼</h3>
+    <div class="widget">
+        <img src="https://tsunhua.github.io/qrcode.jpg" width="100%" style="max-width: 200px;" />
+    </div>
+</div>
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款"
+          style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      <br />
+      Edited by
+      <a xmlns:cc="http: //creativecommons.org/ns#" target="_blank" href="https://github.com/tsunhua" property="cc:attributionName"
+        rel="cc:attributionURL noopener">Hua
+      </a>
+
+      <br>
+      Powered by
+      <a href="https://github.com/" target="_blank">Github</a>&nbsp;&&nbsp;
+      <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <br />
+
+    </div>
+  </div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" href="/">頭頁</a>
+    
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+    
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" href="/atom.xml">RSS</a>
+    
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+    
+  
+</nav>
+
+    
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

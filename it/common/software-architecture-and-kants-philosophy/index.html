@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <html lang="en"></html>
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-128207704-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>軟件架構與康德的哲學理論 | 不輟集</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最近讀了一篇名爲 Foundations for the Study of Software Architecture 的論文。它是由 AT&amp;T 公司的 Dewayne E. Perry 和卡羅拉大學的 Alexander L. Wolf 於 1992 聯合署名發表。 這篇論文不得了，光看名字就覺得很重要，這可是研究軟件架構的基石啊。文中提出了一個重要的軟件架構模型，即： Software">
+<meta property="og:type" content="article">
+<meta property="og:title" content="軟件架構與康德的哲學理論">
+<meta property="og:url" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/index.html">
+<meta property="og:site_name" content="不輟集">
+<meta property="og:description" content="最近讀了一篇名爲 Foundations for the Study of Software Architecture 的論文。它是由 AT&amp;T 公司的 Dewayne E. Perry 和卡羅拉大學的 Alexander L. Wolf 於 1992 聯合署名發表。 這篇論文不得了，光看名字就覺得很重要，這可是研究軟件架構的基石啊。文中提出了一個重要的軟件架構模型，即： Software">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/3-views-processing.png">
+<meta property="og:image" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/3-views-data.png">
+<meta property="og:image" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/4+1-views.png">
+<meta property="og:image" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/5-views.png">
+<meta property="og:image" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/c4-model.jpg">
+<meta property="article:published_time" content="2022-07-16T15:45:26.000Z">
+<meta property="article:modified_time" content="2025-06-14T16:18:38.063Z">
+<meta property="article:author" content="Hua">
+<meta property="article:tag" content="哲學">
+<meta property="article:tag" content="代碼家">
+<meta property="article:tag" content="軟件架構">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/3-views-processing.png">
+  
+  
+    <link rel="shortcut icon" href="favicon.ico" />
+  
+  
+  
+    <link href="//fonts.font.im/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="不輟集" type="application/atom+xml">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">不輟集</a>
+      </h1>
+      
+      <h2 id="subtitle-wrap">
+        <a href="/" id="subtitle">Keep Yourself Alive</a>
+      </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          
+            <a class="main-nav-link" href="/">頭頁</a>
+          
+        
+          
+            <a class="main-nav-link" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+          
+        
+          
+            <a class="main-nav-link" href="/atom.xml">RSS</a>
+          
+        
+          
+            <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+          
+        
+      </nav>
+      <!-- <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+        <a class="main-nav-link" href="/">頭頁</a>
+        
+        <a class="main-nav-link" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+        
+        <a class="main-nav-link" href="/atom.xml">RSS</a>
+        
+        <a class="main-nav-link" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+        
+      </nav> -->
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜尋"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <div class="search-form">
+          <input type="search" id="local-search-input" name="q" results="0" placeholder="搜尋"
+            class="search-form-input" />
+        </div>
+      </div>
+    </div>
+
+    <div id="local-search-result" class="local-search-result-cls"></div>
+
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-it/common/software-architecture-and-kants-philosophy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/it/common/software-architecture-and-kants-philosophy/" class="article-date">
+  <time datetime="2022-07-16T15:45:26.000Z" itemprop="datePublished">2022-07-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      軟件架構與康德的哲學理論
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+          <div id="toc" class="toc-article">
+              <strong class="toc-title">目錄</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%B7%E5%BE%B7%E7%9A%84%E5%93%B2%E5%AD%B8%E7%90%86%E8%AB%96"><span class="toc-number">1.</span> <span class="toc-text">康德的哲學理論</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B%E7%9A%84%E7%9B%B4%E8%A7%80"><span class="toc-number">2.</span> <span class="toc-text">軟件架構的直觀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%B6%E6%A7%8B%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">架構模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%B6%E6%A7%8B%E9%A2%A8%E6%A0%BC"><span class="toc-number">3.1.</span> <span class="toc-text">架構風格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%A6%96%E5%9C%96"><span class="toc-number">3.2.</span> <span class="toc-text">3 視圖</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%87%8D%E8%A6%81%E7%9A%84%E8%A6%96%E5%9C%96"><span class="toc-number">4.</span> <span class="toc-text">其他重要的視圖</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E8%A6%96%E5%9C%96"><span class="toc-number">4.1.</span> <span class="toc-text">4+1 視圖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%A6%96%E5%9C%96"><span class="toc-number">4.2.</span> <span class="toc-text">5 視圖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#C4-%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.3.</span> <span class="toc-text">C4 模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%83%E8%80%83"><span class="toc-number">5.</span> <span class="toc-text">參考</span></a></li></ol>
+          </div>
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近讀了一篇名爲 <em>Foundations for the Study of Software Architecture</em> 的論文。它是由 AT&amp;T 公司的 Dewayne E. Perry 和卡羅拉大學的 Alexander L. Wolf 於 1992 聯合署名發表。</p>
+<p>這篇論文不得了，光看名字就覺得很重要，這可是研究軟件架構的基石啊。文中提出了一個重要的軟件架構模型，即：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Software Architecture = &#123; Elements, Form, Rationale &#125;</span><br></pre></td></tr></table></figure>
+
+<p>翻譯過來就是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">軟件架構 = &#123; 元素, 形式, 理論依據 &#125; </span><br></pre></td></tr></table></figure>
+
+<p>Perry 和 Wolf 如何得出該模型呢？</p>
+<span id="more"></span>
+
+<h2 id="康德的哲學理論"><a href="#康德的哲學理論" class="headerlink" title="康德的哲學理論"></a>康德的哲學理論</h2><p>讓我們先大略了解下康德的哲學理論吧。</p>
+<p>康德認爲對象通過我們的感性形成直觀，然後再經由我們的悟性所思維形成概念。感性的對象我們稱之爲現象，非物自身，物自身我們不知道。現象中之質料(Materie)經由感性，形成感覺，是爲經驗直觀；現象中之形式(Form)，是指先天存在我們心中用來整理感覺的東西，即時間和空間關係，是爲純粹直觀。</p>
+<p>簡單來說，就是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">物自身 --&gt; 現象 --&gt; 直觀 --&gt; 概念</span><br></pre></td></tr></table></figure>
+
+<p>以杯子為例，我們怎麼得出杯子的概念的呢？首先我們用感性感覺到它的存在，但它自身我們並不知道，我們所知的只是它所展現給我們的現象。從現象之質料上，我們直觀知曉它形狀像個碗，但比較小；有的有把手，有的又沒有；有的表面比較粗糙，但更多的是表面光滑；有的木製的，但更多的是玻璃或陶瓷的。從現象之形式上，我們知道可以從上往下倒入液體到它中，隨著時間的流逝，它會盛滿至溢出。按照康德的邏輯，我們思維這些直觀，然後形成了杯子的概念。牛津詞典上如是解釋：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Cup</span><br><span class="line"></span><br><span class="line">[C] a small container shaped like a bowl, usually with a handle, used for drinking tea, coffee, etc.</span><br></pre></td></tr></table></figure>
+
+<p>翻譯過來就是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">杯子</span><br><span class="line"></span><br><span class="line">【可數名詞】一種小的容器，狀似碗，通常有個把手，用來喝茶或咖啡等等。</span><br></pre></td></tr></table></figure>
+
+<p>同樣地，我們要形成軟件架構的概念，必須先建構軟件架構的直觀。</p>
+<h2 id="軟件架構的直觀"><a href="#軟件架構的直觀" class="headerlink" title="軟件架構的直觀"></a>軟件架構的直觀</h2><p>Perry 和 Wolf 審視了當前的軟件架構，並與已有的建築架構学科進行類比，建構了軟件架構的直觀（intuition）：</p>
+<ol>
+<li>軟件架構是多視圖的（multiple views）。架構應該是多個面向的，正如建築架構會提供立面圖和平面圖一樣。</li>
+<li>軟件架構是有不同架構風格的（architecture styles）。正如建築架構有哥特式、羅馬式等不同的風格，軟件架構也有不同風格，並且架構風格約束著架構元素以及它們之間的關係。</li>
+<li>架構（風格）是跟工程原理（engineering principle）密切相关的。不同的架構風格需要不同的工程原理。</li>
+<li>架构風格是跟質料（materials）密切相關的。正如摩天大樓不能用木頭構建。</li>
+</ol>
+<p>再者，從軟件製品的整個生產流程看，架構處在 <code>需求-架構-設計-實現</code> 流程中的一環，溝通著問題域（需求）和解域（實現）。</p>
+<ul>
+<li>需求：決定著系統中的用戶需要的信息和處理過程。</li>
+<li>架構：關心元素、交互和約束。</li>
+<li>設計：關心模塊化、詳細接口、算法和數據類型。</li>
+<li>實現：關心算法和數據結構的最終表示。</li>
+</ul>
+<p>可見，架構的上下文（context）即是需求、設計和實現。</p>
+<p>還有，架構會隨著新需求（通常是定制化的需求）不斷演進，稍有不慎可能導致架構腐化（architectural erosion）或架構偏移（architectural drift）。架構腐化是架構不斷被違反導致的，架構的違反增加了系統的脆性，從而導致災難；而架構偏移是由於對架構的頓感，這種頓感導致架構變得模糊不清，很容易演變成架構違反以至腐化。</p>
+<p>爲避免演進過程架構的腐化和偏移，我們期望有這樣的架構規範：</p>
+<ol>
+<li>以最少約束原則規定需要的約束級別。</li>
+<li>區分主幹和裝飾。</li>
+<li>使用恰當的方式展現架構的不同視圖。</li>
+<li>進行依賴和一致性分析。</li>
+</ol>
+<h2 id="架構模型"><a href="#架構模型" class="headerlink" title="架構模型"></a>架構模型</h2><p>從上述的直觀中，Perry 和 Wolf 得出以下的架構模型：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">軟件架構 = &#123; 元素, 形式, 理論依據 &#125; </span><br></pre></td></tr></table></figure>
+
+<p>該模型認爲軟件架構是由一組具有特定形式的架構元素構成。</p>
+<ul>
+<li>架構元素（elements），包含處理元素、數據元素和連接元素。處理元素是主動的，負責處理數據；數據元素是被動的，被處理元素處理；連接元素是在處理元素之間運載數據元素的機制，它限制著數據元素。例如：在「人在水池中打水球」場景中，人是處理元素，水池則連接元素，水球則是數據元素。換到「人在足球場上踢足球」的場景中，人依然是處理元素，而連接元素變為足球場，數據元素變為足球。顯然，我們無法在足球場中打水球，因此當連接元素變化時，數據元素也跟著變化了，即連接元素限制著數據元素。</li>
+<li>形式（form），指架構元素之間的關係，主次、先後等等。</li>
+<li>理論依據（rationale），指架構風格、元素和形式的選擇動機，以及其滿足功能性或非功能性的約束（或需求）的依據。</li>
+</ul>
+<p>在得出軟件架構的概念後，我們仍然不滿足，因爲架構基本都是定製化的，實在太多了。</p>
+<h3 id="架構風格"><a href="#架構風格" class="headerlink" title="架構風格"></a>架構風格</h3><p>於是，我們基於眾多特定架構，抽象出了架構風格的概念。這個抽象過程其實就是減少約束和減少完成度的過程。</p>
+<p>我們知道架構是一系列決策（決定使用哪些架構元素以及何種形式）的集合，因此也可以說架構風格是一系列重要決策的集合，包含關鍵的架構元素和形式。</p>
+<p>常見的架構風格有：</p>
+<ul>
+<li>獨立構件（Independent Components）</li>
+<li>虛擬機（Virtual Machines）</li>
+<li>數據流（Data Flow）</li>
+<li>數據中心（Data-Centered）</li>
+<li>調用返回（Call-and-return）</li>
+<li>MVC（Model-View-Controller）</li>
+<li>代理架構風格（Broker Architecture Style）</li>
+<li>面向服務架構（Service Oriented Architecture (SOA)）</li>
+<li>點對點架構（Peer-to-Peer Architecture）</li>
+</ul>
+<p>需要注意的是：架構與架構風格之間沒有明顯的分界線，一個架構可以成為另一個架構的架構風格。</p>
+<h3 id="3-視圖"><a href="#3-視圖" class="headerlink" title="3 視圖"></a>3 視圖</h3><p>架構模型的三種元素相互依賴，分別從三種元素的視角觀察，可以得出三種視圖，即：</p>
+<ol>
+<li>處理視圖：從處理元素的視角看到的是系統的數據流（data flow）以及處理元素之間的連接。</li>
+<li>數據視圖：從數據元素的視角看到的是系統的處理流（processing flow）。</li>
+<li>連接視圖：從連接元素的視角看到的是處理元素之間的互動，一個處理元素的輸出是另一個處理元素的輸入，輸入輸出的數據元素在連接協議中定義。</li>
+</ol>
+<p>Perry 和 Wolf 說是有 3 種視圖，但是只給了 2 種，可能是連接視圖沒有畫的必要性。</p>
+<p>處理視圖展現了數據流，數據視圖展現了處理流，有趣。處理視圖強調了處理元素的主觀能動性，數據在其中被處理和流轉；而數據視圖強調了數據本身的變化，處理過程是數據產生變化的原因。</p>
+<p><img src="/it/common/software-architecture-and-kants-philosophy/3-views-processing.png" alt="處理視圖"></p>
+<p><img src="/it/common/software-architecture-and-kants-philosophy/3-views-data.png" alt="數據視圖"></p>
+<p>Perry 和 Wolf 論文中的內容到此結束了，但是 3 視圖在軟件架構中是遠遠不夠的，我們還有必要放眼看看有什麼其他的架構視圖供我們選用。</p>
+<h2 id="其他重要的視圖"><a href="#其他重要的視圖" class="headerlink" title="其他重要的視圖"></a>其他重要的視圖</h2><h3 id="4-1-視圖"><a href="#4-1-視圖" class="headerlink" title="4+1 視圖"></a>4+1 視圖</h3><p>三視圖是從架構元素的視角觀察得出的，我們能否從其他角度進行觀察呢？</p>
+<p>Rational 軟件公司的 Philippe Kruchten 就是這樣思考的，他於 1995 在 IEEE Software 上發表了題為 <em>Architectual Blueprints–The “4+1” View Model of Software Architecture</em> 的論文探討了 4+1 視圖。 </p>
+<p>4+1 視圖是從用戶視角觀察的，不同用戶的視角得出不同的視圖，4+1 視圖共整理了 5 種視圖，即：</p>
+<ol>
+<li>邏輯視圖，從終端用戶的視角，關注的是功能。</li>
+<li>處理視圖，從集成方的視角，關注的是性能和伸縮性。</li>
+<li>開發視圖，從開發者的視角，關注的是軟件管理。</li>
+<li>物理視圖，從系統工程師/運維人員的視角，關注的是拓撲、通信。</li>
+<li>場景視圖，場景串聯以上 4 種視圖，講述某個場景如何被實現。</li>
+</ol>
+<p><img src="/it/common/software-architecture-and-kants-philosophy/4+1-views.png" alt="4+1視圖"></p>
+<h3 id="5-視圖"><a href="#5-視圖" class="headerlink" title="5 視圖"></a>5 視圖</h3><p>CSAI 的架構師們於2009年11月在第六屆中國軟件大會上提出了一種軟件架構設計方法 ADMEMS（Architecture Design Method has been Extended to Method System）。</p>
+<p>該方法上承需求、下接實現，包括 3 個階段和 1 個貫穿環節，即：</p>
+<ol>
+<li>預備架構階段（PA, Pre-Architecture）：關注充分理解需求，把握需求特點。</li>
+<li>概念架構階段（CA, Conceptual Architecture）：關注功能、質量、約束等等。</li>
+<li>細化架構階段（RA, Refined Architecture）：使用 5 視圖。</li>
+<li>貫穿環節：對非功能性目標的考量。</li>
+</ol>
+<p>所謂的 5 視圖包括：</p>
+<ol>
+<li>邏輯視圖：面向對象或結構化，關注職責劃分和職責間協作。</li>
+<li>運行視圖：面向控制流，關注控制流及其組織。</li>
+<li>物理視圖：面向節點，關注物理節點及其拓撲。</li>
+<li>數據視圖：面向Table或文件，關注持久化數據單元和數據存儲格式。</li>
+<li>開發視圖：面向文件，關注程序單元及其組織。</li>
+</ol>
+<p><img src="/it/common/software-architecture-and-kants-philosophy/5-views.png" alt="5視圖"></p>
+<h3 id="C4-模型"><a href="#C4-模型" class="headerlink" title="C4 模型"></a>C4 模型</h3><p>架構師 Simon Brown 在 2006 年到 2011 年間基於 UML 和 4+1 視圖構建了 C4 模型（C4 model），並隨後創辦了 c4model.com 宣傳該模型。2018 年，他在 InfoQ 上發表了題爲 <em>The C4 Model for Software Architecture</em> 的文章，受到廣泛關注。</p>
+<p>C4 是四個首字母爲 C 的單詞的統稱，即：上下文（Context）、容器（Container）、組件（Component）和代碼（Code）。</p>
+<p><img src="/it/common/software-architecture-and-kants-philosophy/c4-model.jpg" alt="C4 模型"></p>
+<p>C4 模型體現了一種頂層設計、逐步細化的思維方式。它就像使用地圖軟件一般，逐步放大，獲取所關注級別的信息。首先從系統的上下文開始，梳理此系統與別的系統之間的關係；然後再深入到系統內部，看內部各個容器（包括應用程序、微服務或數據存儲等等）之間的交互；然後繼續深入到某個容器內部，看容器中各個組件（或功能模塊）之間如何交互；最後如果有必要還可以深入到代碼級別，看看內部各個類之間如何交互。</p>
+<p>綜合上面提到的眾多視圖，顯見架構視圖是上承需求、下接實現的；架構視圖是頂層設計、逐步細化的；架構視圖可以從架構元素的角度觀察，也可以從用戶角度觀察。每種視圖模型都各自的優點，可以視團隊規模、面向的用戶以及系統的複雜度選擇。</p>
+<h2 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.ics.uci.edu/~andre/ics223w2006/perrywolf.pdf">Dewayne E. Perry &amp; Alexander L. Wolf, <em>Foundations for the Study of Software Architecture</em></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf">Philippe Kruchten, <em>Architectural Blueprints—The “4+1” View Model of Software Architecture</em></a></li>
+<li>溫昱著《軟件架構設計(第2版)》, p176</li>
+<li><a target="_blank" rel="noopener" href="https://www.infoq.cn/article/c4-architecture-model">Simon Brown 著, 无明譯 《用于软件架构的 C4 模型》</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.infoq.com/articles/C4-architecture-model/">Simon Brown, <em>The C4 Model for Software Architecture</em></a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/" data-id="cmbwgq5yk00107ofq791q7dlh" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%93%B2%E5%AD%B8/" rel="tag">哲學</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/" rel="tag">軟件架構</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/it/common/software-design-pattern/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          軟件設計模式·復用·變化
+        
+      </div>
+    </a>
+  
+  
+    <a href="/essay/thinking-about-the-cuckoos-nest/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">觀電影《飛越瘋人院》後的一點思考</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+    <h3 class="widget-title">貼示</h3>
+    <div class="widget" style="min-height: 50px;">
+        <img src="" height="50px" style="float: left; margin-right: 10px" />
+        <div style="font-size:medium; color:palevioletred;padding-top: 4px;">
+           <ul>
+                
+                    <li>
+                        *
+                        精力善用
+                    </li>
+                
+                    <li>
+                        *
+                        筆耕不輟，日有所知，月無忘其所能
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/language/han/another-way-to-write-chinese/">書寫漢語的另一種方式——表音方塊字「補字」的誕生</a>
+          </li>
+        
+          <li>
+            <a href="/essay/be-myself/">做一個「不成材」的人</a>
+          </li>
+        
+          <li>
+            <a href="/it/python/python-memory/">Python 程序內存管理及OOM問題分析</a>
+          </li>
+        
+          <li>
+            <a href="/it/python/python-efficient/">Python 程序如何做到高效且穩健？</a>
+          </li>
+        
+          <li>
+            <a href="/essay/first-day-in-2023/">2023年頭一日</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">專輯</h3>
+    <div class="widget tagcloud">
+      <!-- <a href="/tags/Go/" style="font-size: 17.14px;">Go</a> <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 12.86px;">Java</a> <a href="/tags/Python/" style="font-size: 11.43px;">Python</a> <a href="/tags/TODO/" style="font-size: 11.43px;">TODO</a> <a href="/tags/Unicode/" style="font-size: 10px;">Unicode</a> <a href="/tags/net/" style="font-size: 10px;">net</a> <a href="/tags/pprof/" style="font-size: 10px;">pprof</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" style="font-size: 20px;">代碼家</a> <a href="/tags/%E5%8D%81%E4%BA%8C%E7%94%9F%E8%82%96/" style="font-size: 10px;">十二生肖</a> <a href="/tags/%E5%93%B2%E5%AD%B8/" style="font-size: 11.43px;">哲學</a> <a href="/tags/%E5%B9%B2%E6%94%AF%E7%B4%80%E5%B9%B4%E6%B3%95/" style="font-size: 10px;">干支紀年法</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 10px;">思考</a> <a href="/tags/%E6%88%91%E6%80%9D/" style="font-size: 10px;">我思</a> <a href="/tags/%E6%96%B0%E5%86%A0/" style="font-size: 10px;">新冠</a> <a href="/tags/%E6%96%B0%E6%99%82%E4%BB%A3/" style="font-size: 10px;">新時代</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 10px;">日本語</a> <a href="/tags/%E6%BC%A2%E8%AA%9E/" style="font-size: 10px;">漢語</a> <a href="/tags/%E6%BD%AE%E5%8A%87/" style="font-size: 10px;">潮劇</a> <a href="/tags/%E6%BD%AE%E5%B7%9E%E8%A9%B1/" style="font-size: 11.43px;">潮州話</a> <a href="/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/" style="font-size: 12.86px;">甲子話</a> <a href="/tags/%E8%81%86%E8%81%BD%E9%9F%B3%E6%A8%82/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/" style="font-size: 10px;">表音方塊字</a> <a href="/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">設計模式</a> <a href="/tags/%E8%A9%A9%E7%B6%93/" style="font-size: 10px;">詩經</a> <a href="/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/" style="font-size: 10px;">軟件架構</a> <a href="/tags/%E8%BC%94%E5%AD%97/" style="font-size: 10px;">輔字</a> <a href="/tags/%E9%81%8A%E8%A8%98/" style="font-size: 11.43px;">遊記</a> <a href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" style="font-size: 14.29px;">閩南語</a> <a href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" style="font-size: 15.71px;">閩語文</a> <a href="/tags/%E9%9A%A8%E7%AD%86/" style="font-size: 18.57px;">隨筆</a> <a href="/tags/%E9%9B%BB%E5%BD%B1/" style="font-size: 10px;">電影</a> <a href="/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/" style="font-size: 11.43px;">魏晉風流</a> -->
+      <ul class="classtest-list" itemprop="keywords"><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a><span class="classtest-list-count">15</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%9A%A8%E7%AD%86/" rel="tag">隨筆</a><span class="classtest-list-count">11</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/Go/" rel="tag">Go</a><span class="classtest-list-count">8</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" rel="tag">閩語文</a><span class="classtest-list-count">6</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" rel="tag">閩南語</a><span class="classtest-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+  
+    <div class="widget-wrap">
+    <h3 class="widget-title">二維碼</h3>
+    <div class="widget">
+        <img src="https://tsunhua.github.io/qrcode.jpg" width="100%" style="max-width: 200px;" />
+    </div>
+</div>
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款"
+          style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      <br />
+      Edited by
+      <a xmlns:cc="http: //creativecommons.org/ns#" target="_blank" href="https://github.com/tsunhua" property="cc:attributionName"
+        rel="cc:attributionURL noopener">Hua
+      </a>
+
+      <br>
+      Powered by
+      <a href="https://github.com/" target="_blank">Github</a>&nbsp;&&nbsp;
+      <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <br />
+
+    </div>
+  </div>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" href="/">頭頁</a>
+    
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" target="_blank" rel="noopener" href="https://hokkien-writing.github.io/">閩南語書寫</a>
+    
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" href="/atom.xml">RSS</a>
+    
+  
+    
+      <a class="mobile-nav-link mobile-nav-main" target="_blank" rel="noopener" href="https://github.com/tsunhua">GitHub</a>
+    
+  
+</nav>
+
+    
+
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
