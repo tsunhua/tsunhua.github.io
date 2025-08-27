@@ -24,20 +24,20 @@ ga('send', 'pageview');
   <meta name="description" content="現在有三種常見的線程模型，包括：  N:1，即 N 個用戶線程對應一個系統線程，節省上下文（context switch）切換開銷； 1:1，即 1 個用戶線程對應一個系統線程，充分利用多個核心（multi-core）； M:N，即 M 個用戶線程對應 N 個系統線程，節省上下文開銷並充分利用多個核心。  Go的線程調度模型就是 M:N。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Go調度器">
-<meta property="og:url" content="https://blog.tsunhualim.top/it/go/go-scheduler/index.html">
+<meta property="og:url" content="https://tsunhua.github.io/it/go/go-scheduler/index.html">
 <meta property="og:site_name" content="不輟集">
 <meta property="og:description" content="現在有三種常見的線程模型，包括：  N:1，即 N 個用戶線程對應一個系統線程，節省上下文（context switch）切換開銷； 1:1，即 1 個用戶線程對應一個系統線程，充分利用多個核心（multi-core）； M:N，即 M 個用戶線程對應 N 個系統線程，節省上下文開銷並充分利用多個核心。  Go的線程調度模型就是 M:N。">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://blog.tsunhualim.top/it/go/go-scheduler/mpg.png">
-<meta property="og:image" content="https://blog.tsunhualim.top/it/go/go-scheduler/syscall.jpg">
-<meta property="og:image" content="https://blog.tsunhualim.top/it/go/go-scheduler/steal.jpg">
+<meta property="og:image" content="https://tsunhua.github.io/it/go/go-scheduler/mpg.png">
+<meta property="og:image" content="https://tsunhua.github.io/it/go/go-scheduler/syscall.jpg">
+<meta property="og:image" content="https://tsunhua.github.io/it/go/go-scheduler/steal.jpg">
 <meta property="article:published_time" content="2021-12-27T03:00:00.000Z">
 <meta property="article:modified_time" content="2025-08-27T11:25:43.495Z">
 <meta property="article:author" content="Hua">
 <meta property="article:tag" content="代碼家">
 <meta property="article:tag" content="Go">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.tsunhualim.top/it/go/go-scheduler/mpg.png">
+<meta name="twitter:image" content="https://tsunhua.github.io/it/go/go-scheduler/mpg.png">
   
   
     <link rel="shortcut icon" href="favicon.ico" />
@@ -172,7 +172,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.tsunhualim.top/it/go/go-scheduler/" data-id="cmetwqhk8001hnxnc1o8s0s3r" class="article-share-link">分享</a>
+      <a data-url="https://tsunhua.github.io/it/go/go-scheduler/" data-id="cmetwqhk8001hnxnc1o8s0s3r" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a></li></ul>
