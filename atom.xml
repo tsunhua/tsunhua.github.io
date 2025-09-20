@@ -6,7 +6,7 @@
   <link href="https://tsunhua.github.io/atom.xml" rel="self"/>
   
   <link href="https://tsunhua.github.io/"/>
-  <updated>2025-08-27T12:45:03.277Z</updated>
+  <updated>2025-09-20T13:01:20.696Z</updated>
   <id>https://tsunhua.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>中國古代建築鳥瞰之二：斗栱</title>
+    <link href="https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture-ii-old/"/>
+    <id>https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture-ii-old/</id>
+    <published>2025-09-20T12:51:00.000Z</published>
+    <updated>2025-09-20T13:01:20.696Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h1&gt;&lt;p&gt;斗栱，又稱斗拱、枓栱、斗科、鋪作（宋《營造法式》），是在屋頂和梁枋之間的木構件，用於支撐挑出的屋檐。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/arch/birds-eye-view-of-ancient-chinese-architecture-ii-old/%E5%96%84%E5%8C%96%E5%AF%BA%E6%96%97%E6%A0%B1.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;圖：山西善化寺大雄寶殿斗栱（實地拍攝）&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="建築" scheme="https://tsunhua.github.io/tags/%E5%BB%BA%E7%AF%89/"/>
+    
+    <category term="中國建築" scheme="https://tsunhua.github.io/tags/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中國古代建築鳥瞰之二：斗栱</title>
+    <link href="https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture-ii/"/>
+    <id>https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture-ii/</id>
+    <published>2025-09-20T12:51:00.000Z</published>
+    <updated>2025-09-20T13:13:31.163Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h1&gt;&lt;p&gt;斗栱，又稱斗拱、枓栱、斗科、鋪作（宋《營造法式》），是在屋頂和梁枋之間的木構件，用於支撐挑出的屋檐。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/arch/birds-eye-view-of-ancient-chinese-architecture-ii/%E5%96%84%E5%8C%96%E5%AF%BA%E6%96%97%E6%A0%B1.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;center&gt;圖：山西善化寺大雄寶殿斗栱（實地拍攝）&lt;/center&gt;</summary>
+    
+    
+    
+    
+    <category term="建築" scheme="https://tsunhua.github.io/tags/%E5%BB%BA%E7%AF%89/"/>
+    
+    <category term="中國建築" scheme="https://tsunhua.github.io/tags/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89/"/>
+    
+  </entry>
   
   <entry>
     <title>中國古代建築鳥瞰（一）：構架及屋頂</title>
@@ -453,49 +495,6 @@
     <category term="Go" scheme="https://tsunhua.github.io/tags/Go/"/>
     
     <category term="pprof" scheme="https://tsunhua.github.io/tags/pprof/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>比較 JSON 和 protobuf 並介紹 protobuf編碼、語法及 protobuf over HTTP 示例</title>
-    <link href="https://tsunhua.github.io/it/common/protobuf-intro/"/>
-    <id>https://tsunhua.github.io/it/common/protobuf-intro/</id>
-    <published>2021-11-21T06:12:51.000Z</published>
-    <updated>2025-08-27T11:25:43.456Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Protocol Buffers&lt;code&gt;（簡稱 protobuf）&lt;/code&gt;，是 Google 推出的一種數據交換格式，採用 Varint 和 ZigZag 等二進制編碼，數據壓縮效果顯著，可用來傳輸數據或持久化數據。&lt;/p&gt;
-&lt;h2 id=&quot;JSON-是什麼？&quot;&gt;&lt;a href=&quot;#JSON-是什麼？&quot; class=&quot;headerlink&quot; title=&quot;JSON 是什麼？&quot;&gt;&lt;/a&gt;JSON 是什麼？&lt;/h2&gt;&lt;p&gt;JSON 全稱爲 JavaScript Object Notation&lt;code&gt;（JavaScript對象標記）&lt;/code&gt;，即 JS對象的字符串表示。其採用文本編碼，是現今最通用的數據交換格式。2001年3月，State Software公司的聯合創始人設計了此種格式，並隨後進行了標準化。現在有 ECMA-404（2013年）和 RFC-8259（2017年）兩種標準。&lt;/p&gt;
-&lt;h2 id=&quot;protobuf-是什麼？&quot;&gt;&lt;a href=&quot;#protobuf-是什麼？&quot; class=&quot;headerlink&quot; title=&quot;protobuf 是什麼？&quot;&gt;&lt;/a&gt;protobuf 是什麼？&lt;/h2&gt;&lt;p&gt;protobuf 全稱爲 Protocol Buffers&lt;code&gt;（“協議緩衝”）&lt;/code&gt;，是一種數據壓縮性能優秀的數據存儲和交換格式。其採用二進制編碼，通常跟 gRPC 一起使用。&lt;/p&gt;
-&lt;p&gt;2001年 Google公司內部誕生了proto1版本，並隨後在2008年以BSD協議開源了proto2，2016年釋出proto3正式版。&lt;/p&gt;
-&lt;p&gt;對於 proto2，官方推出了針對 C++、Java、C# 和 Python 語言的 protobuf編譯器 protoc；而在 proto3 中，增加了對 Dart、GO、Kotlin 和 Ruby 的官方支持。另外，第三方有提供對 JavaScript 和 PHP 等等語言的支持。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
-    
-    <category term="protobuf" scheme="https://tsunhua.github.io/tags/protobuf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>關於我存在的一點思考</title>
-    <link href="https://tsunhua.github.io/essay/think-about-me/"/>
-    <id>https://tsunhua.github.io/essay/think-about-me/</id>
-    <published>2021-11-09T22:35:32.000Z</published>
-    <updated>2025-08-27T11:25:43.386Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;過去我時常在想一個問題，就是：人生有何意義？&lt;/p&gt;
-&lt;p&gt;我問父母，父母告訴我三頓有得吃就好了；&lt;br&gt;我問老師，老師告訴我這不用考；&lt;br&gt;我問書本，書本說回首往事的時候不會後悔；&lt;br&gt;我問佛陀，佛陀拈花微笑不語。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
-    
-    <category term="我思" scheme="https://tsunhua.github.io/tags/%E6%88%91%E6%80%9D/"/>
     
   </entry>
   
