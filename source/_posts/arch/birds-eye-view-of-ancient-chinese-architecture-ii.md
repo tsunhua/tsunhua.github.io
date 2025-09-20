@@ -1,5 +1,5 @@
 ---
-title: 中國古代建築鳥瞰之二：斗栱
+title: 中國古代建築鳥瞰（二）：斗栱
 p: arch/birds-eye-view-of-ancient-chinese-architecture-ii.md
 date: 2025-09-20 20:51:00
 tags:
