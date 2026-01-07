@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>不輟集</title>
-  <icon>https://blog.tsunhualim.top/favicon.ico</icon>
+  <icon>https://tsunhua.github.io/favicon.ico</icon>
   <subtitle>Keep Yourself Alive</subtitle>
-  <link href="https://blog.tsunhualim.top/atom.xml" rel="self"/>
+  <link href="https://tsunhua.github.io/atom.xml" rel="self"/>
   
-  <link href="https://blog.tsunhualim.top/"/>
-  <updated>2025-07-12T02:56:37.747Z</updated>
-  <id>https://blog.tsunhualim.top/</id>
+  <link href="https://tsunhua.github.io/"/>
+  <updated>2026-01-07T12:15:36.193Z</updated>
+  <id>https://tsunhua.github.io/</id>
   
   <author>
     <name>Hua</name>
@@ -17,9 +17,86 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>介紹一個意在連結所有語言的網站：LangMap</title>
+    <link href="https://tsunhua.github.io/essay/langmap-intro/"/>
+    <id>https://tsunhua.github.io/essay/langmap-intro/</id>
+    <published>2026-01-06T14:01:00.000Z</published>
+    <updated>2026-01-07T12:15:36.193Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;保護語言多樣性最好的方式就是多學幾門新語言。根據教科文組織的統計，包括口語和手語在內，世界上共有 8324種語言，其中還在使用的大概有 7000種，並且&lt;strong&gt;每兩周就有一種語言消失&lt;/strong&gt;。消失的不僅是語言本身，還有再此之上的文化，那些與古老的過去連結的聲音和符號，那些流傳下來的鮮活的表達，彷彿在世界上不曾存在過。&lt;/p&gt;
+&lt;p&gt;為此，我特地創建了一個網站，意在連結所有的語言，不管大語種還是小語種，不管是標準語還是方言，不管是用什麼書寫方式，都歡迎連結起來。這樣，即使再小眾的語言都能被看見和被學習。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/essay/langmap-intro/langmap-home.png&quot; alt=&quot;LangMap主頁&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+    <category term="LangMap" scheme="https://tsunhua.github.io/tags/LangMap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中國古代建築鳥瞰（二）：斗栱</title>
+    <link href="https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture-ii/"/>
+    <id>https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture-ii/</id>
+    <published>2025-09-20T12:51:00.000Z</published>
+    <updated>2025-09-24T08:31:02.735Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h1&gt;&lt;p&gt;斗栱，又稱斗拱、枓栱、斗科、鋪作（宋《營造法式》），是在屋頂和梁枋之間的木構件，用於支撐挑出的屋檐。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/arch/birds-eye-view-of-ancient-chinese-architecture-ii/%E5%96%84%E5%8C%96%E5%AF%BA%E6%96%97%E6%A0%B1.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;center&gt;圖：山西善化寺大雄寶殿斗栱（實地拍攝）&lt;/center&gt;</summary>
+    
+    
+    
+    
+    <category term="建築" scheme="https://tsunhua.github.io/tags/%E5%BB%BA%E7%AF%89/"/>
+    
+    <category term="中國建築" scheme="https://tsunhua.github.io/tags/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中國古代建築鳥瞰（一）：構架及屋頂</title>
+    <link href="https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture/"/>
+    <id>https://tsunhua.github.io/arch/birds-eye-view-of-ancient-chinese-architecture/</id>
+    <published>2025-08-27T11:36:00.000Z</published>
+    <updated>2025-09-24T08:31:02.771Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;主要特徵&quot;&gt;&lt;a href=&quot;#主要特徵&quot; class=&quot;headerlink&quot; title=&quot;主要特徵&quot;&gt;&lt;/a&gt;主要特徵&lt;/h1&gt;&lt;p&gt;梁思成先生在《中國建築史》中概述了中國古代建築的主要特徵：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;結構取法方面：&lt;ol&gt;
+&lt;li&gt;以木料為主要構材。&lt;/li&gt;
+&lt;li&gt;歷用構架制之結構原則，即「梁柱式建築」之「構架制」，牆倒屋不塌。&lt;/li&gt;
+&lt;li&gt;以斗拱為結構之關鍵，並為度量單位。&lt;/li&gt;
+&lt;li&gt;外部輪廓之特異，包括：翼展之屋頂、崇厚之階基、玲瓏木質之屋身、院落之組織、彩色之施用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;環境思想方面：&lt;ol&gt;
+&lt;li&gt;不求原物長存之觀念。&lt;/li&gt;
+&lt;li&gt;建築活動受道德觀念之制裁。&lt;/li&gt;
+&lt;li&gt;著重部署之規制。&lt;/li&gt;
+&lt;li&gt;建築之術，師徒傳授，不重書籍。唯有官修的兩部書籍流傳至今，即宋李誡《營造法式》和清工部《工程做法則例》。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+    <category term="建築" scheme="https://tsunhua.github.io/tags/%E5%BB%BA%E7%AF%89/"/>
+    
+    <category term="中國建築" scheme="https://tsunhua.github.io/tags/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89/"/>
+    
+  </entry>
+  
+  <entry>
     <title>五條人新曲《两人相拍跋落溪》歌詞中的「元差」應是「員差」</title>
-    <link href="https://blog.tsunhualim.top/language/min/ngiang-chhe/"/>
-    <id>https://blog.tsunhualim.top/language/min/ngiang-chhe/</id>
+    <link href="https://tsunhua.github.io/language/min/ngiang-chhe/"/>
+    <id>https://tsunhua.github.io/language/min/ngiang-chhe/</id>
     <published>2025-07-09T14:40:00.000Z</published>
     <updated>2025-07-12T02:56:37.747Z</updated>
     
@@ -34,18 +111,18 @@
     
     
     
-    <category term="閩南語" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
+    <category term="閩南語" scheme="https://tsunhua.github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
     
-    <category term="五條人" scheme="https://blog.tsunhualim.top/tags/%E4%BA%94%E6%A2%9D%E4%BA%BA/"/>
+    <category term="五條人" scheme="https://tsunhua.github.io/tags/%E4%BA%94%E6%A2%9D%E4%BA%BA/"/>
     
-    <category term="海豐話" scheme="https://blog.tsunhualim.top/tags/%E6%B5%B7%E8%B1%90%E8%A9%B1/"/>
+    <category term="海豐話" scheme="https://tsunhua.github.io/tags/%E6%B5%B7%E8%B1%90%E8%A9%B1/"/>
     
   </entry>
   
   <entry>
     <title>書寫漢語的另一種方式——表音方塊字「補字」的誕生</title>
-    <link href="https://blog.tsunhualim.top/language/han/another-way-to-write-chinese/"/>
-    <id>https://blog.tsunhualim.top/language/han/another-way-to-write-chinese/</id>
+    <link href="https://tsunhua.github.io/language/han/another-way-to-write-chinese/"/>
+    <id>https://tsunhua.github.io/language/han/another-way-to-write-chinese/</id>
     <published>2025-06-14T16:42:00.000Z</published>
     <updated>2025-06-15T09:46:27.338Z</updated>
     
@@ -68,18 +145,18 @@
     
     
     
-    <category term="漢語" scheme="https://blog.tsunhualim.top/tags/%E6%BC%A2%E8%AA%9E/"/>
+    <category term="漢語" scheme="https://tsunhua.github.io/tags/%E6%BC%A2%E8%AA%9E/"/>
     
-    <category term="輔字" scheme="https://blog.tsunhualim.top/tags/%E8%BC%94%E5%AD%97/"/>
+    <category term="輔字" scheme="https://tsunhua.github.io/tags/%E8%BC%94%E5%AD%97/"/>
     
-    <category term="表音方塊字" scheme="https://blog.tsunhualim.top/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/"/>
+    <category term="表音方塊字" scheme="https://tsunhua.github.io/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/"/>
     
   </entry>
   
   <entry>
     <title>做一個「不成材」的人</title>
-    <link href="https://blog.tsunhualim.top/essay/be-myself/"/>
-    <id>https://blog.tsunhualim.top/essay/be-myself/</id>
+    <link href="https://tsunhua.github.io/essay/be-myself/"/>
+    <id>https://tsunhua.github.io/essay/be-myself/</id>
     <published>2024-11-22T14:22:00.000Z</published>
     <updated>2025-06-14T16:18:37.995Z</updated>
     
@@ -90,16 +167,16 @@
     
     
     
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
-    <category term="思考" scheme="https://blog.tsunhualim.top/tags/%E6%80%9D%E8%80%83/"/>
+    <category term="思考" scheme="https://tsunhua.github.io/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
   <entry>
     <title>Python 程序內存管理及OOM問題分析</title>
-    <link href="https://blog.tsunhualim.top/it/python/python-memory/"/>
-    <id>https://blog.tsunhualim.top/it/python/python-memory/</id>
+    <link href="https://tsunhua.github.io/it/python/python-memory/"/>
+    <id>https://tsunhua.github.io/it/python/python-memory/</id>
     <published>2024-08-03T14:38:00.000Z</published>
     <updated>2025-06-14T16:18:38.129Z</updated>
     
@@ -112,16 +189,16 @@
     
     
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="Python" scheme="https://blog.tsunhualim.top/tags/Python/"/>
+    <category term="Python" scheme="https://tsunhua.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python 程序如何做到高效且穩健？</title>
-    <link href="https://blog.tsunhualim.top/it/python/python-efficient/"/>
-    <id>https://blog.tsunhualim.top/it/python/python-efficient/</id>
+    <link href="https://tsunhua.github.io/it/python/python-efficient/"/>
+    <id>https://tsunhua.github.io/it/python/python-efficient/</id>
     <published>2024-07-28T02:49:00.000Z</published>
     <updated>2025-06-14T16:18:38.129Z</updated>
     
@@ -132,16 +209,16 @@
     
     
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="Python" scheme="https://blog.tsunhualim.top/tags/Python/"/>
+    <category term="Python" scheme="https://tsunhua.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>2023年頭一日</title>
-    <link href="https://blog.tsunhualim.top/essay/first-day-in-2023/"/>
-    <id>https://blog.tsunhualim.top/essay/first-day-in-2023/</id>
+    <link href="https://tsunhua.github.io/essay/first-day-in-2023/"/>
+    <id>https://tsunhua.github.io/essay/first-day-in-2023/</id>
     <published>2023-01-01T15:36:42.000Z</published>
     <updated>2025-06-14T16:18:37.996Z</updated>
     
@@ -153,16 +230,16 @@
     
     
     
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
-    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    <category term="閩語文" scheme="https://tsunhua.github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
   </entry>
   
   <entry>
     <title>穢着新冠之後</title>
-    <link href="https://blog.tsunhualim.top/essay/covid19-and-me/"/>
-    <id>https://blog.tsunhualim.top/essay/covid19-and-me/</id>
+    <link href="https://tsunhua.github.io/essay/covid19-and-me/"/>
+    <id>https://tsunhua.github.io/essay/covid19-and-me/</id>
     <published>2022-12-24T14:56:42.000Z</published>
     <updated>2025-06-14T16:18:37.995Z</updated>
     
@@ -174,18 +251,18 @@
     
     
     
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
-    <category term="新冠" scheme="https://blog.tsunhualim.top/tags/%E6%96%B0%E5%86%A0/"/>
+    <category term="新冠" scheme="https://tsunhua.github.io/tags/%E6%96%B0%E5%86%A0/"/>
     
-    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
+    <category term="閩語文" scheme="https://tsunhua.github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
   </entry>
   
   <entry>
     <title>新時代生存守則</title>
-    <link href="https://blog.tsunhualim.top/essay/live-in-the-new-era/"/>
-    <id>https://blog.tsunhualim.top/essay/live-in-the-new-era/</id>
+    <link href="https://tsunhua.github.io/essay/live-in-the-new-era/"/>
+    <id>https://tsunhua.github.io/essay/live-in-the-new-era/</id>
     <published>2022-11-04T14:34:28.000Z</published>
     <updated>2025-06-14T16:18:37.996Z</updated>
     
@@ -197,16 +274,16 @@
     
     
     
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
-    <category term="新時代" scheme="https://blog.tsunhualim.top/tags/%E6%96%B0%E6%99%82%E4%BB%A3/"/>
+    <category term="新時代" scheme="https://tsunhua.github.io/tags/%E6%96%B0%E6%99%82%E4%BB%A3/"/>
     
   </entry>
   
   <entry>
     <title>軟件設計模式·復用·變化</title>
-    <link href="https://blog.tsunhualim.top/it/common/software-design-pattern/"/>
-    <id>https://blog.tsunhualim.top/it/common/software-design-pattern/</id>
+    <link href="https://tsunhua.github.io/it/common/software-design-pattern/"/>
+    <id>https://tsunhua.github.io/it/common/software-design-pattern/</id>
     <published>2022-07-31T13:11:51.000Z</published>
     <updated>2025-06-14T16:18:38.067Z</updated>
     
@@ -219,16 +296,16 @@
     
     
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="設計模式" scheme="https://blog.tsunhualim.top/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
+    <category term="設計模式" scheme="https://tsunhua.github.io/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>軟件架構與康德的哲學理論</title>
-    <link href="https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/"/>
-    <id>https://blog.tsunhualim.top/it/common/software-architecture-and-kants-philosophy/</id>
+    <link href="https://tsunhua.github.io/it/common/software-architecture-and-kants-philosophy/"/>
+    <id>https://tsunhua.github.io/it/common/software-architecture-and-kants-philosophy/</id>
     <published>2022-07-16T15:45:26.000Z</published>
     <updated>2025-06-14T16:18:38.063Z</updated>
     
@@ -245,18 +322,18 @@
     
     
     
-    <category term="哲學" scheme="https://blog.tsunhualim.top/tags/%E5%93%B2%E5%AD%B8/"/>
+    <category term="哲學" scheme="https://tsunhua.github.io/tags/%E5%93%B2%E5%AD%B8/"/>
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="軟件架構" scheme="https://blog.tsunhualim.top/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/"/>
+    <category term="軟件架構" scheme="https://tsunhua.github.io/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/"/>
     
   </entry>
   
   <entry>
     <title>觀電影《飛越瘋人院》後的一點思考</title>
-    <link href="https://blog.tsunhualim.top/essay/thinking-about-the-cuckoos-nest/"/>
-    <id>https://blog.tsunhualim.top/essay/thinking-about-the-cuckoos-nest/</id>
+    <link href="https://tsunhua.github.io/essay/thinking-about-the-cuckoos-nest/"/>
+    <id>https://tsunhua.github.io/essay/thinking-about-the-cuckoos-nest/</id>
     <published>2022-07-13T15:21:00.000Z</published>
     <updated>2025-06-14T16:18:38.028Z</updated>
     
@@ -267,16 +344,16 @@
     
     
     
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
-    <category term="電影" scheme="https://blog.tsunhualim.top/tags/%E9%9B%BB%E5%BD%B1/"/>
+    <category term="電影" scheme="https://tsunhua.github.io/tags/%E9%9B%BB%E5%BD%B1/"/>
     
   </entry>
   
   <entry>
     <title>《純粹理性批判》閱讀筆記一：導言</title>
-    <link href="https://blog.tsunhualim.top/essay/criteque-of-pure-reason-i/"/>
-    <id>https://blog.tsunhualim.top/essay/criteque-of-pure-reason-i/</id>
+    <link href="https://tsunhua.github.io/essay/criteque-of-pure-reason-i/"/>
+    <id>https://tsunhua.github.io/essay/criteque-of-pure-reason-i/</id>
     <published>2022-07-10T13:41:00.000Z</published>
     <updated>2025-06-14T16:18:37.996Z</updated>
     
@@ -294,16 +371,16 @@
     
     
     
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
     
-    <category term="哲學" scheme="https://blog.tsunhualim.top/tags/%E5%93%B2%E5%AD%B8/"/>
+    <category term="哲學" scheme="https://tsunhua.github.io/tags/%E5%93%B2%E5%AD%B8/"/>
     
   </entry>
   
   <entry>
     <title>Go內存模型</title>
-    <link href="https://blog.tsunhualim.top/it/go/go-memory-model/"/>
-    <id>https://blog.tsunhualim.top/it/go/go-memory-model/</id>
+    <link href="https://tsunhua.github.io/it/go/go-memory-model/"/>
+    <id>https://tsunhua.github.io/it/go/go-memory-model/</id>
     <published>2021-12-31T02:50:00.000Z</published>
     <updated>2025-06-14T16:18:38.074Z</updated>
     
@@ -315,16 +392,16 @@
     
     
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
+    <category term="Go" scheme="https://tsunhua.github.io/tags/Go/"/>
     
   </entry>
   
   <entry>
     <title>網絡I/O</title>
-    <link href="https://blog.tsunhualim.top/it/common/net-io/"/>
-    <id>https://blog.tsunhualim.top/it/common/net-io/</id>
+    <link href="https://tsunhua.github.io/it/common/net-io/"/>
+    <id>https://tsunhua.github.io/it/common/net-io/</id>
     <published>2021-12-29T08:30:00.000Z</published>
     <updated>2025-06-14T16:18:38.061Z</updated>
     
@@ -339,16 +416,16 @@
     
     
     
-    <category term="net" scheme="https://blog.tsunhualim.top/tags/net/"/>
+    <category term="net" scheme="https://tsunhua.github.io/tags/net/"/>
     
-    <category term="TODO" scheme="https://blog.tsunhualim.top/tags/TODO/"/>
+    <category term="TODO" scheme="https://tsunhua.github.io/tags/TODO/"/>
     
   </entry>
   
   <entry>
     <title>Go調度器</title>
-    <link href="https://blog.tsunhualim.top/it/go/go-scheduler/"/>
-    <id>https://blog.tsunhualim.top/it/go/go-scheduler/</id>
+    <link href="https://tsunhua.github.io/it/go/go-scheduler/"/>
+    <id>https://tsunhua.github.io/it/go/go-scheduler/</id>
     <published>2021-12-27T03:00:00.000Z</published>
     <updated>2025-06-14T16:18:38.074Z</updated>
     
@@ -364,16 +441,16 @@
     
     
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
+    <category term="Go" scheme="https://tsunhua.github.io/tags/Go/"/>
     
   </entry>
   
   <entry>
     <title>Unicode 字符集及UTF編碼入門</title>
-    <link href="https://blog.tsunhualim.top/it/common/unicode/"/>
-    <id>https://blog.tsunhualim.top/it/common/unicode/</id>
+    <link href="https://tsunhua.github.io/it/common/unicode/"/>
+    <id>https://tsunhua.github.io/it/common/unicode/</id>
     <published>2021-12-20T13:06:00.000Z</published>
     <updated>2025-06-14T16:18:38.067Z</updated>
     
@@ -392,14 +469,14 @@
     
     
     
-    <category term="Unicode" scheme="https://blog.tsunhualim.top/tags/Unicode/"/>
+    <category term="Unicode" scheme="https://tsunhua.github.io/tags/Unicode/"/>
     
   </entry>
   
   <entry>
     <title>介紹Go程序性能分析工具 pprof</title>
-    <link href="https://blog.tsunhualim.top/it/go/go-tool-pprof/"/>
-    <id>https://blog.tsunhualim.top/it/go/go-tool-pprof/</id>
+    <link href="https://tsunhua.github.io/it/go/go-tool-pprof/"/>
+    <id>https://tsunhua.github.io/it/go/go-tool-pprof/</id>
     <published>2021-12-04T12:51:15.000Z</published>
     <updated>2025-06-14T16:18:38.075Z</updated>
     
@@ -413,73 +490,11 @@
     
     
     
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
+    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
-    <category term="Go" scheme="https://blog.tsunhualim.top/tags/Go/"/>
+    <category term="Go" scheme="https://tsunhua.github.io/tags/Go/"/>
     
-    <category term="pprof" scheme="https://blog.tsunhualim.top/tags/pprof/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>比較 JSON 和 protobuf 並介紹 protobuf編碼、語法及 protobuf over HTTP 示例</title>
-    <link href="https://blog.tsunhualim.top/it/common/protobuf-intro/"/>
-    <id>https://blog.tsunhualim.top/it/common/protobuf-intro/</id>
-    <published>2021-11-21T06:12:51.000Z</published>
-    <updated>2025-06-14T16:18:38.061Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Protocol Buffers&lt;code&gt;（簡稱 protobuf）&lt;/code&gt;，是 Google 推出的一種數據交換格式，採用 Varint 和 ZigZag 等二進制編碼，數據壓縮效果顯著，可用來傳輸數據或持久化數據。&lt;/p&gt;
-&lt;h2 id=&quot;JSON-是什麼？&quot;&gt;&lt;a href=&quot;#JSON-是什麼？&quot; class=&quot;headerlink&quot; title=&quot;JSON 是什麼？&quot;&gt;&lt;/a&gt;JSON 是什麼？&lt;/h2&gt;&lt;p&gt;JSON 全稱爲 JavaScript Object Notation&lt;code&gt;（JavaScript對象標記）&lt;/code&gt;，即 JS對象的字符串表示。其採用文本編碼，是現今最通用的數據交換格式。2001年3月，State Software公司的聯合創始人設計了此種格式，並隨後進行了標準化。現在有 ECMA-404（2013年）和 RFC-8259（2017年）兩種標準。&lt;/p&gt;
-&lt;h2 id=&quot;protobuf-是什麼？&quot;&gt;&lt;a href=&quot;#protobuf-是什麼？&quot; class=&quot;headerlink&quot; title=&quot;protobuf 是什麼？&quot;&gt;&lt;/a&gt;protobuf 是什麼？&lt;/h2&gt;&lt;p&gt;protobuf 全稱爲 Protocol Buffers&lt;code&gt;（“協議緩衝”）&lt;/code&gt;，是一種數據壓縮性能優秀的數據存儲和交換格式。其採用二進制編碼，通常跟 gRPC 一起使用。&lt;/p&gt;
-&lt;p&gt;2001年 Google公司內部誕生了proto1版本，並隨後在2008年以BSD協議開源了proto2，2016年釋出proto3正式版。&lt;/p&gt;
-&lt;p&gt;對於 proto2，官方推出了針對 C++、Java、C# 和 Python 語言的 protobuf編譯器 protoc；而在 proto3 中，增加了對 Dart、GO、Kotlin 和 Ruby 的官方支持。另外，第三方有提供對 JavaScript 和 PHP 等等語言的支持。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="代碼家" scheme="https://blog.tsunhualim.top/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
-    
-    <category term="protobuf" scheme="https://blog.tsunhualim.top/tags/protobuf/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>關於我存在的一點思考</title>
-    <link href="https://blog.tsunhualim.top/essay/think-about-me/"/>
-    <id>https://blog.tsunhualim.top/essay/think-about-me/</id>
-    <published>2021-11-09T22:35:32.000Z</published>
-    <updated>2025-06-14T16:18:38.026Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;過去我時常在想一個問題，就是：人生有何意義？&lt;/p&gt;
-&lt;p&gt;我問父母，父母告訴我三頓有得吃就好了；&lt;br&gt;我問老師，老師告訴我這不用考；&lt;br&gt;我問書本，書本說回首往事的時候不會後悔；&lt;br&gt;我問佛陀，佛陀拈花微笑不語。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="隨筆" scheme="https://blog.tsunhualim.top/tags/%E9%9A%A8%E7%AD%86/"/>
-    
-    <category term="我思" scheme="https://blog.tsunhualim.top/tags/%E6%88%91%E6%80%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nǹg uá khòu-thâu(鑽我褲頭)</title>
-    <link href="https://blog.tsunhualim.top/essay/nng-ua-khou-thau/"/>
-    <id>https://blog.tsunhualim.top/essay/nng-ua-khou-thau/</id>
-    <published>2021-09-29T13:38:48.000Z</published>
-    <updated>2025-06-14T16:18:37.997Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;Lâu Lêng(劉伶) sâinn&lt;code&gt;--&lt;/code&gt;sî tsia̍h tsiú huàng-tsòng, ǔ&lt;code&gt;--&lt;/code&gt;sî nā tshù-lǎi tǹg-pe̍h-pe̍h. Nâng thói-tioh i, tsang i kiàng-siàu, A-lêng(阿伶) tànn: “uá ínn thinn-tī uî lâu-pâng, pâng-kainn uî khòu-thâu, níng-hiá-nâng nǹg uá khòu-thâu muā&lt;code&gt;--&lt;/code&gt;âi mō?”&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="閩語文" scheme="https://blog.tsunhualim.top/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
-    
-    <category term="魏晉風流" scheme="https://blog.tsunhualim.top/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/"/>
+    <category term="pprof" scheme="https://tsunhua.github.io/tags/pprof/"/>
     
   </entry>
   
