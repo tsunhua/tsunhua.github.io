@@ -113,6 +113,70 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-it/java/java-jvm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/it/java/java-jvm/" class="article-date">
+  <time datetime="2020-11-18T03:37:00.000Z" itemprop="datePublished">2020-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/it/java/java-jvm/">JVM</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JVM(Java Virtual Machine)，即 Java 虛擬機，是操作系統上的一個程序，用於編譯、運行Java程序，使得 Java程序可以跨平台。關於 JVM 我們著重在內存區域、類的加載、對象的創建和內存管理四個部分。</p>
+<p>內存區域分爲堆、方法區、程序計數器、虛擬機棧和本地方法棧。其中堆和方法區是線程共享的，程序計數器、虛擬機棧和本地方法棧則是線程私有的。堆是一大塊內存，幾乎所有的對象實例都在這裡分配；方法區在JVM 規範中是堆的一部分，不同的 JVM 可以有不同的實現，就 HotSpot VM 而言，在 JDK1.8 之前使用永久代實現方法區，在JDK1.8及之後使用直接內存上的元空間實現；程序計數器存放下一條指令的地址；虛擬機棧的每一個棧幀保存著方法的局部變量表、操作數棧、動態連接和方法返回地址；本地方法棧類似虛擬機棧，不過是調用 native 方法，在 HotSpot VM中虛擬機棧和本地方法棧合而爲一。</p>
+<p>類的生命週期分爲加載、連接、初始化、使用和卸載四個過程，其中：</p>
+<ol>
+<li>加載：將 .class 文件以二進制字節流方式讀入虛擬機，並在方法區給靜態變量分配空間，在堆中生成 Class 對象作爲訪問靜態變量的入口。</li>
+<li>連接：分爲驗證、準備和解析三個階段，驗證階段驗證字節碼文件的合規性，準備階段將類變量賦予初始零值，解析階段將常量池中的符號引用轉爲直接引用。</li>
+<li>初始化：執行 <code>&lt;clinit&gt;</code> 方法。</li>
+</ol>
+<p>對象的創建過程依次是類加載檢查、分配內存、初始化零值、設置對象頭和執行<code>&lt;init&gt;</code> 方法。</p>
+<ol>
+<li>類加載檢查：檢查類是否加載完畢。</li>
+<li>分配內存：對象實例一般會分配在堆中，根據採用的垃圾回收器會選擇指針碰撞或空閒類表方式分配。JDK1.7之後啟用逃逸分析可以將未逃逸的對象分配到棧中。</li>
+<li>初始化零值：給對象的成員變量設置初始的零值。</li>
+<li>設置對象頭：對象頭包括所屬的類、對象哈希碼、GC分代年齡和鎖信息。</li>
+<li>執行 <code>&lt;init&gt;</code> 方法。</li>
+</ol>
+<p>Java 是自動內存管理的，內存的分配和回收由JVM進行控制。通常使用分代內存管理，分新生代、老年代和永久代(JDK1.8及之後無永久代)，新對象優先在新生代 Eden 區分配，大對象直接分配到老年代，持續存活的對象也會被轉移到老年代。</p>
+<p>內存回收涉及垃圾的判定、垃圾收集算法和垃圾收集器。</p>
+<p>判定垃圾通常有引用計數法和可達性分析算法。</p>
+<p>垃圾收集(GC)通常分部分收集(Partial GC)和整堆收集(Full GC)，部分收集分新生代收集(Minor GC / Young GC)、老年代收集(Major GC / Old GC)和混合收集(Mixed GC)</p>
+<p>垃圾收集算法通常有標記-清除算法、複製算法、標記-整理算法和分代收集算法。</p>
+<p>垃圾收集器中 ParNew 最早採用並行收集，CMS 最早採用並發收集。JDK1.8 中默認使用 Parallel Scavenge(新生代) + Parallel Old(老年代) 收集器，JDK9之後默認使用 G1 收集器。</p>
+        
+          <p class="article-more-link">
+            <a href="/it/java/java-jvm/#more">接續讀落</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://tsunhua.github.io/it/java/java-jvm/" data-id="cmbwgq5yo001r7ofqbaa864nz" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-language/min/gahzi-oi-hung-lui-ci-biao" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/language/min/gahzi-oi-hung-lui-ci-biao/" class="article-date">
@@ -333,55 +397,11 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-language/min/teochew-kahtsi-vowel" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/language/min/teochew-kahtsi-vowel/" class="article-date">
-  <time datetime="2020-11-04T14:44:00.000Z" itemprop="datePublished">2020-11-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/language/min/teochew-kahtsi-vowel/">潮州話與甲子話韻母差異（稿）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/language/min/teochew-kahtsi-vowel/202010042112.png" alt></p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文所說的潮州話指的是狹義的潮州話，即潮州市內通行的閩南語，甲子話則是指陸豐市甲子鎮內通行的閩南語。<br>通過比較，發現甲子話沒有潮州話中的 e、eh、eng、ou、iou、iouh、uê、uêh、uên、uêng、uêg、iê、iêh、iên、iêng、iêg 等韻，而與之相對應的是 u、uh、ng、ao、iao、iaoh、oi、oih、oin、uang、êng、iang、oig、io、ioh、ion、iang、iag 等等韻。</p>
-        
-          <p class="article-more-link">
-            <a href="/language/min/teochew-kahtsi-vowel/#more">接續讀落</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://tsunhua.github.io/language/min/teochew-kahtsi-vowel/" data-id="cmbwgq5z0004p7ofq4igb7oqv" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%BD%AE%E5%B7%9E%E8%A9%B1/" rel="tag">潮州話</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/" rel="tag">甲子話</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" rel="tag">閩南語</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/7/">« 上一頁</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/9/">下一頁 »</a>
+    <a class="extend prev" rel="prev" href="/page/7/">« 上一頁</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/9/">下一頁 »</a>
   </nav>
 
 </section>
@@ -417,6 +437,10 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/project/losttouch/privacy-policy/">Privacy Policy for LostTouch (不断联)</a>
+          </li>
+        
+          <li>
             <a href="/essay/langmap-intro/">介紹一個意在連結所有語言的網站——LangMap</a>
           </li>
         
@@ -432,10 +456,6 @@ ga('send', 'pageview');
             <a href="/language/min/ngiang-chhe/">五條人新曲《两人相拍跋落溪》歌詞中的「元差」應是「員差」</a>
           </li>
         
-          <li>
-            <a href="/language/han/another-way-to-write-chinese/">書寫漢語的另一種方式——表音方塊字「補字」的誕生</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -445,7 +465,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">專輯</h3>
     <div class="widget tagcloud">
-      <!-- <a href="/tags/Go/" style="font-size: 16.67px;">Go</a> <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 13.33px;">Java</a> <a href="/tags/LangMap/" style="font-size: 10px;">LangMap</a> <a href="/tags/Python/" style="font-size: 11.67px;">Python</a> <a href="/tags/TODO/" style="font-size: 11.67px;">TODO</a> <a href="/tags/Unicode/" style="font-size: 10px;">Unicode</a> <a href="/tags/net/" style="font-size: 10px;">net</a> <a href="/tags/pprof/" style="font-size: 10px;">pprof</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89/" style="font-size: 11.67px;">中國建築</a> <a href="/tags/%E4%BA%94%E6%A2%9D%E4%BA%BA/" style="font-size: 10px;">五條人</a> <a href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" style="font-size: 20px;">代碼家</a> <a href="/tags/%E5%8D%81%E4%BA%8C%E7%94%9F%E8%82%96/" style="font-size: 10px;">十二生肖</a> <a href="/tags/%E5%93%B2%E5%AD%B8/" style="font-size: 11.67px;">哲學</a> <a href="/tags/%E5%B9%B2%E6%94%AF%E7%B4%80%E5%B9%B4%E6%B3%95/" style="font-size: 10px;">干支紀年法</a> <a href="/tags/%E5%BB%BA%E7%AF%89/" style="font-size: 11.67px;">建築</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 10px;">思考</a> <a href="/tags/%E6%88%91%E6%80%9D/" style="font-size: 10px;">我思</a> <a href="/tags/%E6%96%B0%E5%86%A0/" style="font-size: 10px;">新冠</a> <a href="/tags/%E6%96%B0%E6%99%82%E4%BB%A3/" style="font-size: 10px;">新時代</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 10px;">日本語</a> <a href="/tags/%E6%B5%B7%E8%B1%90%E8%A9%B1/" style="font-size: 10px;">海豐話</a> <a href="/tags/%E6%BC%A2%E8%AA%9E/" style="font-size: 10px;">漢語</a> <a href="/tags/%E6%BD%AE%E5%8A%87/" style="font-size: 10px;">潮劇</a> <a href="/tags/%E6%BD%AE%E5%B7%9E%E8%A9%B1/" style="font-size: 11.67px;">潮州話</a> <a href="/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/" style="font-size: 13.33px;">甲子話</a> <a href="/tags/%E8%81%86%E8%81%BD%E9%9F%B3%E6%A8%82/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/" style="font-size: 10px;">表音方塊字</a> <a href="/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">設計模式</a> <a href="/tags/%E8%A9%A9%E7%B6%93/" style="font-size: 10px;">詩經</a> <a href="/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/" style="font-size: 10px;">軟件架構</a> <a href="/tags/%E8%BC%94%E5%AD%97/" style="font-size: 10px;">輔字</a> <a href="/tags/%E9%81%8A%E8%A8%98/" style="font-size: 11.67px;">遊記</a> <a href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" style="font-size: 15px;">閩南語</a> <a href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" style="font-size: 15px;">閩語文</a> <a href="/tags/%E9%9A%A8%E7%AD%86/" style="font-size: 18.33px;">隨筆</a> <a href="/tags/%E9%9B%BB%E5%BD%B1/" style="font-size: 10px;">電影</a> <a href="/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/" style="font-size: 11.67px;">魏晉風流</a> -->
+      <!-- <a href="/tags/Go/" style="font-size: 16.67px;">Go</a> <a href="/tags/Hello/" style="font-size: 10px;">Hello</a> <a href="/tags/Java/" style="font-size: 13.33px;">Java</a> <a href="/tags/LangMap/" style="font-size: 10px;">LangMap</a> <a href="/tags/Python/" style="font-size: 11.67px;">Python</a> <a href="/tags/TODO/" style="font-size: 11.67px;">TODO</a> <a href="/tags/Unicode/" style="font-size: 10px;">Unicode</a> <a href="/tags/losttouch/" style="font-size: 10px;">losttouch</a> <a href="/tags/net/" style="font-size: 10px;">net</a> <a href="/tags/pprof/" style="font-size: 10px;">pprof</a> <a href="/tags/project/" style="font-size: 10px;">project</a> <a href="/tags/protobuf/" style="font-size: 10px;">protobuf</a> <a href="/tags/%E4%B8%AD%E5%9C%8B%E5%BB%BA%E7%AF%89/" style="font-size: 11.67px;">中國建築</a> <a href="/tags/%E4%BA%94%E6%A2%9D%E4%BA%BA/" style="font-size: 10px;">五條人</a> <a href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" style="font-size: 20px;">代碼家</a> <a href="/tags/%E5%8D%81%E4%BA%8C%E7%94%9F%E8%82%96/" style="font-size: 10px;">十二生肖</a> <a href="/tags/%E5%93%B2%E5%AD%B8/" style="font-size: 11.67px;">哲學</a> <a href="/tags/%E5%B9%B2%E6%94%AF%E7%B4%80%E5%B9%B4%E6%B3%95/" style="font-size: 10px;">干支紀年法</a> <a href="/tags/%E5%BB%BA%E7%AF%89/" style="font-size: 11.67px;">建築</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 10px;">思考</a> <a href="/tags/%E6%88%91%E6%80%9D/" style="font-size: 10px;">我思</a> <a href="/tags/%E6%96%B0%E5%86%A0/" style="font-size: 10px;">新冠</a> <a href="/tags/%E6%96%B0%E6%99%82%E4%BB%A3/" style="font-size: 10px;">新時代</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 10px;">日本語</a> <a href="/tags/%E6%B5%B7%E8%B1%90%E8%A9%B1/" style="font-size: 10px;">海豐話</a> <a href="/tags/%E6%BC%A2%E8%AA%9E/" style="font-size: 10px;">漢語</a> <a href="/tags/%E6%BD%AE%E5%8A%87/" style="font-size: 10px;">潮劇</a> <a href="/tags/%E6%BD%AE%E5%B7%9E%E8%A9%B1/" style="font-size: 11.67px;">潮州話</a> <a href="/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/" style="font-size: 13.33px;">甲子話</a> <a href="/tags/%E8%81%86%E8%81%BD%E9%9F%B3%E6%A8%82/" style="font-size: 10px;">聆聽音樂</a> <a href="/tags/%E8%A1%A8%E9%9F%B3%E6%96%B9%E5%A1%8A%E5%AD%97/" style="font-size: 10px;">表音方塊字</a> <a href="/tags/%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">設計模式</a> <a href="/tags/%E8%A9%A9%E7%B6%93/" style="font-size: 10px;">詩經</a> <a href="/tags/%E8%BB%9F%E4%BB%B6%E6%9E%B6%E6%A7%8B/" style="font-size: 10px;">軟件架構</a> <a href="/tags/%E8%BC%94%E5%AD%97/" style="font-size: 10px;">輔字</a> <a href="/tags/%E9%81%8A%E8%A8%98/" style="font-size: 11.67px;">遊記</a> <a href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" style="font-size: 15px;">閩南語</a> <a href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" style="font-size: 15px;">閩語文</a> <a href="/tags/%E9%9A%A8%E7%AD%86/" style="font-size: 18.33px;">隨筆</a> <a href="/tags/%E9%9B%BB%E5%BD%B1/" style="font-size: 10px;">電影</a> <a href="/tags/%E9%AD%8F%E6%99%89%E9%A2%A8%E6%B5%81/" style="font-size: 11.67px;">魏晉風流</a> -->
       <ul class="classtest-list" itemprop="keywords"><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a><span class="classtest-list-count">15</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%9A%A8%E7%AD%86/" rel="tag">隨筆</a><span class="classtest-list-count">12</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/Go/" rel="tag">Go</a><span class="classtest-list-count">8</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%96%A9%E8%AA%9E%E6%96%87/" rel="tag">閩語文</a><span class="classtest-list-count">6</span></li><li class="classtest-list-item"><a class="classtest-list-link" href="/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/" rel="tag">閩南語</a><span class="classtest-list-count">6</span></li></ul>
     </div>
   </div>

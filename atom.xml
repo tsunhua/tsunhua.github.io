@@ -6,7 +6,7 @@
   <link href="https://tsunhua.github.io/atom.xml" rel="self"/>
   
   <link href="https://tsunhua.github.io/"/>
-  <updated>2026-01-07T12:32:07.554Z</updated>
+  <updated>2026-01-21T12:35:42.915Z</updated>
   <id>https://tsunhua.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Privacy Policy for LostTouch (不断联)</title>
+    <link href="https://tsunhua.github.io/project/losttouch/privacy-policy/"/>
+    <id>https://tsunhua.github.io/project/losttouch/privacy-policy/</id>
+    <published>2026-01-21T12:35:00.000Z</published>
+    <updated>2026-01-21T12:35:42.915Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;Last Updated: January 21, 2026&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Your privacy is the cornerstone of &lt;strong&gt;LostTouch&lt;/strong&gt; (不断联). This application is designed to be “local-first,” meaning your personal data stays where it belongs: on your device.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="losttouch" scheme="https://tsunhua.github.io/tags/losttouch/"/>
+    
+    <category term="project" scheme="https://tsunhua.github.io/tags/project/"/>
+    
+  </entry>
   
   <entry>
     <title>介紹一個意在連結所有語言的網站——LangMap</title>
@@ -471,31 +491,6 @@
     
     
     <category term="Unicode" scheme="https://tsunhua.github.io/tags/Unicode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>介紹Go程序性能分析工具 pprof</title>
-    <link href="https://tsunhua.github.io/it/go/go-tool-pprof/"/>
-    <id>https://tsunhua.github.io/it/go/go-tool-pprof/</id>
-    <published>2021-12-04T12:51:15.000Z</published>
-    <updated>2025-06-14T16:18:38.075Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;pprof 是 program profiling（程序分析）的縮寫，是 Go程序中重要的性能分析工具，包含兩個部分：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;數據採集，由編譯到程序中的 pprof 庫實現。pprof 庫主要是指 “runtime/pprof” 包，另有 “net/http/pprof” 包引用 “runtime/pprof” 並以 HTTP 接口形式提供實時性能數據。&lt;/li&gt;
-&lt;li&gt;數據分析，使用 &lt;code&gt;go tool pprof &amp;lt;source&amp;gt;&lt;/code&gt; 工具分析採集到的數據。 &lt;/li&gt;
-&lt;/ol&gt;</summary>
-    
-    
-    
-    
-    <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
-    
-    <category term="Go" scheme="https://tsunhua.github.io/tags/Go/"/>
-    
-    <category term="pprof" scheme="https://tsunhua.github.io/tags/pprof/"/>
     
   </entry>
   
