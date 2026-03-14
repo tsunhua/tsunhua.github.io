@@ -6,7 +6,7 @@
   <link href="https://tsunhua.github.io/atom.xml" rel="self"/>
   
   <link href="https://tsunhua.github.io/"/>
-  <updated>2026-01-21T12:35:42.915Z</updated>
+  <updated>2026-03-14T12:15:12.642Z</updated>
   <id>https://tsunhua.github.io/</id>
   
   <author>
@@ -17,22 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Privacy Policy for LostTouch (不断联)</title>
-    <link href="https://tsunhua.github.io/project/losttouch/privacy-policy/"/>
-    <id>https://tsunhua.github.io/project/losttouch/privacy-policy/</id>
-    <published>2026-01-21T12:35:00.000Z</published>
-    <updated>2026-01-21T12:35:42.915Z</updated>
+    <title>我个甲子話印象</title>
+    <link href="https://tsunhua.github.io/language/min/ua-kai-kahtsi-ue-in-siang/"/>
+    <id>https://tsunhua.github.io/language/min/ua-kai-kahtsi-ue-in-siang/</id>
+    <published>2026-03-14T11:30:00.000Z</published>
+    <updated>2026-03-14T12:15:12.642Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;strong&gt;Last Updated: January 21, 2026&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Your privacy is the cornerstone of &lt;strong&gt;LostTouch&lt;/strong&gt; (不断联). This application is designed to be “local-first,” meaning your personal data stays where it belongs: on your device.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;甲子話是陸豐三甲地區个潮汕話，學術中歸入閩南語。呾起來，潮汕話應該是我个父語，海陸豐話正是我个母語，阮母伊厝內汝是呾「lí」而毋是「lú」个，來綴阮父後正呾「lú」个。若是汝睇出我佮汝毋平樣个呾法，亦勿見怪。因爲實際上，語言因時因地因儂而變，百種儂呾百種話。所謂「某某話」者，是取各儂話語交集个所在來佮別个話來區分。&lt;/p&gt;
+&lt;p&gt;我想勿掠咱个話斷送在咱此一代，此馬有變做个就是先掠伊記落來。此亦是我建立 &lt;a href=&quot;https://langmap.io/&quot;&gt;langmap.io&lt;/a&gt; 个初衷，見前文 &lt;a href=&quot;/essay/langmap-intro/&quot;&gt;介紹一個意在連結所有語言的網站——LangMap&lt;/a&gt;。&lt;/p&gt;</summary>
     
     
     
     
-    <category term="losttouch" scheme="https://tsunhua.github.io/tags/losttouch/"/>
+    <category term="閩語文" scheme="https://tsunhua.github.io/tags/%E9%96%A9%E8%AA%9E%E6%96%87/"/>
     
-    <category term="project" scheme="https://tsunhua.github.io/tags/project/"/>
+    <category term="甲子話" scheme="https://tsunhua.github.io/tags/%E7%94%B2%E5%AD%90%E8%A9%B1/"/>
+    
+    <category term="閩南語" scheme="https://tsunhua.github.io/tags/%E9%96%A9%E5%8D%97%E8%AA%9E/"/>
+    
+    <category term="潮汕話" scheme="https://tsunhua.github.io/tags/%E6%BD%AE%E6%B1%95%E8%A9%B1/"/>
     
   </entry>
   
