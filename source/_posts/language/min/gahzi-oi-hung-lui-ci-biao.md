@@ -7,7 +7,7 @@ tags:
 - 閩南語
 ---
 
-**!!! 注意：本辭表已收錄在典合網中進行維護，請轉閱：[https://dicthub.cn/dicts/kahtsi-ue](https://dicthub.cn/dicts/kahtsi-ue) !!!**
+**!!! 注意：本辭表已收錄在LangMap中進行維護，請轉閱：[https://langmap.io/#/handbooks/1539253276](https://langmap.io/#/handbooks/1539253276?target_lang=zh-CN,emoji) !!!**
 
 ## 序言(su⁶ ngiang⁵)
 
