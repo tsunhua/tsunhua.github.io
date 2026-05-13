@@ -6,7 +6,7 @@
   <link href="https://tsunhua.github.io/atom.xml" rel="self"/>
   
   <link href="https://tsunhua.github.io/"/>
-  <updated>2026-03-14T12:15:12.642Z</updated>
+  <updated>2026-05-13T14:05:43.432Z</updated>
   <id>https://tsunhua.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>「給阿嬤的情書」or「乞阿媽个情批」</title>
+    <link href="https://tsunhua.github.io/essay/khurt-a-ma-kai-chheng-tsur/"/>
+    <id>https://tsunhua.github.io/essay/khurt-a-ma-kai-chheng-tsur/</id>
+    <published>2026-05-13T10:38:00.000Z</published>
+    <updated>2026-05-13T14:05:43.432Z</updated>
+    
+    
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;語言&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;寫法&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;普通話&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;給阿嬤的情書&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;普通話&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;給奶奶的情書&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;潮州話&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;乞阿媽个情書（khṳt a-má kâi/âi chhêng-tsṳ）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;潮州話&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;乞阿媽个情批（khṳt a-má kâi/âi chhêng-phoi）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;福建話&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;互阿媽个情書（hō͘ a-má ê chêng-su）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;福建話&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;互阿媽个情批（hō͘ a-má ê chêng-phoe）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    
+    <category term="隨筆" scheme="https://tsunhua.github.io/tags/%E9%9A%A8%E7%AD%86/"/>
+    
+  </entry>
   
   <entry>
     <title>我个甲子話印象</title>
@@ -469,32 +517,6 @@
     <category term="代碼家" scheme="https://tsunhua.github.io/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/"/>
     
     <category term="Go" scheme="https://tsunhua.github.io/tags/Go/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unicode 字符集及UTF編碼入門</title>
-    <link href="https://tsunhua.github.io/it/common/unicode/"/>
-    <id>https://tsunhua.github.io/it/common/unicode/</id>
-    <published>2021-12-20T13:06:00.000Z</published>
-    <updated>2025-06-14T16:18:38.067Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;開始介紹 Unicode 之前，我們先來做一道不定項選擇題。&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;問題&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;：請問以下說法正確的是（）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;A&lt;/span&gt;. 所有中文字符都可用 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 編碼，並佔用 &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; 個字節。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;B&lt;/span&gt;. 字符串可以直接轉成字節數組，字節數組可以直接轉成字符串。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;C. 文本的編碼順序跟其書寫順序一致，不一定是按從左到右從上到下順序。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;D. 帶 BOM 的文本一定是 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 編碼，不帶 BOM 的文本不一定是 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 編碼。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;E. Unicode、GBK 和 UTF-&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt; 都是不同的編碼方式。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;F. UTF-&lt;span class=&quot;number&quot;&gt;16&lt;/span&gt; 不兼容 ASCII 碼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;G. 十進制的數字可以轉成二進制，因此不需要編碼。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;答案文章末尾揭曉，如果著急想對答案可以先翻到末尾核對；如果想知道為什麼，那就帶著問題繼續往下看吧。&lt;/p&gt;
-&lt;h2 id=&quot;字符集&quot;&gt;&lt;a href=&quot;#字符集&quot; class=&quot;headerlink&quot; title=&quot;字符集&quot;&gt;&lt;/a&gt;字符集&lt;/h2&gt;&lt;p&gt;Unicode 是一種國際通用的字符集。&lt;/p&gt;
-&lt;p&gt;什麼是字符？計算機中的字符分為兩種：打印字符和非打印字符。打印字符包括數字、字母、漢字、假名、標點符號等等，非打印字符又稱之為控制字符，常見的有：回車（’&#92;r’，U+000D）、換行（’&#92;n’，U+000A）等等。&lt;/p&gt;
-&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;問題&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;：數字 &lt;span class=&quot;number&quot;&gt;123&lt;/span&gt; 由（）個字符組成？&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;什麼是字符集？字符集就是字符的集合，不同的字符集包含的字符類型和數量可能不一樣。Unicode 是字符集的一種。&lt;/p&gt;
-&lt;p&gt;字符之所以能被計算機處理，其中最為關鍵的是字符能夠被正確地編碼和解碼。字符的編碼是字符在對應字符集中的序號。此序號是一個整數，稱之為字符碼點 （code point）。不同的字符集可能會對同樣的字符有不同的碼點表示，甚至沒有表示（並不是所有字符在字符集中都有定義）。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Unicode" scheme="https://tsunhua.github.io/tags/Unicode/"/>
     
   </entry>
   

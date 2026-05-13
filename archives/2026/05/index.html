@@ -19,25 +19,18 @@ ga('send', 'pageview');
 
 
   
-  <title>Go調度器 | 不輟集</title>
+  <title>彙整: 2026/5 | 不輟集</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="現在有三種常見的線程模型，包括：  N:1，即 N 個用戶線程對應一個系統線程，節省上下文（context switch）切換開銷； 1:1，即 1 個用戶線程對應一個系統線程，充分利用多個核心（multi-core）； M:N，即 M 個用戶線程對應 N 個系統線程，節省上下文開銷並充分利用多個核心。  Go的線程調度模型就是 M:N。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Go調度器">
-<meta property="og:url" content="https://tsunhua.github.io/it/go/go-scheduler/index.html">
+  <meta name="description" content="筆耕不輟，日有所知，月無忘其所能">
+<meta property="og:type" content="website">
+<meta property="og:title" content="不輟集">
+<meta property="og:url" content="https://tsunhua.github.io/archives/2026/05/index.html">
 <meta property="og:site_name" content="不輟集">
-<meta property="og:description" content="現在有三種常見的線程模型，包括：  N:1，即 N 個用戶線程對應一個系統線程，節省上下文（context switch）切換開銷； 1:1，即 1 個用戶線程對應一個系統線程，充分利用多個核心（multi-core）； M:N，即 M 個用戶線程對應 N 個系統線程，節省上下文開銷並充分利用多個核心。  Go的線程調度模型就是 M:N。">
+<meta property="og:description" content="筆耕不輟，日有所知，月無忘其所能">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://tsunhua.github.io/it/go/go-scheduler/mpg.png">
-<meta property="og:image" content="https://tsunhua.github.io/it/go/go-scheduler/syscall.jpg">
-<meta property="og:image" content="https://tsunhua.github.io/it/go/go-scheduler/steal.jpg">
-<meta property="article:published_time" content="2021-12-27T03:00:00.000Z">
-<meta property="article:modified_time" content="2025-06-14T16:18:38.074Z">
 <meta property="article:author" content="Hua">
-<meta property="article:tag" content="代碼家">
-<meta property="article:tag" content="Go">
+<meta property="article:tag" content="漢字,閩南語,福建話,潮州話,甲子話,編程語言,Java,Go">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tsunhua.github.io/it/go/go-scheduler/mpg.png">
   
   
     <link rel="shortcut icon" href="favicon.ico" />
@@ -118,90 +111,40 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-it/go/go-scheduler" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/it/go/go-scheduler/" class="article-date">
-  <time datetime="2021-12-27T03:00:00.000Z" itemprop="datePublished">2021-12-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      Go調度器
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2026" class="archive-year">2026</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/essay/khurt-a-ma-kai-chheng-tsur/" class="archive-article-date">
+  <time datetime="2026-05-13T10:38:00.000Z" itemprop="datePublished">5月 13</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/essay/khurt-a-ma-kai-chheng-tsur/">「給阿嬤的情書」or「乞阿媽个情批」</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>現在有三種常見的線程模型，包括：</p>
-<ol>
-<li>N:1，即 N 個用戶線程對應一個系統線程，節省上下文（context switch）切換開銷；</li>
-<li>1:1，即 1 個用戶線程對應一個系統線程，充分利用多個核心（multi-core）；</li>
-<li>M:N，即 M 個用戶線程對應 N 個系統線程，節省上下文開銷並充分利用多個核心。</li>
-</ol>
-<p>Go的線程調度模型就是 M:N。</p>
-<span id="more"></span>
-
-<p>我們使用三個實體來表示 Go 的線程：</p>
-<ol>
-<li>三角框的 M，代表系統線程，在運行時代碼中寫作 M（Machine）；</li>
-<li>圓框的 G，代表 goroutine，包含棧和指令指針等等信息；</li>
-<li>方框的 P，代表調度的上下文（context for scheduling），在運行時代碼中寫作 P（Processor）。</li>
-</ol>
-<p><img src="/it/go/go-scheduler/mpg.png" alt="M-P-G"></p>
-<p>在這種模型中，M 持有 P 來運行 G（M hold P to run G），藍色的G表示正在運行，灰色的G置於P本地的 runqueue 中等待被調度，P 的數量可以通過 GOMAXPROC 設置（從GO1.5起默認等於CPU核心數）。</p>
-<p>為什麼不直接將 G 掛在 M 上，而是通過 P 來調度呢？</p>
-<p>因為使用P可以靈活高效地管理G，具體如下：</p>
-<p>第一，P 可以在 M 阻塞（比如syscall）時，從阻塞的M脫離，掛到其他可用的M上，保證後續的G正常運行。</p>
-<p><img src="/it/go/go-scheduler/syscall.jpg" alt="Syscall"></p>
-<p>第二，在阻塞的M解除阻塞狀態時，會從其他M搶奪P；如果搶不到，就將G置放到全局的 runqueue中，然後將自己放入線程緩存並休眠。</p>
-<p>第三，P 會定時檢查全局的 runqueue 中是否有G，有的話拿過來運行。</p>
-<p>第四，當 P 運行完本地 runqueue中的任務後，會檢察全局的 runqueue 是否有G；如果沒有，就從其他P搶奪一半的G過來運行。</p>
-<p><img src="/it/go/go-scheduler/steal.jpg" alt="Steal Work"></p>
-<p>參考：<a target="_blank" rel="noopener" href="https://www.morsmachine.dk/go-scheduler">The Go scheduler - Morsing’s blog</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://tsunhua.github.io/it/go/go-scheduler/" data-id="cmbwgq5ym001d7ofqgxwu2j0f" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A2%BC%E5%AE%B6/" rel="tag">代碼家</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/it/common/net-io/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">
-        
-          網絡I/O
-        
-      </div>
-    </a>
-  
-  
-    <a href="/it/common/unicode/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">Unicode 字符集及UTF編碼入門</div>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
+
 
 </section>
         
